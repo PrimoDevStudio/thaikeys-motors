@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@docuseal/vue": "^1.0.50",
+    "@headlessui/vue": "^1.7.23",
+    "@heroicons/vue": "^2.2.0",
+    "@nuxt/image": "^1.11.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^10.0.5",
+    "@nuxtjs/supabase": "^1.6.0",
+    "@supabase/supabase-js": "^2.55.0",
+    "@types/leaflet": "^1.9.20",
+    "browser-image-compression": "^2.0.2",
+    "echarts": "^6.0.0",
+    "leaflet": "^1.9.4",
+    "lucide-vue-next": "^0.539.0",
+    "nuxt": "^4.1.2",
+    "nuxt-echarts": "^1.0.0",
+    "swiper": "^12.0.2",
+    "vue": "^3.5.18",
+    "vue-echarts": "^8.0.0-beta.1",
+    "vue-leaflet": "^0.1.0",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "supabase": "^2.34.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vue-tsc": "^3.0.5"
+  }
+}

@@ -1,0 +1,1031 @@
+{
+  "nav": {
+    "buy": "Buy",
+    "rent": "Rent", 
+    "sell": "Sell",
+    "features": "Features",
+    "agents": "Agencies",
+    "listprivately": "List Privately",
+    "sellers": "Sellers",
+    "developers": "Developers",
+    "expats": "Expats Hub",
+    "about": "About Us",
+    "login": "Log In / Register",
+    "logout": "Log Out",
+    "register": "Register"
+  },
+  "listings": {
+    "bangkok_properties": "Bangkok Properties",
+    "properties_found": "{count} properties found",
+    "expand_map": "Expand map",
+    "asok_bts": "Asok BTS",
+    "phrom_phong_bts": "Phrom Phong BTS",
+    "thonglor_bts": "Thonglor BTS",
+    "ekkamai_bts": "Ekkamai BTS",
+    "properties": "Properties",
+    "search_placeholder": "Search by location or transit station...",
+    "available": "Available",
+    "sqm": "sqm",
+    "contact": "Contact",
+    "mapview": "View on Map",
+    "map_view_title": "Bangkok Real Estate - Map View",
+    "filters": {
+      "bts": "Near BTS",
+      "furnished": "Furnished",
+      "luxury": "Luxury",
+      "new": "New"
+    }
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions", 
+    "contact": "Contact Us",
+    "payments": "Digital Payments",
+    "tagline": "Unlocking Thailand's Property Market."
+  },
+  "hero": {
+    "title_part1": "Unlocking",
+    "title_part2": "Thailand's Property Market",
+    "subtitle": "Thailand's most advanced property platform with integrated transport mapping, professional agents, and modern payment solutions.",
+    "search_placeholder": "Search by location, landmark, or transit station..."
+  },
+  "tabs": {
+    "rent": "Rent",
+    "buy": "Buy",
+    "developments": "Developments",
+    "commercial": "Commercial"
+  },
+  "filters": {
+    "property_type": "Property Type",
+    "condominium": "Condominium",
+    "apartment": "Apartment",
+    "house": "House",
+    "villa": "Villa",
+    "land": "Land",
+    "min_price": "Min Price",
+    "max_price": "Max Price",
+    "no_max": "No Max",
+    "bedrooms": "Bedrooms"
+  },
+  "buttons": {
+    "search_properties": "Search Properties",
+    "more_filters": "More Filters",
+    "view_all": "View All",
+    "view_details": "View Details",
+    "join_agent_network": "Join Agent Network",
+    "start_searching": "Start Searching Properties",
+    "schedule_demo": "Schedule Demo",
+    "read_more": "Read More",
+    "read_article": "Read Article"
+  },
+  "stats": {
+    "properties": "Properties",
+    "agents": "Professional Agents",
+    "bts_stations": "Transit Stations"
+  },
+  "sections": {
+    "featured_properties": "Featured Properties",
+    "featured_properties_subtitle": "Exceptional homes selected for their outstanding value, location, and amenities.",
+    "popular_projects": "Popular Projects",
+    "popular_projects_subtitle": "Discover Thailand's most sought-after developments",
+    "latest_rentals": "Latest Houses & Condos for Rent",
+    "latest_rentals_subtitle": "Fresh rental opportunities updated daily",
+    "popular_locations": "Popular Locations in Thailand",
+    "popular_locations_subtitle": "Explore the most attractive areas for investment and living",
+    "revolutionary_features": "Revolutionary Features",
+    "revolutionary_features_subtitle": "Experience property search like never before with cutting-edge technology and professional-grade service standards",
+    "property_insights": "Latest Property Insights",
+    "property_insights_subtitle": "Stay updated with Thailand's property market trends and expert advice",
+    "bts_search_title_1": "Find Properties Near Any",
+    "bts_search_title_2": "Transit Station",
+    "bts_search_subtitle": "Our revolutionary transport mapping shows you exactly how close properties are to transit stations, helping you make smarter decisions about your commute and lifestyle.",
+    "insights_title_1": "Market",
+    "insights_title_2": "Insights & News",
+    "insights_subtitle": "Stay informed with the latest market trends, investment opportunities, and expert insights from Thailand's property experts.",
+    "built_for_agents": "Built for Modern Agents",
+    "built_for_agents_subtitle": "Join Thailand's most advanced agent network. Get access to cutting-edge tools, qualified leads, and a platform designed to grow your business.",
+    "ready_for_future": "Ready for the Future?",
+    "ready_for_future_subtitle": "Join thousands of users discovering their perfect property through Thailand's most advanced platform"
+  },
+  "features": {
+    "visualize_commute": {
+      "title": "Visualize Your Commute",
+      "description": "See walking times to transit stations at a glance. No more guessing if that \"5-minute walk\" is actually 15 minutes."
+    },
+    "discover_gems": {
+      "title": "Discover Hidden Gems",
+      "description": "Find amazing properties in areas you never considered, all perfectly connected to transit stations."
+    },
+    "save_time": {
+      "title": "Save Hours of Research",
+      "description": "Skip the endless Google Maps searches. Our platform does all the transport research for you."
+    },
+    "smart_alerts": {
+      "title": "Smart Price Alerts",
+      "description": "Get notified instantly when properties matching your criteria and budget become available in your preferred areas."
+    },
+    "bts_proximity": {
+      "title": "Transit Station Proximity Search",
+      "description": "Find properties within walking distance of any transit station. See exact walking times and routes on interactive maps."
+    },
+    "professional_agents": {
+      "title": "Professional Agents",
+      "description": "Work with trained, technology-enabled agents who deliver exceptional service and deep market expertise."
+    },
+    "smart_payments": {
+      "title": "Smart Payments",
+      "description": "Pay rent any way you want - credit cards, PromptPay, digital wallets, or traditional transfers. Secure and instant."
+    }
+  },
+  "common": {
+    "from": "From",
+    "month": "month",
+    "bed": "bed",
+    "bath": "bath",
+    "min_walk_to_bts": "min walk to BTS",
+    "new_project": "New Project",
+    "premium": "Premium",
+    "hot_sale": "On Sale",
+    "luxury": "Luxury",
+    "featured": "Featured"
+  },
+  "demo": {
+    "browser_title": "Bangkok Property Search - Transit Stations Integration",
+    "property_title": "Modern Condo Near Asok",
+    "perfect_commute": "Perfect Commute"
+  },
+  "article": {
+    "date": "March 15, 2025",
+    "date_2": "March 12, 2025",
+    "date_3": "March 10, 2025",
+    "category": "Market Analysis",
+    "read_time": "5 min read",
+    "title": "Bangkok Property Market 2025: BTS Expansion Impact on Real Estate Values",
+    "excerpt": "Discover how the new BTS Green Line extension is reshaping property values across Bangkok. Our analysis reveals which areas are experiencing the highest growth and why proximity to transit stations remains the key factor for property investment. Find out which emerging corridors smart investors are targeting right now.",
+    "author": "Sarah Chen",
+    "author_title": "Property Market Analyst",
+    "tips": "Tips",
+    "tips_title": "10 Essential Questions to Ask Before Renting in Bangkok",
+    "tips_excerpt": "From transit station proximity to building amenities, here's your complete checklist for finding the perfect rental property.",
+    "investment": "Investment",
+    "investment_title": "Foreign Property Investment Guide: Thailand 2025",
+    "investment_excerpt": "Navigate Thailand's property laws and discover the best investment opportunities for international buyers."
+  },
+  "app": {
+    "mobile_tablet": "on Mobile and Tablet",
+    "description": "Get Thailand's leading property app, built to make buying and finding your next home - now easier than ever - right on your smartphone. Download the app now on iOS and Android!",
+    "feature_1": "Search properties with advanced transit station proximity filters",
+    "feature_2": "Save favorites and get instant notifications",
+    "feature_3": "Connect directly with verified agents",
+    "feature_4": "Book viewings and manage applications"
+  },
+  "agent": {
+    "dashboard_title": "Agent CRM Dashboard",
+    "active_listings": "Active Listings",
+    "this_month": "This Month",
+    "new_inquiry": "New Inquiry",
+    "inquiry_1": "Condo near Asok BTS",
+    "inquiry_2": "House near Punnawhithi BTS",
+    "viewing_scheduled": "Viewing Scheduled",
+    "viewing_1": "Tomorrow 2:00 PM",
+    "viewing_2": "Wednesday 11:15 AM",
+    "instant_leads": {
+      "title": "Instant Lead Notifications",
+      "description": "Get notified immediately when clients search for properties in your area."
+    },
+    "analytics": {
+      "title": "Advanced Analytics",
+      "description": "Track your performance and optimize your listings with detailed insights."
+    },
+    "commission": {
+      "title": "Smart Commission System",
+      "description": "Transparent pricing with competitive rates and instant payments."
+    }
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "bangkok_rentals": "Bangkok Rentals",
+    "sukhumvit": "Sukhumvit"
+  },
+  "property": {
+    "status": {
+      "available_now": "Available Now",
+      "verified": "Verified"
+    },
+    "bts_walk_time": "{minutes} min walk to {station}",
+    "details": {
+      "bedrooms": "{count} Bedrooms | {count} Bedroom",
+      "bathrooms": "{count} Bathrooms | {count} Bathroom", 
+      "area": "{sqm} sqm"
+    },
+    "pricing": {
+      "per_month": "per month"
+    },
+    "actions": {
+      "schedule_viewing": "Schedule Viewing",
+      "contact_agent": "Contact Agent",
+      "save_favorites": "Save to Favorites"
+    },
+    "id_label": "Property ID",
+    "sections": {
+      "description": "Property Description",
+      "key_features": "Key Features",
+      "building_amenities": "Building Amenities",
+      "location_transport": "Location & Transport"
+    },
+    "features": {
+      "fully_furnished": "Fully Furnished",
+      "air_conditioning": "Air Conditioning", 
+      "balcony_view": "Balcony with City View",
+      "high_speed_wifi": "High-Speed WiFi",
+      "washing_machine": "Washing Machine",
+      "kitchen_appliances": "Kitchen Appliances",
+      "security_24_7": "24/7 Security",
+      "parking_space": "Parking Space"
+    },
+    "amenities": {
+      "swimming_pool": {
+        "title": "Swimming Pool",
+        "description": "Rooftop infinity pool with city views"
+      },
+      "fitness_center": {
+        "title": "Fitness Center", 
+        "description": "State-of-the-art gym equipment"
+      },
+      "concierge": {
+        "title": "Concierge",
+        "description": "24-hour concierge service"
+      },
+      "business_center": {
+        "title": "Business Center",
+        "description": "Co-working space and meeting rooms"
+      },
+      "security": {
+        "title": "Security",
+        "description": "CCTV and key card access"
+      },
+      "parking": {
+        "title": "Parking",
+        "description": "Covered parking garage"
+      }
+    },
+    "bts": {
+      "walk_info": "{minutes} minute walk â€¢ Sukhumvit & MRT Interchange",
+      "access_info": "Direct access to Siam, Phrom Phong, and Central Bangkok"
+    },
+    "nearby": {
+      "shopping_dining": "Shopping & Dining",
+      "business_education": "Business & Education"
+    },
+    "map": {
+      "title": "Interactive Location Map",
+      "subtitle": "Click to explore the neighborhood"
+    },
+    "agent": {
+      "title": "Your Agent",
+      "role": "Senior Property Consultant",
+      "rating": "{rating} ({reviews} reviews)",
+      "call": "Call Agent",
+      "message": "Send Message"
+    },
+    "payment": {
+      "title": "Rental Payment Options",
+      "promptpay": {
+        "title": "PromptPay",
+        "description": "Instant QR transfers"
+      },
+      "cards": {
+        "title": "International Cards",
+        "description": "Visa, Mastercard, Amex"
+      },
+      "transfer": {
+        "title": "Bank Transfer",
+        "description": "Wire transfers"
+      },
+      "deposit": "Deposit",
+      "key_money": "Key Money",
+      "none": "None"
+    },
+    "similar": {
+      "title": "Similar Properties",
+      "view_more": "View More Similar Properties"
+    },
+    "quick_actions": {
+      "title": "Quick Actions",
+      "save": "Save to Favorites",
+      "share": "Share Property",
+      "print": "Print Details", 
+      "compare": "Compare Properties"
+    }
+  },
+  "gallery": {
+    "photo_count": "{current} / {total} Photos",
+    "view_all_photos": "View All Photos"
+  },
+  "dashboard": {
+    "welcome_back": "Welcome back, {name}",
+    "agent_role": "Senior Property Consultant",
+    "search_placeholder": "Search properties, clients...",
+    "navigation": {
+      "overview": "Overview",
+      "properties": "My Properties", 
+      "inquiries": "Inquiries",
+      "clients": "Clients",
+      "calendar": "Calendar",
+      "analytics": "Analytics"
+    },
+    "stats": {
+      "active_listings": "Active Listings",
+      "this_week_change": "+{count} this week",
+      "total_views": "Total Views",
+      "monthly_change": "+{percent}% vs last month",
+      "new_inquiries": "New Inquiries",
+      "urgent_count": "{count} urgent",
+      "monthly_revenue": "Monthly Revenue",
+      "revenue_change": "+{amount} vs last month"
+    },
+    "quick_actions": {
+      "title": "Quick Actions",
+      "add_property": "Add New Property",
+      "schedule_viewing": "Schedule Viewing",
+      "view_analytics": "View Analytics"
+    },
+    "recent_inquiries": {
+      "title": "Recent Inquiries",
+      "view_all": "View All"
+    },
+    "priority": {
+      "high": "High",
+      "medium": "Medium", 
+      "low": "Low"
+    },
+    "properties": {
+      "title": "My Properties",
+      "add_property": "Add Property"
+    },
+    "property_status": {
+      "available": "Available",
+      "rented": "Rented",
+      "pending": "Pending"
+    },
+    "property_stats": {
+      "views": "Views",
+      "inquiries": "Inquiries",
+      "photos": "Photos"
+    },
+    "property_actions": {
+      "edit": "Edit",
+      "view": "View"
+    },
+    "inquiries": {
+      "title": "Property Inquiries",
+      "columns": {
+        "client": "Client",
+        "property": "Property",
+        "type": "Type",
+        "priority": "Priority",
+        "status": "Status",
+        "actions": "Actions"
+      }
+    },
+    "filters": {
+      "all_priorities": "All Priorities",
+      "high_priority": "High Priority",
+      "medium_priority": "Medium Priority", 
+      "low_priority": "Low Priority",
+      "all_status": "All Status",
+      "new": "New",
+      "in_progress": "In Progress",
+      "closed": "Closed"
+    },
+    "inquiry_types": {
+      "viewing": "Viewing",
+      "information": "Information"
+    },
+    "inquiry_status": {
+      "new": "New",
+      "in_progress": "In Progress",
+      "closed": "Closed"
+    },
+    "analytics": {
+      "title": "Performance Analytics",
+      "property_performance": "Property Performance",
+      "avg_views": "Average Views per Property",
+      "conversion_rate": "Inquiry Conversion Rate",
+      "avg_response_time": "Average Response Time",
+      "revenue_tracking": "Revenue Tracking",
+      "this_month": "This Month",
+      "last_month": "Last Month",
+      "growth": "Growth",
+      "client_satisfaction": "Client Satisfaction",
+      "avg_rating": "Average Rating",
+      "total_reviews": "Total Reviews",
+      "recommendation_rate": "Recommendation Rate"
+    },
+    "charts": {
+      "revenue_trend": "Monthly Revenue Trend",
+      "property_performance": "Property Views & Inquiries",
+      "bts_proximity": "Performance by transit station proximity",
+      "response_time": "Response Time Distribution"
+    },
+    "modal": {
+      "inquiry_details": "Client Inquiry Details",
+      "interested_in": "Interested in",
+      "message": "Message",
+      "sample_message": "Hi, I'm interested in viewing this property. I'm looking for a 2-bedroom condo near BTS for myself and my partner. We can be flexible with viewing times this week. Please let me know your availability.",
+      "schedule_viewing": "Schedule Viewing",
+      "send_message": "Send Message"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About thaikeys.co.th",
+      "description": "Learn about thaikeys.co.th - Thailand's most advanced property platform revolutionizing real estate with transit station integration and professional services."
+    },
+    "hero": {
+      "title": "Revolutionizing Thailand's Property Market",
+      "subtitle": "We're building the future of real estate in Thailand with cutting-edge technology, professional agents, and unmatched transit station proximity insights."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To make property search and transactions in Thailand seamless, transparent, and efficient through innovative technology and exceptional service.",
+      "vision": "We envision a Thailand where everyone can easily find their perfect home or investment property, with complete confidence and peace of mind."
+    },
+    "stats": {
+      "properties": "Properties",
+      "agents": "Professional Agents", 
+      "satisfaction": "Client Satisfaction",
+      "support": "Support Available"
+    },
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "The principles that guide everything we do at thaikeys.co.th",
+      "items": {
+        "innovation": {
+          "title": "Innovation",
+          "description": "We continuously push boundaries with cutting-edge technology and creative solutions for the property market."
+        },
+        "transparency": {
+          "title": "Transparency", 
+          "description": "Complete honesty in all our dealings, with clear pricing, processes, and communication at every step."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "We strive for perfection in every interaction, ensuring the highest quality service and results."
+        },
+        "community": {
+          "title": "Community",
+          "description": "Building stronger communities by connecting people with their ideal homes and neighborhoods."
+        },
+        "technology": {
+          "title": "Technology",
+          "description": "Leveraging advanced tech like BTS mapping and AI to provide smarter property insights."
+        },
+        "trust": {
+          "title": "Trust",
+          "description": "Earning trust through consistent delivery, professional conduct, and putting client interests first."
+        }
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "The passionate professionals behind thaikeys.co.th",
+      "members": {
+        "ceo": {
+          "role": "CEO & Founder",
+          "bio": "Visionary leader with 15+ years in Thai real estate and technology innovation."
+        },
+        "cto": {
+          "role": "Chief Technology Officer",
+          "bio": "Tech expert specializing in mapping technologies and real estate platform development."
+        },
+        "head_sales": {
+          "role": "Head of Sales",
+          "bio": "Property market specialist with deep knowledge of Bangkok's real estate landscape."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Real Estate?",
+      "subtitle": "Join thousands of satisfied clients who have found their perfect properties through thaikeys.co.th.",
+      "contact_us": "Contact Us",
+      "join_team": "Join Our Team"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact thaikeys.co.th",
+      "description": "Get in touch with thaikeys.co.th. Contact our expert team for property inquiries, support, partnerships, or any questions about Thailand's real estate market."
+    },
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Have questions about properties, need support, or want to partner with us? We're here to help you every step of the way."
+    },
+    "form": {
+      "title": "Send us a Message",
+      "first_name": "First Name",
+      "first_name_placeholder": "Enter your first name",
+      "last_name": "Last Name", 
+      "last_name_placeholder": "Enter your last name",
+      "email": "Email Address",
+      "email_placeholder": "your.email{'@'}example.com",
+      "phone": "Phone Number",
+      "phone_placeholder": "+66 XX XXX XXXX",
+      "department": "Department",
+      "select_department": "Select a department...",
+      "subject": "Subject",
+      "subject_placeholder": "What can we help you with?",
+      "message": "Message",
+      "message_placeholder": "Tell us more about your inquiry...",
+      "send_message": "Send Message",
+      "sending": "Sending...",
+      "success_message": "Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.",
+      "error_message": "Sorry, there was an error sending your message. Please try again or contact us directly."
+    },
+    "departments": {
+      "sales": "Sales & Property Inquiries",
+      "support": "Customer Support",
+      "agents": "Agent Services",
+      "partnerships": "Business Partnerships",
+      "technical": "Technical Support",
+      "media": "Media & Press",
+      "legal": "Legal & Compliance",
+      "general": "General Inquiries"
+    },
+    "office": {
+      "title": "Our Office",
+      "address": "Address",
+      "address_line": "123 Sukhumvit Road, Klongtoey, Bangkok 10110, Thailand",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekdays": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    },
+    "emergency": {
+      "title": "Emergency Support",
+      "description": "For urgent property emergencies outside business hours",
+      "phone": "Emergency Hotline"
+    }
+  },
+  "agents": {
+    "hero": {
+      "title_part1": "Join Thailand's",
+      "title_part2": "Most Advanced Property Platform",
+      "subtitle": "Stop paying outrageous fees for outdated tools. Get unlimited listings, transit station proximity search, and modern CRM tools for 50% less than competitors.",
+      "join_now": "Join Now",
+      "learn_more": "Learn More"
+    },
+    "stats": {
+      "cheaper": "Cheaper",
+      "faster": "Faster Deals",
+      "modern": "Modern Tools"
+    },
+    "problems": {
+      "title": "Tired of Broken Property Platforms?",
+      "subtitle": "Thailand's current property platforms are stuck in 2010. Expensive fees, terrible mobile experience, and zero support for modern agents.",
+      "expensive": {
+        "title": "Ridiculously Expensive",
+        "description": "Pay ฿25,200/month for basic features that should be free. Plus hidden fees for 'premium' placement and listing refreshes."
+      },
+      "outdated": {
+        "title": "Stone Age Technology",
+        "description": "Broken mobile sites, terrible search filters, and no transit station proximity features. Built for 2010, not 2025."
+      },
+      "no_support": {
+        "title": "Zero Agent Support",
+        "description": "No training, no modern tools, no analytics. You're on your own with outdated systems that hurt your business."
+      }
+    },
+    "solution": {
+      "title": "The Modern Agent Platform",
+      "subtitle": "Everything you need to close more deals, serve clients better, and grow your business - at a price that actually makes sense."
+    },
+    "features": {
+      "bts": {
+        "title": "Revolutionary Transit Stations Integration",
+        "description": "The #1 feature every Bangkok agent needs - instant transit station proximity search that actually works. Show clients walking times, transport connections, and neighborhood insights.",
+        "benefit1": "Interactive maps with exact walking times to Transit Stations",
+        "benefit2": "QR codes at stations directing clients to your listings",
+        "benefit3": "Transport-focused search that matches how people actually look for properties"
+      },
+      "tools": {
+        "title": "Professional CRM Tools",
+        "description": "Built-in lead management, client tracking, and analytics dashboard. Everything you need to run a modern real estate business."
+      },
+      "payments": {
+        "title": "Integrated Payment Processing",
+        "description": "Accept rent payments through the platform - PromptPay, international cards, bank transfers. Your clients pay how they want."
+      },
+      "analytics": {
+        "title": "Smart Analytics Dashboard",
+        "description": "Track your performance, see which listings get the most views, and optimize your pricing based on real data."
+      }
+    },
+    "pricing": {
+      "title": "Fair Pricing vs. Highway Robbery",
+      "subtitle": "Get more features for half the price. No hidden fees, no artificial limits, no surprise charges.",
+      "competitor": {
+        "title": "Current Platforms",
+        "period": "per month",
+        "feature1": "Only 150 listings",
+        "feature2": "Pay extra for 'premium' ads",
+        "feature3": "Limited refresh credits"
+      },
+      "our": {
+        "title": "thaikeys.co.th",
+        "period": "per month",
+        "savings": "Save 50%",
+        "feature1": "Unlimited listings included",
+        "feature2": "transit station proximity search built-in",
+        "feature3": "Professional CRM & analytics",
+        "feature4": "Payment processing integration",
+        "cta": "Start Free Trial"
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Real Estate Business?",
+      "subtitle": "Join hundreds of professional agents already using Thailand's most advanced property platform. Get started today and see the difference modern tools make.",
+      "primary": "Join Agent Network",
+      "secondary": "Schedule Demo"
+    },
+    "contact": {
+      "phone": {
+        "title": "Call Us",
+        "number": "+66 2 026 3049"
+      },
+      "email": {
+        "title": "Email",
+        "address": "agents{'@'}thaikeys.co.th"
+      },
+      "line": {
+        "title": "LINE",
+        "id": "{'@'}thaikeys"
+      }
+    }
+  },
+    "landlords": {
+    "hero": {
+      "title_part1": "Thailand's Best Agents",
+      "title_part2": "With Lower Costs",
+      "subtitle": "Get professional property management with ongoing support for 8.15-12.5% monthly fees. Save thousands vs traditional agent upfront costs while getting the best service, or go DIY for just ฿1000.",
+      "list_property": "List Your Property",
+      "calculate_earnings": "Calculate Savings"
+    },
+    "stats": {
+      "commission": "Agent Fees",
+      "live_time": "To Go Live",
+      "success_rate": "Success Rate"
+    },
+    "costs": {
+      "title": "Three Ways to Rent Your Property",
+      "subtitle": "Compare traditional agents, our professional agents, and DIY listing to see which option gives you the best value and service.",
+      "traditional": {
+        "title": "Traditional Agents",
+        "subtitle": "Full month rent upfront",
+        "warning": "Expensive & Risky",
+        "point1": "฿30,000 upfront - massive cash hit",
+        "point2": "Agents disappear after getting paid",
+        "point3": "No ongoing property management",
+        "point4": "Outdated tools and limited marketing",
+        "point5": "Zero tenant relationship management"
+      },
+      "professional": {
+        "title": "thaikeys.co.th Agents",
+        "subtitle": "Monthly commission",
+        "badge": "Recommended",
+        "point1": "Only pay when rent is collected monthly",
+        "point2": "Continuous property management",
+        "point3": "Modern platform with BTS marketing",
+        "point4": "Professional tenant screening",
+        "point5": "Motivated agents for long-term success",
+        "cta": "Get Professional Agents"
+      },
+      "diy": {
+        "title": "DIY Self-List",
+        "subtitle": "One-time fee",
+        "savings": "Cheapest Option",
+        "point1": "Professional listing tools",
+        "point2": "transit station proximity highlighting",
+        "point3": "Direct tenant communication",
+        "limitation1": "No agent support or guidance",
+        "limitation2": "You handle all tenant issues",
+        "cta": "List Yourself"
+      }
+    },
+    "comparison": {
+      "title": "Cost Comparison Based on Your Property",
+      "traditional_label": "Traditional (upfront)",
+      "professional_label": "Our Agent (monthly)",
+      "diy_label": "DIY (one-time)",
+      "description": "Save significantly compared to traditional agents, with ongoing service and modern tools. Or save even more by managing it yourself with our professional platform."
+    },
+    "calculator": {
+      "title": "Calculate Your Savings",
+      "subtitle": "See exactly how much you save with different rental approaches based on your property's rent and lease length.",
+      "monthly_rent": "Monthly Rent Amount",
+      "lease_length": "Expected Lease Length",
+      "lease_options": {
+        "short": "1-3 months (12% commission)",
+        "medium": "3-6 months (10% commission)",
+        "long": "1+ years (7% commission)"
+      },
+      "commission_rates": "Our Commission Rates",
+      "rates": {
+        "short": "1-3 months: 12% monthly commission",
+        "medium": "3-6 months: 10% monthly commission", 
+        "long": "1+ years: 7% monthly commission"
+      },
+      "traditional_agent": "Traditional Agents Cost",
+      "our_agent": "Our Agents Cost",
+      "diy_option": "DIY Platform Cost",
+      "upfront_cost": "full month upfront",
+      "monthly_commission": "per month commission",
+      "one_time": "one-time platform fee",
+      "total_savings": "You Save with Our Agents",
+      "vs_traditional": "vs traditional agents"
+    },
+    "tools": {
+      "title": "Professional Tools for DIY Success",
+      "subtitle": "Everything you need to list, screen tenants, and manage rentals like a pro - no experience required.",
+      "professional_listings": {
+        "title": "Professional Property Listings",
+        "description": "Create stunning listings with our guided templates. Add photos, highlight transit station proximity, and showcase amenities that attract quality tenants."
+      },
+      "smart_pricing": {
+        "title": "Smart Pricing Recommendations",
+        "description": "Get AI-powered pricing suggestions based on similar properties, transit station proximity, and current market conditions in your area."
+      },
+      "tenant_screening": {
+        "title": "Tenant Screening Tools",
+        "description": "Review tenant profiles, employment history, and previous rental references. Make informed decisions about who rents your property."
+      },
+      "digital_contracts": {
+        "title": "Digital Lease Agreements",
+        "description": "Generate legally-compliant rental contracts instantly. Digital signatures make the process fast and paperless for both parties."
+      }
+    },
+    "dashboard": {
+      "title": "Landlord Dashboard",
+      "active_listings": "Active Properties",
+      "inquiries": "This Month",
+      "new_inquiry": "New Inquiry",
+      "inquiry_1": "Interested in 2BR condo",
+      "price_suggestion": "Price Optimization",
+      "suggestion_1": "Consider ฿32,000 for faster rental"
+    },
+    "features": {
+      "payment_collection": {
+        "title": "Automated Payment Collection",
+        "description": "Accept rent payments through PromptPay, bank transfers, or international cards. Automatic receipts and late payment reminders included."
+      },
+      "property_management": {
+        "title": "Complete Property Management",
+        "description": "Track maintenance requests, manage lease renewals, and communicate with tenants - all from one dashboard."
+      },
+      "market_insights": {
+        "title": "Market Insights & Analytics",
+        "description": "See how your property performs compared to similar listings. Get insights on optimal pricing and marketing strategies."
+      }
+    },
+    "testimonials": {
+      "title": "Success Stories from DIY Landlords",
+      "subtitle": "Join thousands of property owners who've ditched expensive agents and taken control of their rentals.",
+      "testimonial1": {
+        "name": "Somchai K.",
+        "role": "Condo Owner, Sukhumvit",
+        "quote": "Saved ฿30,000 in agent fees and found a great tenant in just 2 weeks. The platform made everything so easy, I'll never use an agent again."
+      },
+      "testimonial2": {
+        "name": "Maria R.",
+        "role": "Expat Property Owner",
+        "quote": "As a foreigner, I was worried about handling rentals myself. But the digital contracts and tenant screening made it completely stress-free."
+      },
+      "testimonial3": {
+        "name": "Apinya T.",
+        "role": "Multi-Property Owner",
+        "quote": "Managing 4 properties used to cost me ฿120,000 in agent fees per year. Now I pay ฿3,996 total and have better control."
+      }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "No hidden fees, no commission cuts, no surprises. Pay once, list professionally, keep all your rental income.",
+      "basic": {
+        "title": "Basic",
+        "price": "฿1000",
+        "period": "per listing",
+        "feature1": "Professional listing creation",
+        "feature2": "Transit station proximity highlighting", 
+        "feature3": "Direct tenant messaging",
+        "cta": "Start Basic"
+      },
+      "professional": {
+        "title": "Professional",
+        "price": "฿2,000",
+        "period": "per listing",
+        "badge": "Most Popular",
+        "feature1": "Everything in Basic",
+        "feature2": "Smart pricing recommendations",
+        "feature3": "Digital lease agreements",
+        "feature4": "Tenant screening tools",
+        "cta": "Go Professional"
+      },
+      "premium": {
+        "title": "Premium",
+        "price": "฿3,000",
+        "period": "per listing",
+        "feature1": "Everything in Professional",
+        "feature2": "Priority listing placement",
+        "feature3": "Advanced analytics dashboard",
+        "feature4": "Dedicated support",
+        "cta": "Choose Premium"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about listing your property without an agent.",
+      "q1": {
+        "question": "Is it legal to rent my property without an agent in Thailand?",
+        "answer": "Absolutely! You have every right to rent your own property directly to tenants. Thousands of landlords in Thailand successfully manage their rentals without agents."
+      },
+      "q2": {
+        "question": "What if I don't speak Thai fluently?",
+        "answer": "Our platform supports both Thai and English. Many expat landlords successfully use our tools, and we provide templates and guidance in both languages."
+      },
+      "q3": {
+        "question": "How do I handle the legal paperwork?",
+        "answer": "We provide legally-compliant rental agreement templates that automatically fill in your property details. Our digital signature system makes the process fast and legally binding."
+      },
+      "q4": {
+        "question": "What if I need help with difficult tenants?",
+        "answer": "Our platform includes tenant communication tools and we can connect you with legal services if needed. Many issues can be resolved through proper documentation and clear communication."
+      }
+    },
+    "final_cta": {
+      "title": "Ready to Keep More of Your Rental Income?",
+      "subtitle": "Join thousands of smart landlords who've eliminated agent fees and taken control of their property rentals. Start your first listing today.",
+      "primary": "List Your Property Now",
+      "secondary": "Calculate My Savings"
+    }
+  },
+      "sellers": {
+      "hero": {
+        "title_part1": "Thailand's Best Agents",
+        "title_part2": "With Lower Commissions",
+        "subtitle": "Get professional property sales service with expert marketing for 2.0-2.5% commission rates. Save thousands vs traditional agent fees while getting the best service, or go DIY for just ฿3000.",
+        "list_property": "List Your Property",
+        "calculate_savings": "Calculate Savings"
+      },
+      "stats": {
+        "commission": "Commission Rates",
+        "live_time": "To Go Live",
+        "success_rate": "Success Rate"
+      },
+      "costs": {
+        "title": "Three Ways to Sell Your Property",
+        "subtitle": "Compare traditional agents, our professional agents, and DIY listing to see which option gives you the best value and service for your property sale.",
+        "traditional": {
+          "title": "Traditional Agent",
+          "subtitle": "Standard market rates",
+          "warning": "Expensive & Outdated",
+          "point1": "High commission rates up to 5%",
+          "point2": "Limited digital marketing reach",
+          "point3": "No transit station proximity highlighting",
+          "point4": "Outdated tools and processes"
+        },
+        "professional": {
+          "title": "thaikeys.co.th Agent",
+          "subtitle": "Reduced commission rates",
+          "badge": "Recommended",
+          "point1": "Tiered commission structure saves money",
+          "point2": "Advanced transit station proximity marketing",
+          "point3": "Professional photography and virtual tours",
+          "point4": "Modern CRM and buyer screening tools",
+          "cta": "Get Professional Agent"
+        },
+        "diy": {
+          "title": "DIY Self-List",
+          "subtitle": "One-time platform fee",
+          "savings": "Maximum Savings",
+          "point1": "Professional listing creation tools",
+          "point2": "Transit station proximity highlighting",
+          "limitation1": "No agent support or guidance",
+          "limitation2": "You handle all buyer negotiations",
+          "cta": "List Yourself"
+        }
+      },
+      "comparison": {
+        "title": "Commission Comparison Based on Your Property",
+        "traditional_label": "Traditional rates",
+        "professional_label": "Our reduced rates",
+        "diy_label": "DIY (one-time)",
+        "description": "Save significantly compared to traditional agents with our tiered commission structure and modern tools. Or save even more by managing the sale yourself with our professional platform."
+      },
+      "tools": {
+        "title": "Professional Tools for DIY Success",
+        "subtitle": "Everything you need to list, market, and sell your property like a pro - no experience required.",
+        "professional_listings": {
+          "title": "Professional Property Listings",
+          "description": "Create stunning listings with our guided templates. Add photos, highlight transit station proximity, and showcase features that attract qualified buyers."
+        },
+        "market_valuation": {
+          "title": "AI-Powered Market Valuation",
+          "description": "Get accurate pricing recommendations based on recent sales, transit station proximity, and current market conditions in your area."
+        },
+        "buyer_screening": {
+          "title": "Buyer Qualification Tools",
+          "description": "Review buyer profiles, financing pre-approval, and purchase history. Make informed decisions about serious buyers."
+        },
+        "legal_support": {
+          "title": "Legal Transfer Support",
+          "description": "Access to legal professionals for contract review and property transfer assistance. Ensure all paperwork is handled correctly."
+        }
+      },
+      "dashboard": {
+        "title": "Seller Dashboard",
+        "active_listings": "Active Properties",
+        "inquiries": "This Month",
+        "new_inquiry": "New Inquiry",
+        "inquiry_1": "Interested in ฿8M condo",
+        "market_update": "Market Update",
+        "update_1": "Your area prices up 3% this quarter"
+      },
+      "features": {
+        "virtual_tours": {
+          "title": "360° Virtual Tours",
+          "description": "Create immersive virtual property tours that let buyers explore your property remotely, increasing engagement and qualified inquiries."
+        },
+        "marketing_analytics": {
+          "title": "Marketing Performance Analytics",
+          "description": "Track listing views, inquiry sources, and buyer engagement. Optimize your marketing strategy based on real data."
+        },
+        "negotiation_support": {
+          "title": "Expert Negotiation Support",
+          "description": "Get guidance on offers, counteroffers, and closing strategies from experienced professionals when you need it most."
+        }
+      },
+      "testimonials": {
+        "title": "Success Stories from Smart Sellers",
+        "subtitle": "Join thousands of property owners who've saved money and achieved better results by choosing modern selling approaches.",
+        "testimonial1": {
+          "name": "Pakin K.",
+          "role": "Condo Owner, Bangkok",
+          "quote": "Saved ฿120,000 in commission fees and sold in just 3 weeks. The transit station proximity marketing really worked - got 40% more inquiries than expected."
+        },
+        "testimonial2": {
+          "name": "James S.",
+          "role": "Expat Property Owner",
+          "quote": "As a foreigner, I was worried about selling property in Thailand. The legal support and professional tools made everything transparent and stress-free."
+        },
+        "testimonial3": {
+          "name": "Niran W.",
+          "role": "Property Investor",
+          "quote": "Sold 3 properties through the platform. The tiered commission structure saved me over ฿300,000 compared to traditional agents while getting better service."
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Everything you need to know about selling your property with reduced commissions or DIY.",
+        "q1": {
+          "question": "How do your commission rates compare to traditional agents?",
+          "answer": "Our tiered structure offers 0.5% savings per tier: 3% vs 3.5% for under ฿5M, 2.5% vs 3% for ฿5M-15M, and 2% vs 2.5% for above ฿15M. This can save you ฿15,000-200,000+ depending on your property value."
+        },
+        "q2": {
+          "question": "What's included in your agent service that traditional agents don't offer?",
+          "answer": "Transit station proximity marketing, professional virtual tours, advanced buyer screening, modern CRM tools, and performance analytics. Plus ongoing support throughout the entire sales process."
+        },
+        "q3": {
+          "question": "Is the DIY option suitable for first-time sellers?",
+          "answer": "Yes! Our platform includes step-by-step guidance, legal document templates, and optional expert consultation. Many first-time sellers successfully use our DIY tools with excellent results."
+        },
+        "q4": {
+          "question": "How long does it typically take to sell a property?",
+          "answer": "With our transit station proximity marketing and professional tools, properties typically sell 30% faster than traditional listings. Average time varies by location and price, but most sell within 60-90 days."
+        }
+      },
+      "final_cta": {
+        "title": "Ready to Maximize Your Property Sale?",
+        "subtitle": "Join thousands of smart sellers who've saved money and achieved better results. Start listing your property today with Thailand's most advanced platform.",
+        "primary": "List Your Property Now",
+        "secondary": "Calculate My Savings"
+      }
+    },
+    "developers": {
+    "hero": {
+      "title_part1": "Launch Your",
+      "title_part2": "Development Project",
+      "subtitle": "Thailand's premier development platform with pre-launch marketing, agent networks, payment tracking, and buyer management tools for faster sales and higher profits.",
+      "list_project": "List Your Project",
+      "view_portfolio": "View Portfolio"
+    },
+    "stats": {
+      "projects": "Active Projects",
+      "pre_sold": "Average Pre-Sold",
+      "value_sold": "Total Value Sold"
+    }
+  }
+}

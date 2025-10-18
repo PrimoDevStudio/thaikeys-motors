@@ -1,0 +1,48 @@
+export default defineNuxtPlugin(() => {
+  // Only run on client-side and only once per session
+  if (process.client && !sessionStorage.getItem('locale_detected')) {
+    try {
+      const { $i18n } = useNuxtApp()
+      
+      // Get browser language (device locale)
+      const browserLang = navigator.language || navigator.languages?.[0]
+      
+      // Get timezone as backup
+      const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+      
+      let detectedLocale = 'en' // Default to English
+      
+      // Simple logic:
+      // 1. If device language is Thai -> Thai
+      // 2. If timezone is Bangkok (and no Thai language) -> Thai  
+      // 3. Otherwise -> English
+      
+      if (browserLang && browserLang.toLowerCase().startsWith('th')) {
+        detectedLocale = 'th'
+        console.log('🇹🇭 Thai detected via device language:', browserLang)
+      } else if (timezone === 'Asia/Bangkok') {
+        detectedLocale = 'th'
+        console.log('🇹🇭 Thai detected via Bangkok timezone:', timezone)
+      } else {
+        detectedLocale = 'en'
+        console.log('🌍 English detected - Device:', browserLang, 'Timezone:', timezone)
+      }
+      
+      // Only set if different from current locale
+      const currentLocale = $i18n.locale.value || $i18n.locale
+      
+      if (detectedLocale !== currentLocale) {
+        $i18n.setLocale(detectedLocale)
+        console.log('✅ Locale auto-set to:', detectedLocale)
+      }
+      
+      // Mark as detected to prevent future auto-detection
+      sessionStorage.setItem('locale_detected', 'true')
+      
+    } catch (error) {
+      console.error('Locale detection error:', error)
+      // Still mark as detected to prevent retries
+      sessionStorage.setItem('locale_detected', 'true')
+    }
+  }
+})

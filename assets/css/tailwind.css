@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-900 bg-gray-50 font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 32;
+  }
+
+  /* Custom font-display class */
+  .font-display {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  /* Links */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Clean focus styles - no rings anywhere */
+  *:focus {
+    @apply outline-none;
+  }
+  
+  /* Force remove all focus outlines */
+  *:focus,
+  *:focus-visible {
+    outline: none !important;
+    outline-offset: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-navy text-white hover:bg-brand-turqoise-light shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 shadow-sm hover:shadow-md;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white;
+  }
+
+  .btn-success {
+    @apply btn bg-green-600 text-white hover:bg-green-700 shadow-md hover:shadow-lg;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-base;
+  }
+
+  .btn-xl {
+    @apply px-8 py-4 text-lg;
+  }
+
+  /* Card variants */
+  .card {
+    @apply bg-white rounded-xl shadow-soft border border-gray-200/50;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-200 hover:shadow-medium hover:-translate-y-1;
+  }
+
+  .card-interactive {
+    @apply card-hover cursor-pointer hover:border-brand-blue/30;
+  }
+
+  .card-demo {
+    @apply bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden;
+  }
+
+  /* Input styles */
+  .input {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:border-brand-turqoise-light transition-colors duration-200;
+  }
+
+  .input-lg {
+    @apply input px-4 py-3 text-lg rounded-xl;
+  }
+
+  .input-search {
+    @apply w-full px-4 py-3 border-0 rounded-xl focus:outline-none text-gray-900 bg-white;
+  }
+
+  /* Badge styles */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-brand-navy text-white;
+  }
+
+  .badge-blue {
+    @apply badge bg-brand-blue text-white;
+  }
+
+  .badge-success {
+    @apply badge bg-green-100 text-green-800;
+  }
+
+  .badge-warning {
+    @apply badge bg-yellow-100 text-yellow-800;
+  }
+
+  .badge-danger {
+    @apply badge bg-red-100 text-red-800;
+  }
+
+  /* Loading states */
+  .loading-spinner {
+    @apply inline-block animate-spin rounded-full border-2 border-solid border-current border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite];
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply backdrop-blur-md bg-white/80 border border-white/20 shadow-lg;
+  }
+
+  /* Property-specific components */
+  .property-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-200 overflow-hidden;
+  }
+
+  .property-pin {
+    @apply w-4 h-4 bg-brand-blue rounded-full border-2 border-white shadow-md;
+  }
+
+  .bts-station {
+    @apply bg-brand-blue text-white px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .price-tag {
+    @apply bg-white text-gray-900 px-3 py-1 rounded-full text-sm shadow-md;
+  }
+
+  /* Agent dashboard components */
+  .dashboard-card {
+    @apply bg-white rounded-xl border border-gray-200 overflow-hidden;
+  }
+
+  .dashboard-stat {
+    @apply p-4 rounded-xl border;
+  }
+
+  .dashboard-stat-accent {
+    @apply dashboard-stat bg-blue-50 border-blue-200;
+  }
+
+  .dashboard-stat-default {
+    @apply dashboard-stat bg-gray-50 border-gray-200;
+  }
+
+  /* Gradient backgrounds */
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-brand-navy to-brand-blue;
+  }
+
+  .bg-gradient-hero {
+    @apply bg-gradient-to-br from-blue-50 via-white to-indigo-50/50;
+  }
+
+  .bg-gradient-demo {
+    @apply bg-gradient-to-br from-blue-50 to-indigo-50;
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply text-brand-navy dark:text-white hover:text-brand-turqoise-light font-medium transition-colors duration-200;
+  }
+
+  /* Feature sections */
+  .feature-icon {
+    @apply w-12 h-12 rounded-xl flex items-center justify-center mb-6;
+  }
+
+  .feature-icon-blue {
+    @apply feature-icon bg-brand-blue text-white;
+  }
+
+  .feature-icon-navy {
+    @apply feature-icon bg-brand-navy text-white;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-20;
+  }
+}
+
+@layer utilities {
+  /* Text gradients */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-brand-navy to-brand-blue bg-clip-text text-transparent;
+  }
+
+  /* Animation utilities */
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slideUp {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  /* Responsive utilities */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Safe area utilities for mobile */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* PropTech specific utilities */
+  .floating-element {
+    @apply absolute rounded-full opacity-60;
+  }
+
+  .floating-blue {
+    @apply floating-element bg-brand-blue;
+  }
+
+  .floating-navy {
+    @apply floating-element bg-brand-navy opacity-40;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth transitions for interactive elements */
+.transition-smooth {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .mobile-padding {
+    @apply px-4 py-6;
+  }
+  
+  .mobile-text {
+    @apply text-sm;
+  }
+}
