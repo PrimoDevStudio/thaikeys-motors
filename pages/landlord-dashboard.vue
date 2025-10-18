@@ -32,14 +32,14 @@
               v-model="searchQuery"
               type="text" 
               placeholder="Search properties, tenants..."
-              class="w-80 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+              class="w-80 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
             >
             <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
           </div>
           
-          <button class="relative p-2 text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light transition-colors">
+          <button class="relative p-2 text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM11 13h-1a4 4 0 01-4-4V7a4 4 0 118 0v2a4 4 0 01-4 4z"/>
             </svg>
@@ -48,7 +48,7 @@
           
           <div class="flex items-center space-x-2">
             <div class="w-8 h-8 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-800 dark:to-green-600 rounded-full"></div>
-            <button class="text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light">
+            <button class="text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
@@ -66,7 +66,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                    activeTab === 'overview' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                    activeTab === 'overview' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'overview'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,20 +78,20 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                    activeTab === 'properties' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                    activeTab === 'properties' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'properties'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
             </svg>
             <span class="font-medium">My Properties</span>
-            <span class="bg-brand-turqoise-light/20 text-brand-navy dark:text-brand-turqoise-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ totalProperties }}</span>
+            <span class="bg-brand-red-light/20 text-brand-navy dark:text-brand-red-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ totalProperties }}</span>
           </a>
           
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                    activeTab === 'tenants' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                    activeTab === 'tenants' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'tenants'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -104,7 +104,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                    activeTab === 'income' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                    activeTab === 'income' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'income'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,7 +117,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                    activeTab === 'maintenance' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                    activeTab === 'maintenance' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'maintenance'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -131,7 +131,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                    activeTab === 'contracts' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                    activeTab === 'contracts' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'contracts'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,7 +144,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                    activeTab === 'analytics' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                    activeTab === 'analytics' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'analytics'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,7 +156,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                    activeTab === 'profile' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                    activeTab === 'profile' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'profile'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -241,7 +241,7 @@
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
               <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-4">Quick Actions</h3>
               <div class="space-y-3">
-                <button class="w-full bg-brand-turqoise-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center justify-center space-x-2">
+                <button class="w-full bg-brand-red-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center justify-center space-x-2">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                   </svg>
@@ -275,7 +275,7 @@
             <div class="lg:col-span-2 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Recent Activity</h3>
-                <button class="text-brand-turqoise-light hover:text-teal-500 font-medium text-sm">View All</button>
+                <button class="text-brand-red-light hover:text-teal-500 font-medium text-sm">View All</button>
               </div>
               
               <div class="space-y-4">
@@ -313,13 +313,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Property Portfolio</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Properties</option>
                 <option>Occupied</option>
                 <option>Vacant</option>
                 <option>Under Maintenance</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                 </svg>
@@ -342,7 +342,7 @@
                   </span>
                 </div>
                 <div class="absolute bottom-4 left-4">
-                  <span class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded-full text-xs font-semibold">
+                  <span class="bg-brand-red-light text-brand-navy px-3 py-1 rounded-full text-xs font-semibold">
                     {{ property.type }}
                   </span>
                 </div>
@@ -380,7 +380,7 @@
 
                 <!-- Action Buttons -->
                 <div class="flex items-center space-x-2">
-                  <button class="flex-1 bg-brand-turqoise-light text-brand-navy py-2 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors text-sm">
+                  <button class="flex-1 bg-brand-red-light text-brand-navy py-2 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors text-sm">
                     Manage
                   </button>
                   <button class="flex-1 border border-gray-300 dark:border-gray-600 text-brand-navy dark:text-gray-300 py-2 px-4 rounded-lg font-semibold hover:border-gray-400 dark:hover:border-gray-500 transition-colors text-sm">
@@ -396,13 +396,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Tenant Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Tenants</option>
                 <option>Active Tenants</option>
                 <option>Lease Expiring Soon</option>
                 <option>Payment Due</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                 </svg>
@@ -422,7 +422,7 @@
                       v-model="tenantSearchQuery"
                       type="text" 
                       placeholder="Search tenants..."
-                      class="w-64 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                      class="w-64 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
                     >
                     <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -514,13 +514,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Rental Income Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>This Month</option>
                 <option>Last 3 Months</option>
                 <option>This Year</option>
                 <option>All Time</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Generate Report
               </button>
             </div>
@@ -637,13 +637,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Maintenance Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Requests</option>
                 <option>Urgent</option>
                 <option>In Progress</option>
                 <option>Completed</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                 </svg>
@@ -744,13 +744,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Contract Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Contracts</option>
                 <option>Active Leases</option>
                 <option>Expiring Soon</option>
                 <option>Expired</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                 </svg>
@@ -921,7 +921,7 @@
               <div class="text-sm text-brand-navy dark:text-gray-400">
                 Profile Completion: <span class="font-bold text-lg" :class="getProfileCompletionColor(profileCompletionScore)">{{ profileCompletionScore }}%</span>
               </div>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Save Changes
               </button>
             </div>
@@ -1009,7 +1009,7 @@
                     <span class="text-sm" :class="landlordProfile.uses_digital_payments ? 'text-green-600' : 'text-gray-500'">
                       {{ landlordProfile.uses_digital_payments ? 'Active (+25 pts)' : 'Disabled' }}
                     </span>
-                    <button v-if="!landlordProfile.uses_digital_payments" @click="showDigitalPaymentModal = true" class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded text-sm hover:bg-teal-300">
+                    <button v-if="!landlordProfile.uses_digital_payments" @click="showDigitalPaymentModal = true" class="bg-brand-red-light text-brand-navy px-3 py-1 rounded text-sm hover:bg-teal-300">
                       Enable
                     </button>
                   </div>
@@ -1029,7 +1029,7 @@
                     <span class="text-sm" :class="landlordProfile.uses_digital_leases ? 'text-green-600' : 'text-gray-500'">
                       {{ landlordProfile.uses_digital_leases ? 'Active (+25 pts)' : 'Disabled' }}
                     </span>
-                    <button v-if="!landlordProfile.uses_digital_leases" @click="showDigitalLeaseModal = true" class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded text-sm hover:bg-teal-300">
+                    <button v-if="!landlordProfile.uses_digital_leases" @click="showDigitalLeaseModal = true" class="bg-brand-red-light text-brand-navy px-3 py-1 rounded text-sm hover:bg-teal-300">
                       Enable
                     </button>
                   </div>
@@ -1046,19 +1046,19 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Full Name</label>
-                  <input type="text" v-model="landlordPersonalInfo.fullName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="text" v-model="landlordPersonalInfo.fullName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Email</label>
-                  <input type="email" v-model="landlordPersonalInfo.email" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="email" v-model="landlordPersonalInfo.email" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Phone Number</label>
-                  <input type="tel" v-model="landlordPersonalInfo.phone" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="tel" v-model="landlordPersonalInfo.phone" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Years as Landlord</label>
-                  <select v-model="landlordPersonalInfo.experience" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="landlordPersonalInfo.experience" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="0-1">0-1 years</option>
                     <option value="2-5">2-5 years</option>
                     <option value="6-10">6-10 years</option>
@@ -1074,7 +1074,7 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Total Properties Owned</label>
-                  <input type="number" v-model="landlordPersonalInfo.totalPropertiesOwned" min="1" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="number" v-model="landlordPersonalInfo.totalPropertiesOwned" min="1" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Property Types</label>
@@ -1087,7 +1087,7 @@
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Primary Investment Area</label>
-                  <select v-model="landlordPersonalInfo.primaryArea" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="landlordPersonalInfo.primaryArea" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Area</option>
                     <option value="sukhumvit">Sukhumvit</option>
                     <option value="silom">Silom</option>

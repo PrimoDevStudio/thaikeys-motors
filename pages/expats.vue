@@ -21,7 +21,7 @@
           <div class="text-center max-w-6xl w-full">
             <!-- Main Headline -->
             <h1 class="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight tracking-tight">
-              <span class="bg-gradient-to-r from-brand-turqoise-light to-brand-turqoise-dark bg-clip-text text-transparent">
+              <span class="bg-gradient-to-r from-brand-red-light to-brand-red-dark bg-clip-text text-transparent">
                 Expat Life
               </span>
               <br>
@@ -35,7 +35,7 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+              <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
                 Browse Area Guides
               </button>
               <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-orange-800 transition-all duration-300 text-lg">
@@ -46,15 +46,15 @@
             <!-- Key Stats -->
             <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">50+</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">50+</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Area Guides</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">200+</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">200+</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Local Services</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">24/7</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">24/7</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Community Support</div>
               </div>
             </div>
@@ -81,7 +81,7 @@
             <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 relative">
               <div class="absolute inset-0 bg-black/20"></div>
               <div class="absolute bottom-4 left-4 text-white">
-                <span class="text-sm font-medium bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded">Most Popular</span>
+                <span class="text-sm font-medium bg-brand-red-light text-brand-navy px-2 py-1 rounded">Most Popular</span>
               </div>
             </div>
             <div class="p-6">
@@ -143,7 +143,7 @@
             <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 relative">
               <div class="absolute inset-0 bg-black/20"></div>
               <div class="absolute bottom-4 left-4 text-white">
-                <span class="text-sm font-medium bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded">Trendy</span>
+                <span class="text-sm font-medium bg-brand-red-light text-brand-navy px-2 py-1 rounded">Trendy</span>
               </div>
             </div>
             <div class="p-6">
@@ -205,7 +205,7 @@
             <div class="h-48 bg-gradient-to-br from-green-500 to-lime-600 relative">
               <div class="absolute inset-0 bg-black/20"></div>
               <div class="absolute bottom-4 left-4 text-white">
-                <span class="text-sm font-medium bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded">Local Vibe</span>
+                <span class="text-sm font-medium bg-brand-red-light text-brand-navy px-2 py-1 rounded">Local Vibe</span>
               </div>
             </div>
             <div class="p-6">
@@ -460,7 +460,7 @@
           </div>
 
           <!-- Comfortable Living -->
-          <div class="bg-gradient-to-br from-brand-turqoise-light to-indigo-400 p-8 rounded-2xl text-brand-navy border-2 border-brand-turqoise-light">
+          <div class="bg-gradient-to-br from-brand-red-light to-indigo-400 p-8 rounded-2xl text-brand-navy border-2 border-brand-red-light">
             <div class="text-center mb-6">
               <div class="inline-block bg-brand-navy text-white px-3 py-1 rounded-full text-sm font-semibold mb-4">
                 Most Popular
@@ -689,7 +689,7 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+          <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
             Find Properties in Expat Areas
           </button>
           <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-brand-navy transition-all duration-300 text-lg">

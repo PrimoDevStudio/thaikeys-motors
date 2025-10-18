@@ -53,14 +53,14 @@
               v-model="searchQuery"
               type="text" 
               placeholder="Search properties, clients, deals..."
-              class="w-80 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+              class="w-80 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
             >
             <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
           </div>
           
-          <button class="relative p-2 text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light transition-colors">
+          <button class="relative p-2 text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM11 13h-1a4 4 0 01-4-4V7a4 4 0 118 0v2a4 4 0 01-4 4z"/>
             </svg>
@@ -69,7 +69,7 @@
           
           <div class="flex items-center space-x-2">
             <div class="w-8 h-8 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-600 rounded-full"></div>
-            <button class="text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light">
+            <button class="text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
@@ -87,7 +87,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'overview' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'overview' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'overview'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,20 +99,20 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'crm' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'crm' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'crm'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
             </svg>
             <span class="font-medium">CRM & Clients</span>
-            <span class="bg-brand-turqoise-light/20 text-brand-navy dark:text-brand-turqoise-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ totalClients }}</span>
+            <span class="bg-brand-red-light/20 text-brand-navy dark:text-brand-red-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ totalClients }}</span>
           </a>
           
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'pipeline' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'pipeline' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'pipeline'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,20 +125,20 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'properties' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'properties' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'properties'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
             </svg>
             <span class="font-medium">Properties</span>
-            <span class="bg-brand-turqoise-light/20 text-brand-navy dark:text-brand-turqoise-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ totalProperties }}</span>
+            <span class="bg-brand-red-light/20 text-brand-navy dark:text-brand-red-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ totalProperties }}</span>
           </a>
           
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'commissions' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'commissions' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'commissions'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'transactions' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'transactions' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'transactions'"
             v-if="userProfile.has_active_clients"
           >
@@ -165,7 +165,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'communications' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'communications' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'communications'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -178,7 +178,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'profile' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'profile' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'profile'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -191,7 +191,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'analytics' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'analytics' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'analytics'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -253,7 +253,7 @@
                     </svg>
                     <span class="text-sm" :class="userProfile.uses_digital_payments ? 'text-brand-navy dark:text-white' : 'text-gray-500'">Digital Payments</span>
                   </div>
-                  <button v-if="!userProfile.uses_digital_payments" @click="showDigitalPaymentModal = true" class="text-xs bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded hover:bg-teal-300 transition-colors">
+                  <button v-if="!userProfile.uses_digital_payments" @click="showDigitalPaymentModal = true" class="text-xs bg-brand-red-light text-brand-navy px-2 py-1 rounded hover:bg-teal-300 transition-colors">
                     Enable +25pts
                   </button>
                   <span v-else class="text-xs text-green-600 font-semibold">✓ Active</span>
@@ -266,7 +266,7 @@
                     </svg>
                     <span class="text-sm" :class="userProfile.uses_digital_contracts ? 'text-brand-navy dark:text-white' : 'text-gray-500'">E-Signatures</span>
                   </div>
-                  <button v-if="!userProfile.uses_digital_contracts" @click="showDigitalContractModal = true" class="text-xs bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded hover:bg-teal-300 transition-colors">
+                  <button v-if="!userProfile.uses_digital_contracts" @click="showDigitalContractModal = true" class="text-xs bg-brand-red-light text-brand-navy px-2 py-1 rounded hover:bg-teal-300 transition-colors">
                     Enable +20pts
                   </button>
                   <span v-else class="text-xs text-green-600 font-semibold">✓ Active</span>
@@ -358,8 +358,8 @@
                   <p class="text-3xl font-bold text-brand-navy dark:text-white">{{ formatCurrency(monthlyCommissions) }}</p>
                   <p class="text-sm text-green-600 dark:text-green-400 mt-2">+{{ formatCurrency(15000) }} from last month</p>
                 </div>
-                <div class="w-12 h-12 bg-brand-turqoise-light/20 rounded-xl flex items-center justify-center">
-                  <svg class="w-6 h-6 text-brand-turqoise-light dark:text-brand-turqoise-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-12 h-12 bg-brand-red-light/20 rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6 text-brand-red-light dark:text-brand-red-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
                   </svg>
                 </div>
@@ -372,7 +372,7 @@
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
               <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-4">Quick Actions</h3>
               <div class="space-y-3">
-                <button class="w-full bg-brand-turqoise-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center justify-center space-x-2">
+                <button class="w-full bg-brand-red-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center justify-center space-x-2">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                   </svg>
@@ -406,7 +406,7 @@
             <div class="lg:col-span-2 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Recent Deal Activity</h3>
-                <button class="text-brand-turqoise-light hover:text-teal-500 font-medium text-sm">View All</button>
+                <button class="text-brand-red-light hover:text-teal-500 font-medium text-sm">View All</button>
               </div>
               
               <div class="space-y-4">
@@ -442,13 +442,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">CRM & Client Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Clients</option>
                 <option>Active Clients</option>
                 <option>Prospective Clients</option>
                 <option>Past Clients</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                 </svg>
@@ -488,7 +488,7 @@
                       v-model="clientSearchQuery"
                       type="text" 
                       placeholder="Search clients..."
-                      class="w-64 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                      class="w-64 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
                     >
                     <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -579,14 +579,14 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Deal Pipeline Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Deals</option>
                 <option>Rental Deals</option>
                 <option>Purchase Deals</option>
                 <option>High Value (>฿50k)</option>
               </select>
               <div class="text-sm text-brand-navy dark:text-gray-400">
-                Pipeline Value: <span class="font-bold text-lg text-brand-turqoise-light">{{ formatCurrency(totalPipelineValue) }}</span>
+                Pipeline Value: <span class="font-bold text-lg text-brand-red-light">{{ formatCurrency(totalPipelineValue) }}</span>
               </div>
             </div>
           </div>
@@ -810,7 +810,7 @@
         <div v-if="activeTab === 'properties'" class="p-6">
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Property Management</h2>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center space-x-2">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
               </svg>
@@ -832,7 +832,7 @@
                   </span>
                 </div>
                 <div class="absolute bottom-4 left-4">
-                  <span class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded-full text-xs font-semibold">
+                  <span class="bg-brand-red-light text-brand-navy px-3 py-1 rounded-full text-xs font-semibold">
                     {{ property.btsDistance }}
                   </span>
                 </div>
@@ -874,7 +874,7 @@
 
                 <!-- Action Buttons -->
                 <div class="flex items-center space-x-2">
-                  <button class="flex-1 bg-brand-turqoise-light text-brand-navy py-2 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors text-sm">
+                  <button class="flex-1 bg-brand-red-light text-brand-navy py-2 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors text-sm">
                     Edit
                   </button>
                   <button class="flex-1 border border-gray-300 dark:border-gray-600 text-brand-navy dark:text-gray-300 py-2 px-4 rounded-lg font-semibold hover:border-gray-400 dark:hover:border-gray-500 transition-colors text-sm">
@@ -890,13 +890,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Commission Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Time</option>
                 <option>This Year</option>
                 <option>Last 6 Months</option>
                 <option>This Month</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Export Report
               </button>
             </div>
@@ -1065,7 +1065,7 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Transaction Management</h2>
             <div class="text-sm text-brand-navy dark:text-gray-400">
-              Active Transactions: <span class="font-bold text-lg text-brand-turqoise-light">{{ activeTransactions }}</span>
+              Active Transactions: <span class="font-bold text-lg text-brand-red-light">{{ activeTransactions }}</span>
             </div>
           </div>
 
@@ -1122,7 +1122,7 @@
         <div v-if="activeTab === 'communications'" class="p-6">
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Communications Center</h2>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               New Message
             </button>
           </div>
@@ -1270,7 +1270,7 @@
               <div class="text-sm text-brand-navy dark:text-gray-400">
                 Profile Completion: <span class="font-bold text-lg" :class="getProfileCompletionColor(profileCompletionScore)">{{ profileCompletionScore }}%</span>
               </div>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Save Changes
               </button>
             </div>
@@ -1315,7 +1315,7 @@
                     <span class="text-sm" :class="userProfile.uses_digital_payments ? 'text-green-600' : 'text-gray-500'">
                       {{ userProfile.uses_digital_payments ? 'Active (+25 pts)' : 'Disabled' }}
                     </span>
-                    <button v-if="!userProfile.uses_digital_payments" @click="showDigitalPaymentModal = true" class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded text-sm hover:bg-teal-300">
+                    <button v-if="!userProfile.uses_digital_payments" @click="showDigitalPaymentModal = true" class="bg-brand-red-light text-brand-navy px-3 py-1 rounded text-sm hover:bg-teal-300">
                       Enable
                     </button>
                   </div>
@@ -1335,7 +1335,7 @@
                     <span class="text-sm" :class="userProfile.uses_digital_contracts ? 'text-green-600' : 'text-gray-500'">
                       {{ userProfile.uses_digital_contracts ? 'Active (+20 pts)' : 'Disabled' }}
                     </span>
-                    <button v-if="!userProfile.uses_digital_contracts" @click="showDigitalContractModal = true" class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded text-sm hover:bg-teal-300">
+                    <button v-if="!userProfile.uses_digital_contracts" @click="showDigitalContractModal = true" class="bg-brand-red-light text-brand-navy px-3 py-1 rounded text-sm hover:bg-teal-300">
                       Enable
                     </button>
                   </div>
@@ -1406,19 +1406,19 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Full Name</label>
-                  <input type="text" v-model="agentProfile.fullName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="text" v-model="agentProfile.fullName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Email</label>
-                  <input type="email" v-model="agentProfile.email" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="email" v-model="agentProfile.email" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Phone Number</label>
-                  <input type="tel" v-model="agentProfile.phone" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="tel" v-model="agentProfile.phone" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Years of Experience</label>
-                  <select v-model="agentProfile.experience" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="agentProfile.experience" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="0-1">0-1 years</option>
                     <option value="2-5">2-5 years</option>
                     <option value="6-10">6-10 years</option>
@@ -1434,7 +1434,7 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">License Number</label>
-                  <input type="text" v-model="agentProfile.licenseNumber" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="text" v-model="agentProfile.licenseNumber" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Specialization Areas</label>
@@ -1448,7 +1448,7 @@
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Preferred Commission Rate</label>
                   <div class="flex items-center space-x-2">
-                    <input type="number" v-model="agentProfile.preferredCommissionRate" min="1" max="10" step="0.5" class="w-24 px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="number" v-model="agentProfile.preferredCommissionRate" min="1" max="10" step="0.5" class="w-24 px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <span class="text-brand-navy dark:text-white">%</span>
                   </div>
                 </div>
@@ -1537,7 +1537,7 @@
         <div class="p-6 border-b border-gray-200 dark:border-gray-600">
           <div class="flex items-center justify-between">
             <h3 class="text-xl font-semibold text-brand-navy dark:text-white">Enable Digital Payments</h3>
-            <button @click="showDigitalPaymentModal = false" class="text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light">
+            <button @click="showDigitalPaymentModal = false" class="text-brand-navy dark:text-gray-400 hover:text-brand-red-light">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
               </svg>
@@ -1556,7 +1556,7 @@
               <span class="text-green-600">0.5% fee</span>
             </div>
           </div>
-          <button @click="enableDigitalPayments" class="w-full bg-brand-turqoise-light text-brand-navy py-3 rounded-lg font-semibold hover:bg-teal-300 mt-4">
+          <button @click="enableDigitalPayments" class="w-full bg-brand-red-light text-brand-navy py-3 rounded-lg font-semibold hover:bg-teal-300 mt-4">
             Enable Digital Payments
           </button>
         </div>
@@ -1569,7 +1569,7 @@
         <div class="p-6 border-b border-gray-200 dark:border-gray-600">
           <div class="flex items-center justify-between">
             <h3 class="text-xl font-semibold text-brand-navy dark:text-white">Enable E-Signature Contracts</h3>
-            <button @click="showDigitalContractModal = false" class="text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light">
+            <button @click="showDigitalContractModal = false" class="text-brand-navy dark:text-gray-400 hover:text-brand-red-light">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
               </svg>
@@ -1598,7 +1598,7 @@
               <span class="text-brand-navy dark:text-white">Document audit trail</span>
             </div>
           </div>
-          <button @click="enableDigitalContracts" class="w-full bg-brand-turqoise-light text-brand-navy py-3 rounded-lg font-semibold hover:bg-teal-300 mt-4">
+          <button @click="enableDigitalContracts" class="w-full bg-brand-red-light text-brand-navy py-3 rounded-lg font-semibold hover:bg-teal-300 mt-4">
             Enable E-Signatures
           </button>
         </div>
@@ -2108,7 +2108,7 @@ const revenueChartOption = ref({
       type: 'line',
       smooth: true,
       lineStyle: {
-        color: '#05C7BE' // brand-turqoise-light
+        color: '#05C7BE' // brand-red-light
       },
       itemStyle: {
         color: '#05C7BE'
@@ -2167,7 +2167,7 @@ const propertyChartOption = ref({
       name: 'Inquiries',
       type: 'bar',
       itemStyle: {
-        color: '#05C7BE' // brand-turqoise-light
+        color: '#05C7BE' // brand-red-light
       },
       data: [35, 28, 42, 38]
     }

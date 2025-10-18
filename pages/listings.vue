@@ -5,7 +5,7 @@
       <!-- Left Sidebar Navigation -->
       <aside class="w-16 bg-brand-navy dark:bg-gray-800 flex flex-col items-center py-6 space-y-6 flex-shrink-0 transition-colors duration-300">
         <!-- Logo -->
-        <div class="w-8 h-8 bg-brand-turqoise-light rounded-lg flex items-center justify-center">
+        <div class="w-8 h-8 bg-brand-red-light rounded-lg flex items-center justify-center">
           <svg class="w-5 h-5 text-brand-navy" fill="currentColor" viewBox="0 0 24 24">
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
           </svg>
@@ -13,7 +13,7 @@
         
         <!-- Navigation Icons -->
         <div class="space-y-4">
-          <button class="w-10 h-10 bg-brand-turqoise-light rounded-lg flex items-center justify-center">
+          <button class="w-10 h-10 bg-brand-red-light rounded-lg flex items-center justify-center">
             <svg class="w-5 h-5 text-brand-navy" fill="currentColor" viewBox="0 0 24 24">
               <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
             </svg>
@@ -69,16 +69,16 @@
             <div class="absolute inset-0 bg-black/10 dark:bg-black/10"></div>
             <div class="relative z-10 h-full">
               <!-- BTS Station Labels -->
-              <div class="absolute top-6 left-6 bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              <div class="absolute top-6 left-6 bg-brand-red-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold shadow-md">
                 {{ $t('listings.asok_bts') }}
               </div>
-              <div class="absolute top-6 right-6 bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              <div class="absolute top-6 right-6 bg-brand-red-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold shadow-md">
                 {{ $t('listings.phrom_phong_bts') }}
               </div>
-              <div class="absolute bottom-20 left-6 bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              <div class="absolute bottom-20 left-6 bg-brand-red-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold shadow-md">
                 {{ $t('listings.thonglor_bts') }}
               </div>
-              <div class="absolute bottom-6 right-6 bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold shadow-md">
+              <div class="absolute bottom-6 right-6 bg-brand-red-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold shadow-md">
                 {{ $t('listings.ekkamai_bts') }}
               </div>
 
@@ -99,7 +99,7 @@
                 <div 
                   :class="[
                     'w-12 h-12 rounded-full border-2 border-white shadow-lg flex items-center justify-center font-bold text-white text-xs transition-all duration-200',
-                    selectedProperty?.id === property.id ? 'bg-brand-turqoise-light text-brand-navy scale-110' : 
+                    selectedProperty?.id === property.id ? 'bg-brand-red-light text-brand-navy scale-110' : 
                     hoveredProperty === property.id ? 'bg-brand-navy scale-105' : 'bg-blue-500'
                   ]"
                 >
@@ -144,12 +144,12 @@
             <div class="flex items-center justify-between mb-4">
               <h2 class="text-xl font-semibold text-brand-navy dark:text-white">{{ $t('listings.properties') }}</h2>
               <div class="flex items-center space-x-2">
-                <button class="p-2 text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light transition-colors">
+                <button class="p-2 text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
                   </svg>
                 </button>
-                <button class="p-2 text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light transition-colors">
+                <button class="p-2 text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light transition-colors">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
                   </svg>
@@ -163,7 +163,7 @@
                 v-model="searchQuery"
                 type="text" 
                 :placeholder="$t('listings.search_placeholder')"
-                class="w-full px-4 py-3 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+                class="w-full px-4 py-3 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
               >
               <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -179,7 +179,7 @@
                 :class="[
                   'px-3 py-1 rounded-full text-sm font-medium transition-colors',
                   activeFilters.includes(filter.id) 
-                    ? 'bg-brand-turqoise-light text-brand-navy' 
+                    ? 'bg-brand-red-light text-brand-navy' 
                     : 'bg-gray-100 dark:bg-gray-700 text-brand-navy dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                 ]"
               >
@@ -198,7 +198,7 @@
                 :class="[
                   'bg-white dark:bg-gray-800 rounded-xl border transition-all duration-200 cursor-pointer hover:shadow-lg',
                   selectedProperty?.id === property.id 
-                    ? 'border-brand-turqoise-light shadow-lg' 
+                    ? 'border-brand-red-light shadow-lg' 
                     : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
                 ]"
               >
@@ -215,7 +215,7 @@
                     </button>
                   </div>
                   <div class="absolute bottom-3 left-3">
-                    <span class="bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded-full text-xs font-semibold">
+                    <span class="bg-brand-red-light text-brand-navy px-2 py-1 rounded-full text-xs font-semibold">
                       {{ property.btsDistance }}
                     </span>
                   </div>
@@ -269,10 +269,10 @@
                       </div>
                     </div>
                     <div class="flex items-center justify-right gap-4">
-                    <button class="bg-brand-turqoise-light text-brand-navy px-4 py-2 rounded-lg font-semibold hover:bg-teal-300 transition-colors text-sm">
+                    <button class="bg-brand-red-light text-brand-navy px-4 py-2 rounded-lg font-semibold hover:bg-teal-300 transition-colors text-sm">
                       {{ $t('listings.mapview') }}
                     </button>
-                    <button class="bg-brand-turqoise-light text-brand-navy px-4 py-2 rounded-lg font-semibold hover:bg-teal-300 transition-colors text-sm">
+                    <button class="bg-brand-red-light text-brand-navy px-4 py-2 rounded-lg font-semibold hover:bg-teal-300 transition-colors text-sm">
                       {{ $t('listings.contact') }}
                     </button>
                     </div>
@@ -306,16 +306,16 @@
           <div class="absolute inset-0 bg-black/10 dark:bg-black/20"></div>
           <div class="relative z-10">
             <!-- BTS Station Labels - Fullscreen -->
-            <div class="absolute top-20 left-32 bg-brand-turqoise-light text-brand-navy px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+            <div class="absolute top-20 left-32 bg-brand-red-light text-brand-navy px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
               {{ $t('listings.asok_bts') }}
             </div>
-            <div class="absolute top-32 right-48 bg-brand-turqoise-light text-brand-navy px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+            <div class="absolute top-32 right-48 bg-brand-red-light text-brand-navy px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
               {{ $t('listings.phrom_phong_bts') }}
             </div>
-            <div class="absolute bottom-40 left-48 bg-brand-turqoise-light text-brand-navy px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+            <div class="absolute bottom-40 left-48 bg-brand-red-light text-brand-navy px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
               {{ $t('listings.thonglor_bts') }}
             </div>
-            <div class="absolute bottom-20 right-64 bg-brand-turqoise-light text-brand-navy px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+            <div class="absolute bottom-20 right-64 bg-brand-red-light text-brand-navy px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
               {{ $t('listings.ekkamai_bts') }}
             </div>
 
@@ -335,7 +335,7 @@
               <div 
                 :class="[
                   'w-14 h-14 rounded-full border-3 border-white shadow-lg flex items-center justify-center font-bold text-white text-sm transition-all duration-200',
-                  selectedProperty?.id === property.id ? 'bg-brand-turqoise-light text-brand-navy scale-125' : 
+                  selectedProperty?.id === property.id ? 'bg-brand-red-light text-brand-navy scale-125' : 
                   hoveredProperty === property.id ? 'bg-brand-navy scale-110' : 'bg-blue-500'
                 ]"
               >

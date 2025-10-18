@@ -8,7 +8,7 @@
       <!-- Sun Icon (Light Mode) -->
       <svg
         v-if="!isDark"
-        class="w-5 h-5 text-gray-600 dark:text-gray-300 group-hover:text-brand-turqoise-light transition-colors duration-300"
+        class="w-5 h-5 text-gray-600 dark:text-gray-300 group-hover:text-brand-red-light transition-colors duration-300"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -24,7 +24,7 @@
       <!-- Moon Icon (Dark Mode) -->
       <svg
         v-else
-        class="w-5 h-5 text-gray-300 group-hover:text-brand-turqoise-light transition-colors duration-300"
+        class="w-5 h-5 text-gray-300 group-hover:text-brand-red-light transition-colors duration-300"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"

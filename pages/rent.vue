@@ -21,7 +21,7 @@
           <div class="text-center max-w-6xl w-full">
             <!-- Main Headline -->
             <h1 class="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight tracking-tight">
-              <span class="bg-gradient-to-r from-brand-turqoise-light to-brand-turqoise-dark bg-clip-text text-transparent">
+              <span class="bg-gradient-to-r from-brand-red-light to-brand-red-dark bg-clip-text text-transparent">
                 Rent Smart
               </span>
               <br>
@@ -35,7 +35,7 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+              <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
                 Find Rental Properties
               </button>
               <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-800 transition-all duration-300 text-lg">
@@ -46,15 +46,15 @@
             <!-- Key Stats -->
             <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">150K+</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">150K+</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Available Rentals</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">24h</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">24h</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Average Response</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">97%</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">97%</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Tenant Satisfaction</div>
               </div>
             </div>
@@ -89,7 +89,7 @@
                 <input 
                   v-model="monthlyIncome" 
                   type="text" 
-                  class="w-full pl-12 pr-4 py-3 text-lg border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-center"
+                  class="w-full pl-12 pr-4 py-3 text-lg border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-center"
                   placeholder="80,000"
                 >
               </div>
@@ -103,9 +103,9 @@
               <div class="text-2xl font-bold text-green-700 dark:text-green-400">₿{{ conservativeBudget.toLocaleString() }}</div>
               <p class="text-sm text-green-600 dark:text-green-300 mt-1">Safe monthly rent</p>
             </div>
-            <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border-2 border-brand-turqoise-light text-center">
-              <h3 class="font-semibold text-brand-turqoise-light mb-2">Recommended (30%)</h3>
-              <div class="text-2xl font-bold text-brand-turqoise-light">₿{{ recommendedBudget.toLocaleString() }}</div>
+            <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl border-2 border-brand-red-light text-center">
+              <h3 class="font-semibold text-brand-red-light mb-2">Recommended (30%)</h3>
+              <div class="text-2xl font-bold text-brand-red-light">₿{{ recommendedBudget.toLocaleString() }}</div>
               <p class="text-sm text-blue-600 dark:text-blue-300 mt-1">Balanced budget</p>
             </div>
             <div class="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-xl border border-orange-200 dark:border-orange-800 text-center">
@@ -138,7 +138,7 @@
               <div class="border-t border-gray-300 dark:border-gray-600 pt-4">
                 <div class="flex justify-between items-center">
                   <span class="text-lg font-bold text-brand-navy dark:text-white">Total Move-in Cost</span>
-                  <span class="text-2xl font-bold text-brand-turqoise-light">₿{{ totalMoveInCost.toLocaleString() }}</span>
+                  <span class="text-2xl font-bold text-brand-red-light">₿{{ totalMoveInCost.toLocaleString() }}</span>
                 </div>
               </div>
             </div>
@@ -240,7 +240,7 @@
             <div class="border-t border-gray-300 dark:border-gray-600 pt-4">
               <div class="flex justify-between items-center">
                 <span class="text-lg font-bold text-brand-navy dark:text-white">Total Monthly Living Cost</span>
-                <span class="text-xl font-bold text-brand-turqoise-light">₿{{ totalMonthlyCost.toLocaleString() }}</span>
+                <span class="text-xl font-bold text-brand-red-light">₿{{ totalMonthlyCost.toLocaleString() }}</span>
               </div>
             </div>
           </div>
@@ -264,7 +264,7 @@
           <!-- Services List -->
           <div class="space-y-8">
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -276,7 +276,7 @@
             </div>
 
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -288,7 +288,7 @@
             </div>
 
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v6a2 2 0 002 2h2m0 0h2m0 0h2a2 2 0 002-2V7a2 2 0 00-2-2h-2m0 0V5a2 2 0 00-2-2H9a2 2 0 00-2 2v0z" />
                 </svg>
@@ -300,7 +300,7 @@
             </div>
 
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
@@ -388,7 +388,7 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div class="text-center">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-xl flex items-center justify-center mx-auto mb-4">
+            <div class="w-16 h-16 bg-brand-red-light rounded-xl flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
               </svg>
@@ -398,7 +398,7 @@
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-xl flex items-center justify-center mx-auto mb-4">
+            <div class="w-16 h-16 bg-brand-red-light rounded-xl flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -408,7 +408,7 @@
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-xl flex items-center justify-center mx-auto mb-4">
+            <div class="w-16 h-16 bg-brand-red-light rounded-xl flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
@@ -418,7 +418,7 @@
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-xl flex items-center justify-center mx-auto mb-4">
+            <div class="w-16 h-16 bg-brand-red-light rounded-xl flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
               </svg>
@@ -532,7 +532,7 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+          <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
             Browse Rental Properties
           </button>
           <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-brand-navy transition-all duration-300 text-lg">

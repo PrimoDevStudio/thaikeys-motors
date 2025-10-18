@@ -72,7 +72,7 @@
         </div>
         </div>
           <!-- QR Payment (PromptPay) -->
-          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border-2 border-brand-turqoise-light">
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border-2 border-brand-red-light">
             <div class="flex items-center justify-between mb-6">
               <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/20 rounded-xl flex items-center justify-center">
                 <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@
             </div>
             <div class="flex items-center space-x-2 mb-3">
               <h3 class="text-xl font-bold text-brand-navy dark:text-white">QR Payment</h3>
-              <span class="bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded-full text-xs font-semibold">Popular</span>
+              <span class="bg-brand-red-light text-brand-navy px-2 py-1 rounded-full text-xs font-semibold">Popular</span>
             </div>
             <p class="text-brand-navy dark:text-gray-300 mb-4 min-h-[3lh]">
               PromptPay QR codes for instant transfers. The preferred payment method for Thai users with lower fees.
@@ -237,7 +237,7 @@
 
         <div class="grid lg:grid-cols-4 gap-8">
           <div class="text-center">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-16 h-16 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
               <span class="text-2xl font-bold text-brand-navy">1</span>
             </div>
             <h3 class="text-xl font-bold text-brand-navy dark:text-white mb-3">Select Payment Method</h3>
@@ -245,7 +245,7 @@
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-16 h-16 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
               <span class="text-2xl font-bold text-brand-navy">2</span>
             </div>
             <h3 class="text-xl font-bold text-brand-navy dark:text-white mb-3">Review Fees</h3>
@@ -253,7 +253,7 @@
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-16 h-16 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
               <span class="text-2xl font-bold text-brand-navy">3</span>
             </div>
             <h3 class="text-xl font-bold text-brand-navy dark:text-white mb-3">Secure Processing</h3>
@@ -261,7 +261,7 @@
           </div>
 
           <div class="text-center">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-16 h-16 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
               <span class="text-2xl font-bold text-brand-navy">4</span>
             </div>
             <h3 class="text-xl font-bold text-brand-navy dark:text-white mb-3">Instant Confirmation</h3>
@@ -336,7 +336,7 @@
               
               <div class="absolute bottom-8 left-8 bg-white dark:bg-gray-700 rounded-lg p-4 shadow-lg">
                 <div class="flex items-center space-x-2">
-                  <svg class="w-4 h-4 text-brand-turqoise-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-4 h-4 text-brand-red-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span class="text-sm font-medium text-brand-navy dark:text-white">Verified Transaction</span>
@@ -344,7 +344,7 @@
               </div>
               
               <div class="absolute bottom-24 right-12 bg-white dark:bg-gray-700 rounded-lg p-3 shadow-lg">
-                <div class="w-8 h-8 bg-brand-turqoise-light rounded-full mx-auto"></div>
+                <div class="w-8 h-8 bg-brand-red-light rounded-full mx-auto"></div>
               </div>
             </div>
           </div>
@@ -407,7 +407,7 @@
           Join thousands of users who trust thaikeys.co.th for secure, transparent property transactions
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button class="bg-brand-turqoise-light text-brand-navy px-8 py-3 rounded-xl font-semibold hover:bg-teal-300 transition-colors duration-300 text-lg">
+          <button class="bg-brand-red-light text-brand-navy px-8 py-3 rounded-xl font-semibold hover:bg-teal-300 transition-colors duration-300 text-lg">
             Start Searching Properties
           </button>
           <button class="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-brand-navy transition-colors duration-300 text-lg">

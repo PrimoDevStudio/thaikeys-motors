@@ -22,7 +22,7 @@
               <span class="bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-400 px-3 py-1 rounded-full text-sm font-semibold">
                 {{ $t('property.status.available_now') }}
               </span>
-              <span class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold">
+              <span class="bg-brand-red-light text-brand-navy px-3 py-1 rounded-full text-sm font-semibold">
                 {{ $t('property.status.verified') }}
               </span>
             </div>
@@ -101,7 +101,7 @@
             </div>
             
             <div class="space-y-4">
-              <button class="w-full bg-brand-turqoise-light text-brand-navy py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-200 text-lg shadow-lg hover:shadow-xl">
+              <button class="w-full bg-brand-red-light text-brand-navy py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-200 text-lg shadow-lg hover:shadow-xl">
                 {{ $t('property.actions.schedule_viewing') }}
               </button>
               <button class="w-full border-2 border-brand-navy dark:border-white text-brand-navy dark:text-white py-4 rounded-xl font-semibold hover:bg-brand-navy hover:text-white dark:hover:bg-white dark:hover:text-brand-navy transition-all duration-200">
@@ -175,7 +175,7 @@
                   <!-- Comfort Features -->
                   <div>
                     <h4 class="text-lg font-semibold text-brand-navy dark:text-white mb-4 flex items-center">
-                      <div class="w-2 h-6 bg-brand-turqoise-light rounded mr-3"></div>
+                      <div class="w-2 h-6 bg-brand-red-light rounded mr-3"></div>
                       Comfort & Convenience
                     </h4>
                     <div class="space-y-3">
@@ -236,7 +236,7 @@
               <h2 class="text-2xl font-bold text-brand-navy dark:text-white mb-6">{{ $t('property.sections.building_amenities') }}</h2>
               <div class="grid md:grid-cols-3 gap-6">
                 <div class="text-center p-6 bg-gray-50 dark:bg-gray-700 rounded-xl" v-for="amenity in amenities" :key="amenity.key">
-                  <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center mx-auto mb-4">
                     <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="amenity.iconPath" />
                     </svg>
@@ -254,7 +254,7 @@
               <!-- BTS Info -->
               <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 rounded-xl p-6 mb-8 border border-yellow-200 dark:border-yellow-800">
                 <div class="flex items-center space-x-4">
-                  <div class="w-16 h-16 bg-brand-turqoise-light rounded-xl flex items-center justify-center">
+                  <div class="w-16 h-16 bg-brand-red-light rounded-xl flex items-center justify-center">
                     <svg class="w-8 h-8 text-brand-navy" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
@@ -348,7 +348,7 @@
               </div>
               
               <div class="space-y-3">
-                <button class="w-full bg-brand-turqoise-light text-brand-navy py-3 rounded-xl font-semibold hover:bg-teal-300 transition-colors">
+                <button class="w-full bg-brand-red-light text-brand-navy py-3 rounded-xl font-semibold hover:bg-teal-300 transition-colors">
                   {{ $t('property.agent.call') }}
                 </button>
                 <button class="w-full border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 py-3 rounded-xl font-semibold hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
@@ -366,7 +366,7 @@
               <div class="space-y-4">
                 <div class="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-xl border border-yellow-200 dark:border-yellow-800">
                   <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-brand-turqoise-light rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-brand-red-light rounded-lg flex items-center justify-center">
                       <svg class="w-5 h-5 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                       </svg>
@@ -428,7 +428,7 @@
                   </div>
                 </div>
               </div>
-              <button class="w-full mt-4 text-brand-turqoise-light hover:text-teal-500 font-medium py-2 transition-colors">
+              <button class="w-full mt-4 text-brand-red-light hover:text-teal-500 font-medium py-2 transition-colors">
                 {{ $t('property.similar.view_more') }} →
               </button>
             </div>

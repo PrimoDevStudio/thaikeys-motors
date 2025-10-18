@@ -23,16 +23,16 @@
           <form @submit.prevent="handleLogin" class="space-y-6">
             <div>
               <input v-model="form.email" type="email" required placeholder="Email address"
-                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors">
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors">
             </div>
             
             <div>
               <input v-model="form.password" type="password" required placeholder="Password"
-                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors">
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors">
             </div>
 
             <button type="submit" :disabled="loading"
-              class="w-full bg-brand-turqoise-light text-brand-navy py-3 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 disabled:opacity-50">
+              class="w-full bg-brand-red-light text-brand-navy py-3 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 disabled:opacity-50">
               <span v-if="loading">Signing In...</span>
               <span v-else>Sign In</span>
             </button>
@@ -41,7 +41,7 @@
           <div class="text-center mt-6">
             <p class="text-sm text-brand-navy dark:text-gray-300">
               Don't have an account? 
-              <NuxtLink to="/auth/register" @click="close" class="text-brand-turqoise-light hover:text-teal-500 underline transition-colors">Sign up here</NuxtLink>
+              <NuxtLink to="/auth/register" @click="close" class="text-brand-red-light hover:text-teal-500 underline transition-colors">Sign up here</NuxtLink>
             </p>
           </div>
         </div>

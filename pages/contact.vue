@@ -3,7 +3,7 @@
 
     <!-- Hero Section -->
     <section class="relative pt-16 pb-16 overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-brand-navy via-blue-800 to-brand-turqoise-light"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-navy via-blue-800 to-brand-red-light"></div>
       <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           {{ $t('contact.hero.title') }}
@@ -35,7 +35,7 @@
                       v-model="form.firstName"
                       type="text" 
                       required
-                      class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+                      class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
                       :placeholder="$t('contact.form.first_name_placeholder')"
                     >
                   </div>
@@ -47,7 +47,7 @@
                       v-model="form.lastName"
                       type="text" 
                       required
-                      class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+                      class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
                       :placeholder="$t('contact.form.last_name_placeholder')"
                     >
                   </div>
@@ -61,7 +61,7 @@
                     v-model="form.email"
                     type="email" 
                     required
-                    class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+                    class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
                     :placeholder="$t('contact.form.email_placeholder')"
                   >
                 </div>
@@ -73,7 +73,7 @@
                   <input 
                     v-model="form.phone"
                     type="tel"
-                    class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+                    class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
                     :placeholder="$t('contact.form.phone_placeholder')"
                   >
                 </div>
@@ -86,7 +86,7 @@
                     <select 
                       v-model="form.department"
                       required
-                      class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300 appearance-none cursor-pointer"
+                      class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300 appearance-none cursor-pointer"
                     >
                       <option value="">{{ $t('contact.form.select_department') }}</option>
                       <option v-for="dept in departments" :key="dept.id" :value="dept.id">
@@ -107,7 +107,7 @@
                     v-model="form.subject"
                     type="text" 
                     required
-                    class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+                    class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
                     :placeholder="$t('contact.form.subject_placeholder')"
                   >
                 </div>
@@ -120,7 +120,7 @@
                     v-model="form.message"
                     rows="6" 
                     required
-                    class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300 resize-none"
+                    class="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300 resize-none"
                     :placeholder="$t('contact.form.message_placeholder')"
                   ></textarea>
                 </div>
@@ -128,7 +128,7 @@
                 <button 
                   type="submit"
                   :disabled="isSubmitting"
-                  class="w-full bg-brand-turqoise-light text-brand-navy py-4 px-8 rounded-lg font-bold text-lg hover:bg-teal-300 transition-colors duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                  class="w-full bg-brand-red-light text-brand-navy py-4 px-8 rounded-lg font-bold text-lg hover:bg-teal-300 transition-colors duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <span v-if="!isSubmitting">{{ $t('contact.form.send_message') }}</span>
                   <span v-else>{{ $t('contact.form.sending') }}</span>
@@ -146,7 +146,7 @@
               </h3>
               <div class="space-y-4">
                 <div class="flex items-start space-x-4">
-                  <div class="w-6 h-6 text-brand-turqoise-light mt-1">
+                  <div class="w-6 h-6 text-brand-red-light mt-1">
                     <svg fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
@@ -158,7 +158,7 @@
                 </div>
 
                 <div class="flex items-start space-x-4">
-                  <div class="w-6 h-6 text-brand-turqoise-light mt-1">
+                  <div class="w-6 h-6 text-brand-red-light mt-1">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                     </svg>
@@ -170,7 +170,7 @@
                 </div>
 
                 <div class="flex items-start space-x-4">
-                  <div class="w-6 h-6 text-brand-turqoise-light mt-1">
+                  <div class="w-6 h-6 text-brand-red-light mt-1">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>

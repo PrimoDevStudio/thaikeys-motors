@@ -6,7 +6,7 @@
       :title="`Current: ${currentCurrencyInfo.name} (${currentCurrencyInfo.symbol})`"
     >
       <!-- Current Currency Symbol -->
-      <span class="text-lg font-bold text-gray-600 dark:text-gray-300 group-hover:text-brand-turqoise-light transition-colors duration-300">
+      <span class="text-lg font-bold text-gray-600 dark:text-gray-300 group-hover:text-brand-red-light transition-colors duration-300">
         {{ currentCurrencyInfo.symbol }}
       </span>
     </button>
@@ -22,7 +22,7 @@
         @click="setCurrency(currency.code)"
         class="w-full px-3 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 flex items-center justify-between rounded-lg"
         :class="{ 
-          'text-brand-turqoise-light font-medium bg-blue-50 dark:bg-gray-700': currentCurrency === currency.code,
+          'text-brand-red-light font-medium bg-blue-50 dark:bg-gray-700': currentCurrency === currency.code,
           'text-gray-700 dark:text-gray-200': currentCurrency !== currency.code
         }"
       >

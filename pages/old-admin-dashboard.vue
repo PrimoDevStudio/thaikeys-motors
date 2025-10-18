@@ -334,7 +334,7 @@
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Top Agencies</h3>
-                <button @click="activeTab = 'agency-oversight'" class="text-brand-turqoise-light hover:text-teal-500 font-medium text-sm">View All</button>
+                <button @click="activeTab = 'agency-oversight'" class="text-brand-red-light hover:text-teal-500 font-medium text-sm">View All</button>
               </div>
               
               <div class="space-y-4">
@@ -362,7 +362,7 @@
             <div class="lg:col-span-2 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Recent Platform Activity</h3>
-                <button class="text-brand-turqoise-light hover:text-teal-500 font-medium text-sm">View All</button>
+                <button class="text-brand-red-light hover:text-teal-500 font-medium text-sm">View All</button>
               </div>
               
               <div class="space-y-4">
@@ -405,7 +405,7 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Platform User Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Users</option>
                 <option>Verified Users</option>
                 <option>Pending Verification</option>
@@ -471,7 +471,7 @@
                     v-model="userSearchQuery"
                     type="text" 
                     placeholder="Search users..."
-                    class="w-64 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                    class="w-64 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
                   >
                   <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -524,7 +524,7 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Agency Oversight & Management</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>All Agencies</option>
                 <option>Premium Agencies</option>
                 <option>Needs Review</option>
@@ -671,13 +671,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Platform Analytics & Intelligence</h2>
             <div class="flex items-center space-x-4">
-              <select v-model="analyticsTimeframe" class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select v-model="analyticsTimeframe" class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option value="7d">Last 7 Days</option>
                 <option value="30d">Last 30 Days</option>
                 <option value="90d">Last 90 Days</option>
                 <option value="1y">Last Year</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Generate Report
               </button>
             </div>
@@ -934,7 +934,7 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">ThaiKeys Agency Performance Analytics</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>Last 30 Days</option>
                 <option>Last 90 Days</option>
                 <option>Last Year</option>
@@ -1060,7 +1060,7 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">ThaiKeys Agency Financial Overview</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>Current Month</option>
                 <option>Last Quarter</option>
                 <option>Year to Date</option>
@@ -1353,13 +1353,13 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Market Intelligence & Insights</h2>
             <div class="flex items-center space-x-4">
-              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light">
+              <select class="border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-red-light">
                 <option>Bangkok Metro</option>
                 <option>Phuket</option>
                 <option>Pattaya</option>
                 <option>Chiang Mai</option>
               </select>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Generate Market Report
               </button>
             </div>
@@ -1390,7 +1390,7 @@
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Competitive Analysis</h2>
             <div class="text-sm text-brand-navy dark:text-gray-400">
-              Market Position: <span class="font-bold text-lg text-brand-turqoise-light">#{{ marketPosition }}</span>
+              Market Position: <span class="font-bold text-lg text-brand-red-light">#{{ marketPosition }}</span>
             </div>
           </div>
 
@@ -1430,13 +1430,13 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Platform Commission Rate (%)</label>
-                  <input type="number" v-model="globalSettings.platformCommission" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="number" v-model="globalSettings.platformCommission" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Subscription Pricing</label>
                   <div class="space-y-2">
-                    <input type="number" v-model="globalSettings.basicTier" placeholder="Basic Tier" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
-                    <input type="number" v-model="globalSettings.premiumTier" placeholder="Premium Tier" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="number" v-model="globalSettings.basicTier" placeholder="Basic Tier" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="number" v-model="globalSettings.premiumTier" placeholder="Premium Tier" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   </div>
                 </div>
               </div>
@@ -1446,15 +1446,15 @@
               <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-4">System Configuration</h3>
               <div class="space-y-4">
                 <div class="flex items-center space-x-4">
-                  <input type="checkbox" v-model="globalSettings.maintenanceMode" class="w-4 h-4 text-brand-turqoise-light border-gray-300 rounded">
+                  <input type="checkbox" v-model="globalSettings.maintenanceMode" class="w-4 h-4 text-brand-red-light border-gray-300 rounded">
                   <label class="text-sm text-brand-navy dark:text-white">Enable Maintenance Mode</label>
                 </div>
                 <div class="flex items-center space-x-4">
-                  <input type="checkbox" v-model="globalSettings.newRegistrations" class="w-4 h-4 text-brand-turqoise-light border-gray-300 rounded">
+                  <input type="checkbox" v-model="globalSettings.newRegistrations" class="w-4 h-4 text-brand-red-light border-gray-300 rounded">
                   <label class="text-sm text-brand-navy dark:text-white">Allow New Registrations</label>
                 </div>
                 <div class="flex items-center space-x-4">
-                  <input type="checkbox" v-model="globalSettings.autoApproveAgencies" class="w-4 h-4 text-brand-turqoise-light border-gray-300 rounded">
+                  <input type="checkbox" v-model="globalSettings.autoApproveAgencies" class="w-4 h-4 text-brand-red-light border-gray-300 rounded">
                   <label class="text-sm text-brand-navy dark:text-white">Auto-approve New Agencies</label>
                 </div>
               </div>
@@ -1670,7 +1670,7 @@ const getNavClass = (tabName) => {
   const isActive = activeTab.value === tabName
   return [
     'flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors',
-    isActive ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'
+    isActive ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'
   ]
 }
 

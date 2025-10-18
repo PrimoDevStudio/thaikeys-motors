@@ -36,14 +36,14 @@
               v-model="searchQuery"
               type="text" 
               placeholder="Search properties, areas..."
-              class="w-80 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+              class="w-80 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
             >
             <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
           </div>
           
-          <button class="relative p-2 text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light transition-colors">
+          <button class="relative p-2 text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM11 13h-1a4 4 0 01-4-4V7a4 4 0 118 0v2a4 4 0 01-4 4z"/>
             </svg>
@@ -52,7 +52,7 @@
           
           <div class="flex items-center space-x-2">
             <div class="w-8 h-8 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-800 dark:to-green-600 rounded-full"></div>
-            <button class="text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light">
+            <button class="text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
@@ -70,7 +70,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'overview' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'overview' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'overview'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,20 +82,20 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'search' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'search' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'search'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
             <span class="font-medium">Property Search</span>
-            <span v-if="savedSearches > 0" class="bg-brand-turqoise-light/20 text-brand-navy dark:text-brand-turqoise-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ savedSearches }}</span>
+            <span v-if="savedSearches > 0" class="bg-brand-red-light/20 text-brand-navy dark:text-brand-red-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ savedSearches }}</span>
           </a>
           
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'favorites' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'favorites' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'favorites'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,7 +108,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'applications' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'applications' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'applications'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,7 +121,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'viewings' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'viewings' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'viewings'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,7 +135,7 @@
             v-if="hasActiveLease"
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'lease' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'lease' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'lease'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -149,7 +149,7 @@
             v-if="hasActiveLease"
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'payments' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'payments' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'payments'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@
             v-if="hasActiveLease"
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'maintenance' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'maintenance' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'maintenance'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -177,7 +177,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'messages' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'messages' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'messages'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -190,7 +190,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'profile' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'profile' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'profile'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -275,7 +275,7 @@
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
               <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-4">Quick Actions</h3>
               <div class="space-y-3">
-                <button class="w-full bg-brand-turqoise-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center justify-center space-x-2">
+                <button class="w-full bg-brand-red-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center justify-center space-x-2">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                   </svg>
@@ -370,7 +370,7 @@
                   <p class="text-sm font-semibold text-brand-navy dark:text-white">฿28,000/month</p>
                 </div>
                 
-                <button class="w-full text-brand-turqoise-light hover:text-teal-600 transition-colors text-sm font-medium">
+                <button class="w-full text-brand-red-light hover:text-teal-600 transition-colors text-sm font-medium">
                   View all recommendations →
                 </button>
               </div>
@@ -381,7 +381,7 @@
         <div v-if="activeTab === 'search'" class="p-6">
           <div class="flex items-center justify-between mb-6">
             <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Property Search</h2>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               Save Search Alert
             </button>
           </div>
@@ -392,7 +392,7 @@
               <!-- Location Filter -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Location</label>
-                <select v-model="searchFilters.location" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.location" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">All Areas</option>
                   <option value="sukhumvit">Sukhumvit</option>
                   <option value="silom">Silom</option>
@@ -406,7 +406,7 @@
               <!-- Property Type Filter -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Property Type</label>
-                <select v-model="searchFilters.propertyType" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.propertyType" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">All Types</option>
                   <option value="condo">Condominium</option>
                   <option value="apartment">Apartment</option>
@@ -418,7 +418,7 @@
               <!-- Bedrooms Filter -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Bedrooms</label>
-                <select v-model="searchFilters.bedrooms" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.bedrooms" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">Any</option>
                   <option value="studio">Studio</option>
                   <option value="1">1 Bedroom</option>
@@ -431,7 +431,7 @@
               <!-- Price Range Filter -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Monthly Rent</label>
-                <select v-model="searchFilters.priceRange" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.priceRange" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">Any Price</option>
                   <option value="0-20000">Up to ฿20,000</option>
                   <option value="20000-35000">฿20,000 - ฿35,000</option>
@@ -444,7 +444,7 @@
 
             <!-- Advanced Filters Toggle -->
             <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-600">
-              <button @click="showAdvancedFilters = !showAdvancedFilters" class="flex items-center space-x-2 text-brand-turqoise-light hover:text-teal-600 transition-colors">
+              <button @click="showAdvancedFilters = !showAdvancedFilters" class="flex items-center space-x-2 text-brand-red-light hover:text-teal-600 transition-colors">
                 <span>Advanced Filters</span>
                 <svg :class="showAdvancedFilters ? 'rotate-180' : ''" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -499,7 +499,7 @@
             <div class="flex items-center justify-between">
               <h3 class="text-lg font-semibold text-brand-navy dark:text-white">{{ filteredProperties.length }} properties found</h3>
               <div class="flex items-center space-x-4">
-                <select v-model="sortBy" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="sortBy" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="price-low">Price: Low to High</option>
                   <option value="price-high">Price: High to Low</option>
                   <option value="newest">Newest First</option>
@@ -507,12 +507,12 @@
                 </select>
                 
                 <div class="flex items-center space-x-2">
-                  <button :class="viewMode === 'grid' ? 'bg-brand-turqoise-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="p-2 rounded-lg">
+                  <button :class="viewMode === 'grid' ? 'bg-brand-red-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="p-2 rounded-lg">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
                     </svg>
                   </button>
-                  <button :class="viewMode === 'list' ? 'bg-brand-turqoise-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="p-2 rounded-lg" @click="viewMode = 'list'">
+                  <button :class="viewMode === 'list' ? 'bg-brand-red-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="p-2 rounded-lg" @click="viewMode = 'list'">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
                     </svg>
@@ -563,7 +563,7 @@
                   
                   <!-- Action Buttons -->
                   <div class="flex space-x-2">
-                    <button class="flex-1 bg-brand-turqoise-light text-brand-navy py-2 px-4 rounded-lg font-medium hover:bg-teal-300 transition-colors text-sm">
+                    <button class="flex-1 bg-brand-red-light text-brand-navy py-2 px-4 rounded-lg font-medium hover:bg-teal-300 transition-colors text-sm">
                       View Details
                     </button>
                     <button class="flex-1 border border-gray-200 dark:border-gray-600 text-brand-navy dark:text-gray-300 py-2 px-4 rounded-lg font-medium hover:border-gray-300 dark:hover:border-gray-500 transition-colors text-sm">
@@ -579,7 +579,7 @@
               <button class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-brand-navy dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                 Previous
               </button>
-              <button class="px-4 py-2 bg-brand-turqoise-light text-brand-navy rounded-lg font-medium">1</button>
+              <button class="px-4 py-2 bg-brand-red-light text-brand-navy rounded-lg font-medium">1</button>
               <button class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-brand-navy dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">2</button>
               <button class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-brand-navy dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">3</button>
               <button class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-brand-navy dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
@@ -596,10 +596,10 @@
               <p class="text-gray-600 dark:text-gray-400">{{ favoritesList.length }} properties saved</p>
             </div>
             <div class="flex items-center space-x-4">
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Create Alert from Favorites
               </button>
-              <select v-model="favoritesSort" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+              <select v-model="favoritesSort" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 <option value="newest">Recently Added</option>
                 <option value="price-low">Price: Low to High</option>
                 <option value="price-high">Price: High to Low</option>
@@ -679,7 +679,7 @@
                 <!-- Action Buttons -->
                 <div class="space-y-2">
                   <div class="flex space-x-2">
-                    <button :disabled="property.status !== 'available'" :class="property.status === 'available' ? 'bg-brand-turqoise-light text-brand-navy hover:bg-teal-300' : 'bg-gray-300 text-gray-500 cursor-not-allowed'" class="flex-1 py-2 px-4 rounded-lg font-medium transition-colors text-sm">
+                    <button :disabled="property.status !== 'available'" :class="property.status === 'available' ? 'bg-brand-red-light text-brand-navy hover:bg-teal-300' : 'bg-gray-300 text-gray-500 cursor-not-allowed'" class="flex-1 py-2 px-4 rounded-lg font-medium transition-colors text-sm">
                       {{ property.status === 'available' ? 'View Details' : 'Not Available' }}
                     </button>
                     <button :disabled="property.status !== 'available'" :class="property.status === 'available' ? 'border border-gray-200 dark:border-gray-600 text-brand-navy dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-500' : 'border border-gray-300 text-gray-400 cursor-not-allowed'" class="flex-1 py-2 px-4 rounded-lg font-medium transition-colors text-sm">
@@ -713,7 +713,7 @@
             </svg>
             <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-2">No Saved Properties</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Start saving properties you're interested in to see them here</p>
-            <button @click="activeTab = 'search'" class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button @click="activeTab = 'search'" class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               Browse Properties
             </button>
           </div>
@@ -725,7 +725,7 @@
               <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Rental Applications</h2>
               <p class="text-gray-600 dark:text-gray-400">{{ totalApplications }} total applications, {{ pendingApplications }} pending review</p>
             </div>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               New Application
             </button>
           </div>
@@ -798,7 +798,7 @@
             <div class="p-6 border-b border-gray-200 dark:border-gray-600">
               <div class="flex items-center justify-between">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Recent Applications</h3>
-                <select v-model="applicationFilter" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="applicationFilter" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="all">All Applications</option>
                   <option value="pending">Pending</option>
                   <option value="approved">Approved</option>
@@ -906,7 +906,7 @@
               <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Property Viewings</h2>
               <p class="text-gray-600 dark:text-gray-400">{{ upcomingViewings }} upcoming viewings, {{ totalViewings }} total scheduled</p>
             </div>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               Schedule New Viewing
             </button>
           </div>
@@ -965,10 +965,10 @@
               <div class="flex items-center justify-between">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Viewing Schedule</h3>
                 <div class="flex items-center space-x-2">
-                  <button :class="viewingView === 'list' ? 'bg-brand-turqoise-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="px-4 py-2 rounded-lg font-medium transition-colors" @click="viewingView = 'list'">
+                  <button :class="viewingView === 'list' ? 'bg-brand-red-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="px-4 py-2 rounded-lg font-medium transition-colors" @click="viewingView = 'list'">
                     List View
                   </button>
-                  <button :class="viewingView === 'calendar' ? 'bg-brand-turqoise-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="px-4 py-2 rounded-lg font-medium transition-colors" @click="viewingView = 'calendar'">
+                  <button :class="viewingView === 'calendar' ? 'bg-brand-red-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="px-4 py-2 rounded-lg font-medium transition-colors" @click="viewingView = 'calendar'">
                     Calendar
                   </button>
                 </div>
@@ -1124,7 +1124,7 @@
               <span v-if="daysUntilRenewal <= 60" class="bg-yellow-100 dark:bg-yellow-900/20 text-yellow-800 dark:text-yellow-400 px-3 py-1 rounded-full text-sm font-semibold">
                 Renewal Available
               </span>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Download Lease
               </button>
             </div>
@@ -1250,7 +1250,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                     </svg>
                     <span class="text-sm text-brand-navy dark:text-white">{{ currentLease.landlord.phone }}</span>
-                    <button class="text-brand-turqoise-light hover:text-teal-600 transition-colors text-sm">Call</button>
+                    <button class="text-brand-red-light hover:text-teal-600 transition-colors text-sm">Call</button>
                   </div>
                   
                   <div class="flex items-center space-x-3">
@@ -1258,7 +1258,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                     <span class="text-sm text-brand-navy dark:text-white">{{ currentLease.landlord.email }}</span>
-                    <button class="text-brand-turqoise-light hover:text-teal-600 transition-colors text-sm">Email</button>
+                    <button class="text-brand-red-light hover:text-teal-600 transition-colors text-sm">Email</button>
                   </div>
                   
                   <div class="flex items-center space-x-3">
@@ -1266,11 +1266,11 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                     </svg>
                     <span class="text-sm text-brand-navy dark:text-white">Available 9AM - 6PM</span>
-                    <button class="text-brand-turqoise-light hover:text-teal-600 transition-colors text-sm">Message</button>
+                    <button class="text-brand-red-light hover:text-teal-600 transition-colors text-sm">Message</button>
                   </div>
                 </div>
                 
-                <button class="w-full bg-brand-turqoise-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+                <button class="w-full bg-brand-red-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                   Contact Landlord
                 </button>
               </div>
@@ -1369,7 +1369,7 @@
               <p class="text-gray-600 dark:text-gray-400">Manage your rent payments and view payment history</p>
             </div>
             <div class="flex items-center space-x-4">
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Set Up Auto-Pay
               </button>
               <button class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors">
@@ -1450,7 +1450,7 @@
           <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 mb-8 transition-colors duration-300">
             <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-6">Quick Payment Actions</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <button class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-turqoise-light dark:hover:border-brand-turqoise-light transition-colors">
+              <button class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-red-light dark:hover:border-brand-red-light transition-colors">
                 <div class="w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-xl flex items-center justify-center">
                   <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
@@ -1460,7 +1460,7 @@
                 <span class="text-xs text-gray-500">{{ formatCurrency(currentLease.monthlyRent) }}</span>
               </button>
 
-              <button class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-turqoise-light dark:hover:border-brand-turqoise-light transition-colors">
+              <button class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-red-light dark:hover:border-brand-red-light transition-colors">
                 <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/20 rounded-xl flex items-center justify-center">
                   <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
@@ -1470,7 +1470,7 @@
                 <span class="text-xs text-gray-500">Future date</span>
               </button>
 
-              <button class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-turqoise-light dark:hover:border-brand-turqoise-light transition-colors">
+              <button class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-red-light dark:hover:border-brand-red-light transition-colors">
                 <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/20 rounded-xl flex items-center justify-center">
                   <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
@@ -1480,7 +1480,7 @@
                 <span class="text-xs text-gray-500">Automatic payments</span>
               </button>
 
-              <button class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-turqoise-light dark:hover:border-brand-turqoise-light transition-colors">
+              <button class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-red-light dark:hover:border-brand-red-light transition-colors">
                 <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/20 rounded-xl flex items-center justify-center">
                   <svg class="w-6 h-6 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
@@ -1498,13 +1498,13 @@
               <div class="flex items-center justify-between">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Payment History</h3>
                 <div class="flex items-center space-x-4">
-                  <select v-model="paymentHistoryFilter" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="paymentHistoryFilter" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="all">All Payments</option>
                     <option value="last-3-months">Last 3 Months</option>
                     <option value="last-6-months">Last 6 Months</option>
                     <option value="this-year">This Year</option>
                   </select>
-                  <button class="text-brand-turqoise-light hover:text-teal-600 transition-colors text-sm font-medium">
+                  <button class="text-brand-red-light hover:text-teal-600 transition-colors text-sm font-medium">
                     Export History
                   </button>
                 </div>
@@ -1600,7 +1600,7 @@
               <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Maintenance Requests</h2>
               <p class="text-gray-600 dark:text-gray-400">{{ openMaintenanceRequests }} open requests, {{ totalMaintenanceRequests }} total submitted</p>
             </div>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               New Request
             </button>
           </div>
@@ -1673,7 +1673,7 @@
           <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 mb-8 transition-colors duration-300">
             <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-6">Quick Request</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              <button v-for="category in maintenanceCategories" :key="category.id" class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-turqoise-light dark:hover:border-brand-turqoise-light transition-colors">
+              <button v-for="category in maintenanceCategories" :key="category.id" class="flex flex-col items-center space-y-2 p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-red-light dark:hover:border-brand-red-light transition-colors">
                 <div :class="category.bgColor" class="w-12 h-12 rounded-xl flex items-center justify-center">
                   <svg :class="category.iconColor" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="category.iconPath"/>
@@ -1689,7 +1689,7 @@
             <div class="p-6 border-b border-gray-200 dark:border-gray-600">
               <div class="flex items-center justify-between">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Recent Requests</h3>
-                <select v-model="maintenanceFilter" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="maintenanceFilter" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="all">All Requests</option>
                   <option value="open">Open</option>
                   <option value="in-progress">In Progress</option>
@@ -1824,7 +1824,7 @@
               <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Messages</h2>
               <p class="text-gray-600 dark:text-gray-400">{{ unreadMessages }} unread messages from {{ activeConversations }} conversations</p>
             </div>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               New Message
             </button>
           </div>
@@ -1835,7 +1835,7 @@
               <div class="p-4 border-b border-gray-200 dark:border-gray-600">
                 <div class="flex items-center justify-between">
                   <h3 class="font-semibold text-brand-navy dark:text-white">Conversations</h3>
-                  <select v-model="messageFilter" class="text-sm px-3 py-1 border border-gray-200 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="messageFilter" class="text-sm px-3 py-1 border border-gray-200 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="all">All</option>
                     <option value="unread">Unread</option>
                     <option value="agents">Agents</option>
@@ -1845,7 +1845,7 @@
               </div>
               
               <div class="overflow-y-auto h-80">
-                <div v-for="conversation in filteredConversations" :key="conversation.id" :class="['p-4 border-b border-gray-100 dark:border-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors', selectedConversation?.id === conversation.id ? 'bg-brand-turqoise-light/10 dark:bg-brand-turqoise-light/20' : '']" @click="selectConversation(conversation)">
+                <div v-for="conversation in filteredConversations" :key="conversation.id" :class="['p-4 border-b border-gray-100 dark:border-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors', selectedConversation?.id === conversation.id ? 'bg-brand-red-light/10 dark:bg-brand-red-light/20' : '']" @click="selectConversation(conversation)">
                   <div class="flex items-start space-x-3">
                     <div class="relative">
                       <div class="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-600 rounded-full flex items-center justify-center">
@@ -1886,17 +1886,17 @@
                     </div>
                     
                     <div class="flex items-center space-x-2">
-                      <button class="p-2 text-gray-400 hover:text-brand-turqoise-light transition-colors">
+                      <button class="p-2 text-gray-400 hover:text-brand-red-light transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                         </svg>
                       </button>
-                      <button class="p-2 text-gray-400 hover:text-brand-turqoise-light transition-colors">
+                      <button class="p-2 text-gray-400 hover:text-brand-red-light transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
                         </svg>
                       </button>
-                      <button class="p-2 text-gray-400 hover:text-brand-turqoise-light transition-colors">
+                      <button class="p-2 text-gray-400 hover:text-brand-red-light transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
                         </svg>
@@ -1908,7 +1908,7 @@
                 <!-- Messages Area -->
                 <div class="flex-1 overflow-y-auto p-4 space-y-4">
                   <div v-for="message in selectedConversation.messages" :key="message.id" :class="['flex', message.sender === 'me' ? 'justify-end' : 'justify-start']">
-                    <div :class="['max-w-xs lg:max-w-md px-4 py-2 rounded-lg', message.sender === 'me' ? 'bg-brand-turqoise-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-700 text-brand-navy dark:text-white']">
+                    <div :class="['max-w-xs lg:max-w-md px-4 py-2 rounded-lg', message.sender === 'me' ? 'bg-brand-red-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-700 text-brand-navy dark:text-white']">
                       <p class="text-sm">{{ message.content }}</p>
                       <p :class="['text-xs mt-1', message.sender === 'me' ? 'text-brand-navy/70' : 'text-gray-500']">{{ formatTime(message.timestamp) }}</p>
                     </div>
@@ -1918,13 +1918,13 @@
                 <!-- Message Input -->
                 <div class="p-4 border-t border-gray-200 dark:border-gray-600">
                   <div class="flex items-center space-x-2">
-                    <button class="p-2 text-gray-400 hover:text-brand-turqoise-light transition-colors">
+                    <button class="p-2 text-gray-400 hover:text-brand-red-light transition-colors">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/>
                       </svg>
                     </button>
-                    <input v-model="newMessage" type="text" placeholder="Type your message..." class="flex-1 px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" @keypress.enter="sendMessage">
-                    <button @click="sendMessage" class="p-2 bg-brand-turqoise-light text-brand-navy rounded-lg hover:bg-teal-300 transition-colors">
+                    <input v-model="newMessage" type="text" placeholder="Type your message..." class="flex-1 px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" @keypress.enter="sendMessage">
+                    <button @click="sendMessage" class="p-2 bg-brand-red-light text-brand-navy rounded-lg hover:bg-teal-300 transition-colors">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
                       </svg>
@@ -1950,7 +1950,7 @@
           <div class="mt-8 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
             <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-4">Quick Message Templates</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <button v-for="template in messageTemplates" :key="template.id" class="text-left p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-turqoise-light dark:hover:border-brand-turqoise-light transition-colors" @click="useTemplate(template)">
+              <button v-for="template in messageTemplates" :key="template.id" class="text-left p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-red-light dark:hover:border-brand-red-light transition-colors" @click="useTemplate(template)">
                 <h4 class="font-medium text-brand-navy dark:text-white mb-2">{{ template.title }}</h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">{{ template.preview }}</p>
               </button>
@@ -1968,7 +1968,7 @@
               <div class="text-sm text-brand-navy dark:text-gray-400">
                 Profile Completion: <span class="font-bold text-lg" :class="getProfileCompletionColor(profileCompletionScore)">{{ profileCompletionScore }}%</span>
               </div>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Save Changes
               </button>
             </div>
@@ -1981,7 +1981,7 @@
                 <div class="w-24 h-24 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-800 dark:to-green-600 rounded-full flex items-center justify-center">
                   <span class="text-2xl font-bold text-green-600 dark:text-green-300">AJ</span>
                 </div>
-                <button class="absolute bottom-0 right-0 w-8 h-8 bg-brand-turqoise-light text-brand-navy rounded-full flex items-center justify-center hover:bg-teal-300 transition-colors">
+                <button class="absolute bottom-0 right-0 w-8 h-8 bg-brand-red-light text-brand-navy rounded-full flex items-center justify-center hover:bg-teal-300 transition-colors">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -2019,32 +2019,32 @@
                 <div class="grid grid-cols-2 gap-4">
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">First Name</label>
-                    <input type="text" v-model="userProfile.firstName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="text" v-model="userProfile.firstName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   </div>
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Last Name</label>
-                    <input type="text" v-model="userProfile.lastName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="text" v-model="userProfile.lastName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   </div>
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Email Address</label>
-                  <input type="email" v-model="userProfile.email" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="email" v-model="userProfile.email" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Phone Number</label>
-                  <input type="tel" v-model="userProfile.phone" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="tel" v-model="userProfile.phone" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Date of Birth</label>
-                  <input type="date" v-model="userProfile.dateOfBirth" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="date" v-model="userProfile.dateOfBirth" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Nationality</label>
-                  <select v-model="userProfile.nationality" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="userProfile.nationality" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Nationality</option>
                     <option value="thai">Thai</option>
                     <option value="american">American</option>
@@ -2063,8 +2063,8 @@
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Budget Range (Monthly)</label>
                   <div class="grid grid-cols-2 gap-4">
-                    <input type="number" v-model="rentalPreferences.budgetMin" placeholder="Min" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
-                    <input type="number" v-model="rentalPreferences.budgetMax" placeholder="Max" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="number" v-model="rentalPreferences.budgetMin" placeholder="Min" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="number" v-model="rentalPreferences.budgetMax" placeholder="Max" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   </div>
                 </div>
                 
@@ -2080,7 +2080,7 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Property Type</label>
-                  <select v-model="rentalPreferences.propertyType" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="rentalPreferences.propertyType" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Any Type</option>
                     <option value="condo">Condominium</option>
                     <option value="apartment">Apartment</option>
@@ -2091,7 +2091,7 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Minimum Bedrooms</label>
-                  <select v-model="rentalPreferences.minBedrooms" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="rentalPreferences.minBedrooms" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Any</option>
                     <option value="studio">Studio</option>
                     <option value="1">1 Bedroom</option>
@@ -2132,7 +2132,7 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Employment Status</label>
-                  <select v-model="employmentInfo.status" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="employmentInfo.status" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Status</option>
                     <option value="employed">Employed</option>
                     <option value="self-employed">Self-Employed</option>
@@ -2144,19 +2144,19 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Company Name</label>
-                  <input type="text" v-model="employmentInfo.companyName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="text" v-model="employmentInfo.companyName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Job Title</label>
-                  <input type="text" v-model="employmentInfo.jobTitle" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="text" v-model="employmentInfo.jobTitle" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
               </div>
               
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Monthly Income</label>
-                  <select v-model="employmentInfo.monthlyIncome" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="employmentInfo.monthlyIncome" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Range</option>
                     <option value="0-30000">฿0 - ฿30,000</option>
                     <option value="30000-50000">฿30,000 - ฿50,000</option>
@@ -2168,12 +2168,12 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Years at Company</label>
-                  <input type="number" v-model="employmentInfo.yearsAtCompany" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="number" v-model="employmentInfo.yearsAtCompany" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Work Address</label>
-                  <textarea v-model="employmentInfo.workAddress" rows="2" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"></textarea>
+                  <textarea v-model="employmentInfo.workAddress" rows="2" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"></textarea>
                 </div>
               </div>
             </div>

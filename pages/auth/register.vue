@@ -16,38 +16,38 @@
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-white mb-2">First Name</label>
                 <input v-model="form.firstName" type="text" required 
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
               </div>
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-white mb-2">Last Name</label>
                 <input v-model="form.lastName" type="text" required
-                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
               </div>
             </div>
 
             <div>
               <label class="block text-sm font-medium text-brand-navy dark:text-white mb-2">Email Address</label>
               <input v-model="form.email" type="email" required
-                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
             </div>
 
             <div>
               <label class="block text-sm font-medium text-brand-navy dark:text-white mb-2">Phone Number</label>
               <input v-model="form.phone" type="tel"
-                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
             </div>
 
             <div>
               <label class="block text-sm font-medium text-brand-navy dark:text-white mb-2">Password</label>
               <input v-model="form.password" type="password" required
-                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
             </div>
 
             <!-- Property Preferences -->
             <div>
               <label class="block text-sm font-medium text-brand-navy dark:text-white mb-2">Budget Range (Monthly)</label>
               <select v-model="form.budget" 
-                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 <option value="">Select budget range</option>
                 <option value="10000-25000">₿10,000 - ₿25,000</option>
                 <option value="25000-50000">₿25,000 - ₿50,000</option>
@@ -61,7 +61,7 @@
               <div class="grid grid-cols-2 gap-2">
                 <label v-for="area in areas" :key="area" class="flex items-center">
                   <input v-model="form.preferredAreas" :value="area" type="checkbox" 
-                    class="rounded border-gray-300 text-brand-turqoise-light focus:ring-brand-turqoise-light">
+                    class="rounded border-gray-300 text-brand-red-light focus:ring-brand-red-light">
                   <span class="ml-2 text-sm text-brand-navy dark:text-gray-300">{{ area }}</span>
                 </label>
               </div>
@@ -71,16 +71,16 @@
             <div>
               <label class="flex items-start space-x-3">
                 <input v-model="form.agreeToTerms" type="checkbox" required
-                  class="mt-1 rounded border-gray-300 text-brand-turqoise-light focus:ring-brand-turqoise-light">
+                  class="mt-1 rounded border-gray-300 text-brand-red-light focus:ring-brand-red-light">
                 <span class="text-sm text-brand-navy dark:text-gray-300">
-                  I agree to the <NuxtLink to="/terms-conditions" class="text-brand-turqoise-light underline">Terms & Conditions</NuxtLink> 
-                  and <NuxtLink to="/privacy-policy" class="text-brand-turqoise-light underline">Privacy Policy</NuxtLink>
+                  I agree to the <NuxtLink to="/terms-conditions" class="text-brand-red-light underline">Terms & Conditions</NuxtLink> 
+                  and <NuxtLink to="/privacy-policy" class="text-brand-red-light underline">Privacy Policy</NuxtLink>
                 </span>
               </label>
             </div>
 
             <button type="submit" :disabled="loading"
-              class="w-full bg-brand-turqoise-light text-brand-navy py-3 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 disabled:opacity-50">
+              class="w-full bg-brand-red-light text-brand-navy py-3 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 disabled:opacity-50">
               <span v-if="loading">Creating Account...</span>
               <span v-else>Create Account</span>
             </button>
@@ -89,7 +89,7 @@
           <div class="text-center mt-6">
             <p class="text-sm text-brand-navy dark:text-gray-300">
               Already have an account? 
-              <button @click="openLoginModal" class="text-brand-turqoise-light hover:underline">Sign in here</button>
+              <button @click="openLoginModal" class="text-brand-red-light hover:underline">Sign in here</button>
             </p>
           </div>
         </div>

@@ -15,7 +15,7 @@
           <div class="text-center max-w-6xl w-full">
             <!-- Main Headline -->
             <h1 class="text-5xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
-              <span class="inline-block bg-brand-turqoise-light text-brand-navy px-4 py-2 rounded-xl font-bold mb-4">
+              <span class="inline-block bg-brand-red-light text-brand-navy px-4 py-2 rounded-xl font-bold mb-4">
                 {{ $t('landlords.hero.title_part1') }}
               </span>
               <br>
@@ -29,7 +29,7 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+              <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
                 {{ $t('landlords.hero.list_property') }}
               </button>
               <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-green-800 transition-all duration-300 text-lg">
@@ -40,15 +40,15 @@
             <!-- Key Stats -->
             <div class="grid grid-cols-3 gap-8 max-w-3xl mx-auto">
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">8.15-12.5%</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">8.15-12.5%</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">{{ $t('landlords.stats.commission') }}</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">24h</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">24h</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">{{ $t('landlords.stats.live_time') }}</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">90%</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">90%</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">{{ $t('landlords.stats.success_rate') }}</div>
               </div>
             </div>
@@ -84,7 +84,7 @@
                   v-model="formattedRent" 
                   @input="handleRentInput"
                   type="text" 
-                  class="w-full pl-12 pr-4 py-4 text-xl font-bold border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-center"
+                  class="w-full pl-12 pr-4 py-4 text-xl font-bold border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-center"
                   placeholder="10,000"
                 >
               </div>
@@ -100,7 +100,7 @@
                   :class="[
                     'px-6 py-3 rounded-lg font-semibold transition-all duration-300',
                     leaseLength === 'short' 
-                      ? 'bg-brand-turqoise-light text-brand-navy shadow-md' 
+                      ? 'bg-brand-red-light text-brand-navy shadow-md' 
                       : 'text-gray-600 dark:text-gray-300 hover:text-brand-navy dark:hover:text-white'
                   ]"
                 >
@@ -111,7 +111,7 @@
                   :class="[
                     'px-6 py-3 rounded-lg font-semibold transition-all duration-300',
                     leaseLength === 'medium' 
-                      ? 'bg-brand-turqoise-light text-brand-navy shadow-md' 
+                      ? 'bg-brand-red-light text-brand-navy shadow-md' 
                       : 'text-gray-600 dark:text-gray-300 hover:text-brand-navy dark:hover:text-white'
                   ]"
                 >
@@ -122,7 +122,7 @@
                   :class="[
                     'px-6 py-3 rounded-lg font-semibold transition-all duration-300',
                     leaseLength === 'long' 
-                      ? 'bg-brand-turqoise-light text-brand-navy shadow-md' 
+                      ? 'bg-brand-red-light text-brand-navy shadow-md' 
                       : 'text-gray-600 dark:text-gray-300 hover:text-brand-navy dark:hover:text-white'
                   ]"
                 >
@@ -133,8 +133,8 @@
 
             <!-- Commission Rate Info -->
             <div class="text-center">
-              <div class="inline-flex items-center bg-brand-turqoise-light/10 dark:bg-brand-turqoise-light/20 px-4 py-2 rounded-full">
-                <svg class="w-5 h-5 text-brand-turqoise-light mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <div class="inline-flex items-center bg-brand-red-light/10 dark:bg-brand-red-light/20 px-4 py-2 rounded-full">
+                <svg class="w-5 h-5 text-brand-red-light mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
                 </svg>
                 <span class="text-sm font-medium text-brand-navy dark:text-white">
@@ -166,7 +166,7 @@
             </div>
 
             <!-- Our Agent -->
-            <div class="bg-gradient-to-br from-brand-turqoise-light to-teal-400 p-6 rounded-xl border-2 border-brand-turqoise-light shadow-xl transform scale-105">
+            <div class="bg-gradient-to-br from-brand-red-light to-teal-400 p-6 rounded-xl border-2 border-brand-red-light shadow-xl transform scale-105">
               <div class="text-center">
                 <div class="w-12 h-12 bg-brand-navy rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -284,7 +284,7 @@
           </div>
 
           <!-- thaikeys.co.th Professional Agent (The Smart Choice) -->
-          <div class="bg-gradient-to-br from-brand-turqoise-light to-teal-400 p-8 rounded-2xl border-2 border-brand-turqoise-light shadow-xl transform scale-105">
+          <div class="bg-gradient-to-br from-brand-red-light to-teal-400 p-8 rounded-2xl border-2 border-brand-red-light shadow-xl transform scale-105">
             <div class="text-center mb-8">
               <div class="inline-block bg-brand-navy text-white px-3 py-1 rounded-full text-sm font-semibold mb-4">
                 {{ $t('landlords.costs.professional.badge') }}
@@ -369,7 +369,7 @@
                 <span class="text-sm">{{ $t('landlords.costs.diy.limitation2') }}</span>
               </div>
             </div>
-            <button class="w-full border-2 border-brand-turqoise-light text-brand-turqoise-light py-3 px-6 rounded-xl font-semibold hover:bg-brand-turqoise-light hover:text-brand-navy transition-all duration-300">
+            <button class="w-full border-2 border-brand-red-light text-brand-red-light py-3 px-6 rounded-xl font-semibold hover:bg-brand-red-light hover:text-brand-navy transition-all duration-300">
               {{ $t('landlords.costs.diy.cta') }}
             </button>
           </div>
@@ -385,7 +385,7 @@
                 <div class="text-sm text-brand-navy dark:text-gray-300">{{ $t('landlords.comparison.traditional_label') }}</div>
               </div>
               <div class="text-center">
-                <div class="text-3xl font-bold text-brand-turqoise-light mb-2">฿{{ displayOurAgentCost.toLocaleString() }}</div>
+                <div class="text-3xl font-bold text-brand-red-light mb-2">฿{{ displayOurAgentCost.toLocaleString() }}</div>
                 <div class="text-sm text-brand-navy dark:text-gray-300">{{ $t('landlords.comparison.professional_label') }}</div>
               </div>
               <div class="text-center">
@@ -418,7 +418,7 @@
           <div class="space-y-8">
             <!-- Professional Listings -->
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
@@ -431,7 +431,7 @@
 
             <!-- Smart Pricing -->
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
@@ -444,7 +444,7 @@
 
             <!-- Tenant Screening -->
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -457,7 +457,7 @@
 
             <!-- Digital Contracts -->
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -490,7 +490,7 @@
                 
                 <div class="space-y-3">
                   <div class="flex items-center space-x-3 p-3 bg-teal-50 dark:bg-teal-900/20 rounded-xl border border-teal-100 dark:border-teal-800">
-                    <div class="w-10 h-10 bg-brand-turqoise-light rounded-full flex items-center justify-center">
+                    <div class="w-10 h-10 bg-brand-red-light rounded-full flex items-center justify-center">
                       <span class="text-sm font-bold text-brand-navy">!</span>
                     </div>
                     <div class="flex-1">
@@ -518,7 +518,7 @@
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Payment Collection -->
           <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-full flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-brand-red-light rounded-full flex items-center justify-center mb-6">
               <svg class="w-8 h-8 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
               </svg>
@@ -529,7 +529,7 @@
 
           <!-- Property Management -->
           <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-full flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-brand-red-light rounded-full flex items-center justify-center mb-6">
               <svg class="w-8 h-8 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
@@ -540,7 +540,7 @@
 
           <!-- Market Insights -->
           <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-16 h-16 bg-brand-turqoise-light rounded-full flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-brand-red-light rounded-full flex items-center justify-center mb-6">
               <svg class="w-8 h-8 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
@@ -568,7 +568,7 @@
           <!-- Testimonial 1 -->
           <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-2xl">
             <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-full flex items-center justify-center mr-4">
+              <div class="w-12 h-12 bg-brand-red-light rounded-full flex items-center justify-center mr-4">
                 <span class="text-brand-navy font-bold">SK</span>
               </div>
               <div>
@@ -584,7 +584,7 @@
           <!-- Testimonial 2 -->
           <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-2xl">
             <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-full flex items-center justify-center mr-4">
+              <div class="w-12 h-12 bg-brand-red-light rounded-full flex items-center justify-center mr-4">
                 <span class="text-brand-navy font-bold">MR</span>
               </div>
               <div>
@@ -600,7 +600,7 @@
           <!-- Testimonial 3 -->
           <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-2xl">
             <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-full flex items-center justify-center mr-4">
+              <div class="w-12 h-12 bg-brand-red-light rounded-full flex items-center justify-center mr-4">
                 <span class="text-brand-navy font-bold">AT</span>
               </div>
               <div>
@@ -663,7 +663,7 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+          <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
             {{ $t('landlords.final_cta.primary') }}
           </button>
           <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-brand-navy transition-all duration-300 text-lg">

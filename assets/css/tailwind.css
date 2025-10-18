@@ -82,7 +82,7 @@
   }
 
   .btn-primary {
-    @apply btn bg-brand-navy text-white hover:bg-brand-turqoise-light shadow-md hover:shadow-lg;
+    @apply btn bg-brand-navy text-white hover:bg-brand-red-light shadow-md hover:shadow-lg;
   }
 
   .btn-secondary {
@@ -124,7 +124,7 @@
 
   /* Input styles */
   .input {
-    @apply block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:border-brand-turqoise-light transition-colors duration-200;
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:border-brand-red-light transition-colors duration-200;
   }
 
   .input-lg {
@@ -219,7 +219,7 @@
 
   /* Navigation */
   .nav-link {
-    @apply text-brand-navy dark:text-white hover:text-brand-turqoise-light font-medium transition-colors duration-200;
+    @apply text-brand-navy dark:text-white hover:text-brand-red-light font-medium transition-colors duration-200;
   }
 
   /* Feature sections */

@@ -26,12 +26,12 @@ module.exports = {
       colors: {
         // NEW THAIKEYS BRAND COLORS
         'brand-navy': '#001f3f',
-        'brand-blue-light': '#2563EB',
-        'brand-blue-dark': '#134FD2',
+        'brand-blue-light': '#0987EB',
+        'brand-blue-dark': '#0060D0',
         'brand-turqoise-light': '#39CCCC',
         'brand-turqoise-dark': '#2FB6B6',
-        'brand-red-dark':'#AC1145',
-        'brand-red-light':'#D11554',
+        'brand-red-dark':'#CE074A',
+        'brand-red-light':'#E90D57',
         'brand-green-dark':'#227843',
         'brand-green-light':'#1F8546',
         'brand-pruple-light':'#9433EA',

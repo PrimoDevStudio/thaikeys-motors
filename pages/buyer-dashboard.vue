@@ -38,14 +38,14 @@
               v-model="searchQuery"
               type="text" 
               placeholder="Search properties, areas, price range..."
-              class="w-96 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
+              class="w-96 px-4 py-2 pr-10 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:border-transparent bg-white dark:bg-gray-700 text-brand-navy dark:text-white transition-colors duration-300"
             >
             <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
           </div>
           
-          <button class="relative p-2 text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light transition-colors">
+          <button class="relative p-2 text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM11 13h-1a4 4 0 01-4-4V7a4 4 0 118 0v2a4 4 0 01-4 4z"/>
             </svg>
@@ -54,7 +54,7 @@
           
           <div class="flex items-center space-x-2">
             <div class="w-8 h-8 bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-800 dark:to-purple-600 rounded-full"></div>
-            <button class="text-brand-navy dark:text-gray-400 hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light">
+            <button class="text-brand-navy dark:text-gray-400 hover:text-brand-red-light dark:hover:text-brand-red-light">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
@@ -72,7 +72,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'overview' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'overview' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'overview'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,20 +84,20 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'search' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'search' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'search'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
             <span class="font-medium">Property Search</span>
-            <span v-if="savedSearches > 0" class="bg-brand-turqoise-light/20 text-brand-navy dark:text-brand-turqoise-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ savedSearches }}</span>
+            <span v-if="savedSearches > 0" class="bg-brand-red-light/20 text-brand-navy dark:text-brand-red-light text-xs font-semibold px-2 py-1 rounded-full ml-auto">{{ savedSearches }}</span>
           </a>
           
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'saved' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'saved' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'saved'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,7 +110,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'offers' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'offers' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'offers'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,7 +123,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'finance' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'finance' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'finance'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -137,7 +137,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'viewings' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'viewings' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'viewings'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +150,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'timeline' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'timeline' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'timeline'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'documents' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'documents' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'documents'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,7 +176,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'investment' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'investment' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'investment'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -188,7 +188,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'messages' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'messages' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'messages'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -201,7 +201,7 @@
           <a 
             href="#" 
             :class="['flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors', 
-                     activeTab === 'profile' ? 'bg-brand-turqoise-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
+                     activeTab === 'profile' ? 'bg-brand-red-light text-brand-navy border border-teal-200' : 'text-brand-navy dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700']"
             @click="activeTab = 'profile'"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -286,7 +286,7 @@
             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
               <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-4">Quick Actions</h3>
               <div class="space-y-3">
-                <button class="w-full bg-brand-turqoise-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center justify-center space-x-2">
+                <button class="w-full bg-brand-red-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors flex items-center justify-center space-x-2">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                   </svg>
@@ -389,7 +389,7 @@
                   <p class="text-xs text-gray-500 mt-1">Expected to remain stable</p>
                 </div>
                 
-                <button class="w-full text-brand-turqoise-light hover:text-teal-600 transition-colors text-sm font-medium">
+                <button class="w-full text-brand-red-light hover:text-teal-600 transition-colors text-sm font-medium">
                   View market report →
                 </button>
               </div>
@@ -440,7 +440,7 @@
               <button class="bg-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors">
                 Investment Calculator
               </button>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Save Search Alert
               </button>
             </div>
@@ -452,7 +452,7 @@
               <!-- Location Filter -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Location</label>
-                <select v-model="searchFilters.location" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.location" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">All Areas</option>
                   <option value="sukhumvit">Sukhumvit</option>
                   <option value="silom">Silom</option>
@@ -466,7 +466,7 @@
               <!-- Property Type Filter -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Property Type</label>
-                <select v-model="searchFilters.propertyType" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.propertyType" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">All Types</option>
                   <option value="condo">Condominium</option>
                   <option value="house">House</option>
@@ -479,7 +479,7 @@
               <!-- Bedrooms Filter -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Bedrooms</label>
-                <select v-model="searchFilters.bedrooms" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.bedrooms" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">Any</option>
                   <option value="1">1 Bedroom</option>
                   <option value="2">2 Bedrooms</option>
@@ -492,7 +492,7 @@
               <!-- Price Range Filter -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Price Range</label>
-                <select v-model="searchFilters.priceRange" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.priceRange" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">Any Price</option>
                   <option value="0-5000000">Up to ฿5M</option>
                   <option value="5000000-10000000">฿5M - ฿10M</option>
@@ -505,7 +505,7 @@
               <!-- Investment Purpose -->
               <div>
                 <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Investment Purpose</label>
-                <select v-model="searchFilters.investmentPurpose" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="searchFilters.investmentPurpose" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="">Any Purpose</option>
                   <option value="own-use">Own Use</option>
                   <option value="rental-income">Rental Income</option>
@@ -517,7 +517,7 @@
 
             <!-- Advanced Investment Filters -->
             <div class="pt-4 border-t border-gray-200 dark:border-gray-600">
-              <button @click="showAdvancedFilters = !showAdvancedFilters" class="flex items-center space-x-2 text-brand-turqoise-light hover:text-teal-600 transition-colors mb-4">
+              <button @click="showAdvancedFilters = !showAdvancedFilters" class="flex items-center space-x-2 text-brand-red-light hover:text-teal-600 transition-colors mb-4">
                 <span>Investment & Financial Filters</span>
                 <svg :class="showAdvancedFilters ? 'rotate-180' : ''" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -531,7 +531,7 @@
                   <div class="space-y-3">
                     <div>
                       <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-1">Min Rental Yield</label>
-                      <select v-model="searchFilters.minRentalYield" class="w-full px-3 py-2 border border-gray-200 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-sm">
+                      <select v-model="searchFilters.minRentalYield" class="w-full px-3 py-2 border border-gray-200 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-sm">
                         <option value="">Any Yield</option>
                         <option value="3">3%+</option>
                         <option value="4">4%+</option>
@@ -541,7 +541,7 @@
                     </div>
                     <div>
                       <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-1">Price per SqM</label>
-                      <select v-model="searchFilters.pricePerSqm" class="w-full px-3 py-2 border border-gray-200 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-sm">
+                      <select v-model="searchFilters.pricePerSqm" class="w-full px-3 py-2 border border-gray-200 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-sm">
                         <option value="">Any</option>
                         <option value="0-100000">Under ฿100K</option>
                         <option value="100000-150000">฿100K-150K</option>
@@ -612,7 +612,7 @@
             <div class="flex items-center justify-between">
               <h3 class="text-lg font-semibold text-brand-navy dark:text-white">{{ filteredProperties.length }} properties found</h3>
               <div class="flex items-center space-x-4">
-                <select v-model="sortBy" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="sortBy" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="price-low">Price: Low to High</option>
                   <option value="price-high">Price: High to Low</option>
                   <option value="yield-high">Rental Yield: High to Low</option>
@@ -621,12 +621,12 @@
                 </select>
                 
                 <div class="flex items-center space-x-2">
-                  <button :class="viewMode === 'grid' ? 'bg-brand-turqoise-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="p-2 rounded-lg" @click="viewMode = 'grid'">
+                  <button :class="viewMode === 'grid' ? 'bg-brand-red-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="p-2 rounded-lg" @click="viewMode = 'grid'">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
                     </svg>
                   </button>
-                  <button :class="viewMode === 'list' ? 'bg-brand-turqoise-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="p-2 rounded-lg" @click="viewMode = 'list'">
+                  <button :class="viewMode === 'list' ? 'bg-brand-red-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-400'" class="p-2 rounded-lg" @click="viewMode = 'list'">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
                     </svg>
@@ -688,7 +688,7 @@
                   <!-- Action Buttons -->
                   <div class="space-y-2">
                     <div class="flex space-x-2">
-                      <button class="flex-1 bg-brand-turqoise-light text-brand-navy py-2 px-4 rounded-lg font-medium hover:bg-teal-300 transition-colors text-sm">
+                      <button class="flex-1 bg-brand-red-light text-brand-navy py-2 px-4 rounded-lg font-medium hover:bg-teal-300 transition-colors text-sm">
                         View Details
                       </button>
                       <button class="flex-1 border border-gray-200 dark:border-gray-600 text-brand-navy dark:text-gray-300 py-2 px-4 rounded-lg font-medium hover:border-gray-300 dark:hover:border-gray-500 transition-colors text-sm">
@@ -720,7 +720,7 @@
               <button class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-brand-navy dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                 Previous
               </button>
-              <button class="px-4 py-2 bg-brand-turqoise-light text-brand-navy rounded-lg font-medium">1</button>
+              <button class="px-4 py-2 bg-brand-red-light text-brand-navy rounded-lg font-medium">1</button>
               <button class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-brand-navy dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">2</button>
               <button class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-brand-navy dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">3</button>
               <button class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg text-brand-navy dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
@@ -740,7 +740,7 @@
               <button class="bg-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors">
                 Portfolio Analysis
               </button>
-              <select v-model="savedPropertiesSort" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+              <select v-model="savedPropertiesSort" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 <option value="newest">Recently Added</option>
                 <option value="price-low">Price: Low to High</option>
                 <option value="price-high">Price: High to Low</option>
@@ -925,7 +925,7 @@
 
                   <!-- Action Buttons -->
                   <div class="flex flex-wrap gap-2">
-                    <button :disabled="property.availability !== 'Available'" :class="property.availability === 'Available' ? 'bg-brand-turqoise-light text-brand-navy hover:bg-teal-300' : 'bg-gray-300 text-gray-500 cursor-not-allowed'" class="px-4 py-2 rounded-lg font-medium transition-colors text-sm">
+                    <button :disabled="property.availability !== 'Available'" :class="property.availability === 'Available' ? 'bg-brand-red-light text-brand-navy hover:bg-teal-300' : 'bg-gray-300 text-gray-500 cursor-not-allowed'" class="px-4 py-2 rounded-lg font-medium transition-colors text-sm">
                       {{ property.availability === 'Available' ? 'View Details' : 'Not Available' }}
                     </button>
                     <button :disabled="property.availability !== 'Available'" :class="property.availability === 'Available' ? 'border border-purple-200 text-purple-600 hover:bg-purple-50' : 'border border-gray-300 text-gray-400 cursor-not-allowed'" class="px-4 py-2 rounded-lg font-medium transition-colors text-sm">
@@ -953,7 +953,7 @@
             </svg>
             <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-2">No Saved Properties</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Start saving properties you're interested in to track their investment potential</p>
-            <button @click="activeTab = 'search'" class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button @click="activeTab = 'search'" class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               Browse Properties
             </button>
           </div>
@@ -965,7 +965,7 @@
               <h2 class="text-2xl font-bold text-brand-navy dark:text-white">My Offers</h2>
               <p class="text-gray-600 dark:text-gray-400">{{ activeOffers }} active offers • {{ totalOffersMade }} total offers made • {{ acceptanceRate }}% acceptance rate</p>
             </div>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               New Offer
             </button>
           </div>
@@ -1053,7 +1053,7 @@
             <div class="p-6 border-b border-gray-200 dark:border-gray-600">
               <div class="flex items-center justify-between">
                 <h3 class="text-lg font-semibold text-brand-navy dark:text-white">Recent Offers</h3>
-                <select v-model="offerFilter" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select v-model="offerFilter" class="px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option value="all">All Offers</option>
                   <option value="pending">Pending</option>
                   <option value="negotiating">Negotiating</option>
@@ -1217,7 +1217,7 @@
               <button class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors">
                 Apply for Pre-Approval
               </button>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Mortgage Calculator
               </button>
             </div>
@@ -1294,23 +1294,23 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Purchase Price</label>
-                  <input type="number" v-model="calculatorInputs.purchasePrice" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Property price">
+                  <input type="number" v-model="calculatorInputs.purchasePrice" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Property price">
                 </div>
                 
                 <div class="grid grid-cols-2 gap-4">
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Down Payment (%)</label>
-                    <input type="number" v-model="calculatorInputs.downPaymentPercent" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="20">
+                    <input type="number" v-model="calculatorInputs.downPaymentPercent" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="20">
                   </div>
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Interest Rate (%)</label>
-                    <input type="number" step="0.01" v-model="calculatorInputs.interestRate" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="4.25">
+                    <input type="number" step="0.01" v-model="calculatorInputs.interestRate" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="4.25">
                   </div>
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Loan Term (years)</label>
-                  <select v-model="calculatorInputs.loanTerm" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="calculatorInputs.loanTerm" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="15">15 years</option>
                     <option value="20">20 years</option>
                     <option value="25">25 years</option>
@@ -1318,7 +1318,7 @@
                   </select>
                 </div>
                 
-                <button @click="calculateMortgage" class="w-full bg-brand-turqoise-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+                <button @click="calculateMortgage" class="w-full bg-brand-red-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                   Calculate Payment
                 </button>
                 
@@ -1442,7 +1442,7 @@
                       </span>
                     </td>
                     <td class="py-3 px-4">
-                      <button v-if="lender.status === 'Available'" class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded text-sm font-medium hover:bg-teal-300 transition-colors">
+                      <button v-if="lender.status === 'Available'" class="bg-brand-red-light text-brand-navy px-3 py-1 rounded text-sm font-medium hover:bg-teal-300 transition-colors">
                         Apply
                       </button>
                       <button v-else-if="lender.status === 'Pre-Approved'" class="bg-green-500 text-white px-3 py-1 rounded text-sm font-medium">
@@ -1489,7 +1489,7 @@
               <button class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors">
                 Apply for Pre-Approval
               </button>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Mortgage Calculator
               </button>
             </div>
@@ -1566,23 +1566,23 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Purchase Price</label>
-                  <input type="number" v-model="calculatorInputs.purchasePrice" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Property price">
+                  <input type="number" v-model="calculatorInputs.purchasePrice" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Property price">
                 </div>
                 
                 <div class="grid grid-cols-2 gap-4">
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Down Payment (%)</label>
-                    <input type="number" v-model="calculatorInputs.downPaymentPercent" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="20">
+                    <input type="number" v-model="calculatorInputs.downPaymentPercent" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="20">
                   </div>
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Interest Rate (%)</label>
-                    <input type="number" step="0.01" v-model="calculatorInputs.interestRate" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="4.25">
+                    <input type="number" step="0.01" v-model="calculatorInputs.interestRate" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="4.25">
                   </div>
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Loan Term (years)</label>
-                  <select v-model="calculatorInputs.loanTerm" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="calculatorInputs.loanTerm" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="15">15 years</option>
                     <option value="20">20 years</option>
                     <option value="25">25 years</option>
@@ -1590,7 +1590,7 @@
                   </select>
                 </div>
                 
-                <button @click="calculateMortgage" class="w-full bg-brand-turqoise-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+                <button @click="calculateMortgage" class="w-full bg-brand-red-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                   Calculate Payment
                 </button>
                 
@@ -1714,7 +1714,7 @@
                       </span>
                     </td>
                     <td class="py-3 px-4">
-                      <button v-if="lender.status === 'Available'" class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded text-sm font-medium hover:bg-teal-300 transition-colors">
+                      <button v-if="lender.status === 'Available'" class="bg-brand-red-light text-brand-navy px-3 py-1 rounded text-sm font-medium hover:bg-teal-300 transition-colors">
                         Apply
                       </button>
                       <button v-else-if="lender.status === 'Pre-Approved'" class="bg-green-500 text-white px-3 py-1 rounded text-sm font-medium">
@@ -1757,7 +1757,7 @@
               <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Purchase Timeline</h2>
               <p class="text-gray-600 dark:text-gray-400">{{ activePurchases }} active purchases • {{ averageTimeToClose }} days average to close</p>
             </div>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               Purchase Checklist
             </button>
           </div>
@@ -1963,7 +1963,7 @@
               <button class="bg-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors">
                 Find Lawyer
               </button>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Upload Document
               </button>
             </div>
@@ -2132,7 +2132,7 @@
                   </div>
                 </div>
                 <div v-else>
-                  <button class="w-full px-3 py-2 bg-brand-turqoise-light text-brand-navy rounded font-medium hover:bg-teal-300 transition-colors">
+                  <button class="w-full px-3 py-2 bg-brand-red-light text-brand-navy rounded font-medium hover:bg-teal-300 transition-colors">
                     Find Property Lawyer
                   </button>
                 </div>
@@ -2241,7 +2241,7 @@
               <button class="bg-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors">
                 Generate Report
               </button>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Compare Properties
               </button>
             </div>
@@ -2255,42 +2255,42 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Purchase Price</label>
-                  <input type="number" v-model="investmentInputs.purchasePrice" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Property price">
+                  <input type="number" v-model="investmentInputs.purchasePrice" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Property price">
                 </div>
                 
                 <div class="grid grid-cols-2 gap-4">
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Down Payment (%)</label>
-                    <input type="number" v-model="investmentInputs.downPaymentPercent" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="20">
+                    <input type="number" v-model="investmentInputs.downPaymentPercent" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="20">
                   </div>
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Closing Costs (%)</label>
-                    <input type="number" step="0.1" v-model="investmentInputs.closingCosts" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="3.5">
+                    <input type="number" step="0.1" v-model="investmentInputs.closingCosts" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="3.5">
                   </div>
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Monthly Rental Income</label>
-                  <input type="number" v-model="investmentInputs.monthlyRent" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Estimated rental">
+                  <input type="number" v-model="investmentInputs.monthlyRent" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Estimated rental">
                 </div>
                 
                 <div class="grid grid-cols-2 gap-4">
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Monthly Expenses</label>
-                    <input type="number" v-model="investmentInputs.monthlyExpenses" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Management, maintenance">
+                    <input type="number" v-model="investmentInputs.monthlyExpenses" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="Management, maintenance">
                   </div>
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Vacancy Rate (%)</label>
-                    <input type="number" step="0.1" v-model="investmentInputs.vacancyRate" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="5">
+                    <input type="number" step="0.1" v-model="investmentInputs.vacancyRate" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="5">
                   </div>
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Expected Annual Appreciation (%)</label>
-                  <input type="number" step="0.1" v-model="investmentInputs.appreciationRate" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="5">
+                  <input type="number" step="0.1" v-model="investmentInputs.appreciationRate" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" placeholder="5">
                 </div>
                 
-                <button @click="calculateInvestmentROI" class="w-full bg-brand-turqoise-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+                <button @click="calculateInvestmentROI" class="w-full bg-brand-red-light text-brand-navy py-3 px-4 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                   Calculate Investment Returns
                 </button>
               </div>
@@ -2468,7 +2468,7 @@
                       <span class="font-medium text-brand-navy dark:text-white">{{ property.investmentScore }}/10</span>
                     </td>
                     <td class="py-3 px-4">
-                      <button class="bg-brand-turqoise-light text-brand-navy px-3 py-1 rounded text-sm font-medium hover:bg-teal-300 transition-colors">
+                      <button class="bg-brand-red-light text-brand-navy px-3 py-1 rounded text-sm font-medium hover:bg-teal-300 transition-colors">
                         View Details
                       </button>
                     </td>
@@ -2519,7 +2519,7 @@
               <h2 class="text-2xl font-bold text-brand-navy dark:text-white">Messages</h2>
               <p class="text-gray-600 dark:text-gray-400">{{ unreadMessages }} unread messages from {{ activeConversations }} conversations</p>
             </div>
-            <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+            <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
               New Message
             </button>
           </div>
@@ -2530,7 +2530,7 @@
               <div class="p-4 border-b border-gray-200 dark:border-gray-600">
                 <div class="flex items-center justify-between">
                   <h3 class="font-semibold text-brand-navy dark:text-white">Conversations</h3>
-                  <select v-model="messageFilter" class="text-sm px-3 py-1 border border-gray-200 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="messageFilter" class="text-sm px-3 py-1 border border-gray-200 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="all">All</option>
                     <option value="unread">Unread</option>
                     <option value="agents">Agents</option>
@@ -2542,7 +2542,7 @@
               </div>
               
               <div class="overflow-y-auto h-80">
-                <div v-for="conversation in filteredBuyerConversations" :key="conversation.id" :class="['p-4 border-b border-gray-100 dark:border-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors', selectedConversation?.id === conversation.id ? 'bg-brand-turqoise-light/10 dark:bg-brand-turqoise-light/20' : '']" @click="selectConversation(conversation)">
+                <div v-for="conversation in filteredBuyerConversations" :key="conversation.id" :class="['p-4 border-b border-gray-100 dark:border-gray-700 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors', selectedConversation?.id === conversation.id ? 'bg-brand-red-light/10 dark:bg-brand-red-light/20' : '']" @click="selectConversation(conversation)">
                   <div class="flex items-start space-x-3">
                     <div class="relative">
                       <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-800 dark:to-purple-600 rounded-full flex items-center justify-center">
@@ -2583,17 +2583,17 @@
                     </div>
                     
                     <div class="flex items-center space-x-2">
-                      <button class="p-2 text-gray-400 hover:text-brand-turqoise-light transition-colors">
+                      <button class="p-2 text-gray-400 hover:text-brand-red-light transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                         </svg>
                       </button>
-                      <button class="p-2 text-gray-400 hover:text-brand-turqoise-light transition-colors">
+                      <button class="p-2 text-gray-400 hover:text-brand-red-light transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
                         </svg>
                       </button>
-                      <button class="p-2 text-gray-400 hover:text-brand-turqoise-light transition-colors">
+                      <button class="p-2 text-gray-400 hover:text-brand-red-light transition-colors">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"/>
                         </svg>
@@ -2605,7 +2605,7 @@
                 <!-- Messages Area -->
                 <div class="flex-1 overflow-y-auto p-4 space-y-4">
                   <div v-for="message in selectedConversation.messages" :key="message.id" :class="['flex', message.sender === 'me' ? 'justify-end' : 'justify-start']">
-                    <div :class="['max-w-xs lg:max-w-md px-4 py-2 rounded-lg', message.sender === 'me' ? 'bg-brand-turqoise-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-700 text-brand-navy dark:text-white']">
+                    <div :class="['max-w-xs lg:max-w-md px-4 py-2 rounded-lg', message.sender === 'me' ? 'bg-brand-red-light text-brand-navy' : 'bg-gray-200 dark:bg-gray-700 text-brand-navy dark:text-white']">
                       <p class="text-sm">{{ message.content }}</p>
                       <p :class="['text-xs mt-1', message.sender === 'me' ? 'text-brand-navy/70' : 'text-gray-500']">{{ formatTime(message.timestamp) }}</p>
                     </div>
@@ -2615,13 +2615,13 @@
                 <!-- Message Input -->
                 <div class="p-4 border-t border-gray-200 dark:border-gray-600">
                   <div class="flex items-center space-x-2">
-                    <button class="p-2 text-gray-400 hover:text-brand-turqoise-light transition-colors">
+                    <button class="p-2 text-gray-400 hover:text-brand-red-light transition-colors">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/>
                       </svg>
                     </button>
-                    <input v-model="newMessage" type="text" placeholder="Type your message..." class="flex-1 px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" @keypress.enter="sendMessage">
-                    <button @click="sendMessage" class="p-2 bg-brand-turqoise-light text-brand-navy rounded-lg hover:bg-teal-300 transition-colors">
+                    <input v-model="newMessage" type="text" placeholder="Type your message..." class="flex-1 px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white" @keypress.enter="sendMessage">
+                    <button @click="sendMessage" class="p-2 bg-brand-red-light text-brand-navy rounded-lg hover:bg-teal-300 transition-colors">
                       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
                       </svg>
@@ -2647,7 +2647,7 @@
           <div class="mt-8 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 transition-colors duration-300">
             <h3 class="text-lg font-semibold text-brand-navy dark:text-white mb-4">Quick Message Templates</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <button v-for="template in buyerMessageTemplates" :key="template.id" class="text-left p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-turqoise-light dark:hover:border-brand-turqoise-light transition-colors" @click="useTemplate(template)">
+              <button v-for="template in buyerMessageTemplates" :key="template.id" class="text-left p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-brand-red-light dark:hover:border-brand-red-light transition-colors" @click="useTemplate(template)">
                 <h4 class="font-medium text-brand-navy dark:text-white mb-2">{{ template.title }}</h4>
                 <p class="text-sm text-gray-600 dark:text-gray-400">{{ template.preview }}</p>
               </button>
@@ -2665,7 +2665,7 @@
               <div class="text-sm text-brand-navy dark:text-gray-400">
                 Profile Completion: <span class="font-bold text-lg" :class="getProfileCompletionColor(profileCompletionScore)">{{ profileCompletionScore }}%</span>
               </div>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-3 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Save Changes
               </button>
             </div>
@@ -2678,7 +2678,7 @@
                 <div class="w-24 h-24 bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-800 dark:to-purple-600 rounded-full flex items-center justify-center">
                   <span class="text-2xl font-bold text-purple-600 dark:text-purple-300">SM</span>
                 </div>
-                <button class="absolute bottom-0 right-0 w-8 h-8 bg-brand-turqoise-light text-brand-navy rounded-full flex items-center justify-center hover:bg-teal-300 transition-colors">
+                <button class="absolute bottom-0 right-0 w-8 h-8 bg-brand-red-light text-brand-navy rounded-full flex items-center justify-center hover:bg-teal-300 transition-colors">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -2720,32 +2720,32 @@
                 <div class="grid grid-cols-2 gap-4">
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">First Name</label>
-                    <input type="text" v-model="buyerProfile.firstName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="text" v-model="buyerProfile.firstName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   </div>
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Last Name</label>
-                    <input type="text" v-model="buyerProfile.lastName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="text" v-model="buyerProfile.lastName" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   </div>
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Email Address</label>
-                  <input type="email" v-model="buyerProfile.email" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="email" v-model="buyerProfile.email" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Phone Number</label>
-                  <input type="tel" v-model="buyerProfile.phone" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <input type="tel" v-model="buyerProfile.phone" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                 </div>
                 
                 <div class="grid grid-cols-2 gap-4">
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Date of Birth</label>
-                    <input type="date" v-model="buyerProfile.dateOfBirth" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="date" v-model="buyerProfile.dateOfBirth" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   </div>
                   <div>
                     <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Nationality</label>
-                    <select v-model="buyerProfile.nationality" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <select v-model="buyerProfile.nationality" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                       <option value="">Select Nationality</option>
                       <option value="thai">Thai</option>
                       <option value="american">American</option>
@@ -2766,14 +2766,14 @@
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Budget Range</label>
                   <div class="grid grid-cols-2 gap-4">
-                    <input type="number" v-model="investmentPreferences.budgetMin" placeholder="Min Budget" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
-                    <input type="number" v-model="investmentPreferences.budgetMax" placeholder="Max Budget" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="number" v-model="investmentPreferences.budgetMin" placeholder="Min Budget" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                    <input type="number" v-model="investmentPreferences.budgetMax" placeholder="Max Budget" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   </div>
                 </div>
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Investment Purpose</label>
-                  <select v-model="investmentPreferences.purpose" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="investmentPreferences.purpose" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Purpose</option>
                     <option value="own-use">Primary Residence</option>
                     <option value="investment">Investment Property</option>
@@ -2804,7 +2804,7 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Risk Tolerance</label>
-                  <select v-model="investmentPreferences.riskTolerance" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="investmentPreferences.riskTolerance" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="conservative">Conservative</option>
                     <option value="moderate">Moderate</option>
                     <option value="aggressive">Aggressive</option>
@@ -2821,7 +2821,7 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Annual Income</label>
-                  <select v-model="financialInfo.annualIncome" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="financialInfo.annualIncome" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Range</option>
                     <option value="0-1000000">฿0 - ฿1M</option>
                     <option value="1000000-2000000">฿1M - ฿2M</option>
@@ -2833,7 +2833,7 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Employment Status</label>
-                  <select v-model="financialInfo.employmentStatus" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="financialInfo.employmentStatus" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Status</option>
                     <option value="employed">Employed</option>
                     <option value="self-employed">Self-Employed</option>
@@ -2845,7 +2845,7 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Available Cash</label>
-                  <select v-model="financialInfo.availableCash" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="financialInfo.availableCash" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Range</option>
                     <option value="0-2000000">฿0 - ฿2M</option>
                     <option value="2000000-5000000">฿2M - ฿5M</option>
@@ -2859,7 +2859,7 @@
               <div class="space-y-4">
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Current Debts</label>
-                  <select v-model="financialInfo.currentDebts" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="financialInfo.currentDebts" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Range</option>
                     <option value="none">No Debts</option>
                     <option value="0-500000">฿0 - ฿500K</option>
@@ -2871,7 +2871,7 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Credit Score</label>
-                  <select v-model="financialInfo.creditScore" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="financialInfo.creditScore" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Range</option>
                     <option value="excellent">Excellent (750+)</option>
                     <option value="good">Good (650-749)</option>
@@ -2882,7 +2882,7 @@
                 
                 <div>
                   <label class="block text-sm font-medium text-brand-navy dark:text-gray-300 mb-2">Investment Experience</label>
-                  <select v-model="financialInfo.investmentExperience" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                  <select v-model="financialInfo.investmentExperience" class="w-full px-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                     <option value="">Select Experience</option>
                     <option value="first-time">First-Time Buyer</option>
                     <option value="some">Some Experience (1-3 properties)</option>
@@ -4056,11 +4056,11 @@ onMounted(() => {
 
 <style scoped>
 .toggle {
- @apply relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-turqoise-light focus:ring-offset-2 dark:bg-gray-600;
+ @apply relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-red-light focus:ring-offset-2 dark:bg-gray-600;
 }
 
 .toggle:checked {
- @apply bg-brand-turqoise-light;
+ @apply bg-brand-red-light;
 }
 
 .toggle::before {

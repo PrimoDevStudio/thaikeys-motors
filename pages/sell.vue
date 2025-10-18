@@ -21,7 +21,7 @@
           <div class="text-center max-w-6xl w-full">
             <!-- Main Headline -->
             <h1 class="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight tracking-tight">
-              <span class="bg-gradient-to-r from-brand-turqoise-light to-brand-turqoise-dark bg-clip-text text-transparent">
+              <span class="bg-gradient-to-r from-brand-red-light to-brand-red-dark bg-clip-text text-transparent">
                 Let Agents
               </span>
               <br>
@@ -35,7 +35,7 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+              <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
                 Get Agent Proposals
               </button>
               <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-800 transition-all duration-300 text-lg">
@@ -46,15 +46,15 @@
             <!-- Key Stats -->
             <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">500+</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">500+</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Verified Agents</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">24h</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">24h</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Average Response</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">95%</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">95%</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Get Multiple Offers</div>
               </div>
             </div>
@@ -79,7 +79,7 @@
           <!-- Step 1 -->
           <div class="text-center">
             <div class="relative mb-8">
-              <div class="w-20 h-20 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div class="w-20 h-20 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span class="text-2xl font-bold text-brand-navy">1</span>
               </div>
               <div class="absolute top-10 left-full w-full h-0.5 bg-gray-300 dark:bg-gray-600 hidden lg:block transform -translate-y-1/2"></div>
@@ -91,7 +91,7 @@
           <!-- Step 2 -->
           <div class="text-center">
             <div class="relative mb-8">
-              <div class="w-20 h-20 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div class="w-20 h-20 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span class="text-2xl font-bold text-brand-navy">2</span>
               </div>
               <div class="absolute top-10 left-full w-full h-0.5 bg-gray-300 dark:bg-gray-600 hidden lg:block transform -translate-y-1/2"></div>
@@ -103,7 +103,7 @@
           <!-- Step 3 -->
           <div class="text-center">
             <div class="relative mb-8">
-              <div class="w-20 h-20 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <div class="w-20 h-20 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <span class="text-2xl font-bold text-brand-navy">3</span>
               </div>
               <div class="absolute top-10 left-full w-full h-0.5 bg-gray-300 dark:bg-gray-600 hidden lg:block transform -translate-y-1/2"></div>
@@ -128,7 +128,7 @@
 
         <!-- CTA -->
         <div class="text-center mt-16">
-          <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+          <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
             Start Getting Agent Proposals
           </button>
         </div>
@@ -155,33 +155,33 @@
               Property Type
             </label>
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-              <button class="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-xl hover:border-brand-turqoise-light hover:bg-brand-turqoise-light/10 transition-all duration-300 text-center">
+              <button class="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-xl hover:border-brand-red-light hover:bg-brand-red-light/10 transition-all duration-300 text-center">
                 <div class="w-8 h-8 mx-auto mb-2">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-brand-turqoise-light">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-brand-red-light">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                   </svg>
                 </div>
                 <span class="text-sm font-medium text-brand-navy dark:text-white">House</span>
               </button>
-              <button class="p-4 border-2 border-brand-turqoise-light bg-brand-turqoise-light/10 rounded-xl text-center">
+              <button class="p-4 border-2 border-brand-red-light bg-brand-red-light/10 rounded-xl text-center">
                 <div class="w-8 h-8 mx-auto mb-2">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-brand-turqoise-light">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-brand-red-light">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <span class="text-sm font-medium text-brand-turqoise-light">Condo</span>
+                <span class="text-sm font-medium text-brand-red-light">Condo</span>
               </button>
-              <button class="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-xl hover:border-brand-turqoise-light hover:bg-brand-turqoise-light/10 transition-all duration-300 text-center">
+              <button class="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-xl hover:border-brand-red-light hover:bg-brand-red-light/10 transition-all duration-300 text-center">
                 <div class="w-8 h-8 mx-auto mb-2">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-brand-turqoise-light">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-brand-red-light">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
                   </svg>
                 </div>
                 <span class="text-sm font-medium text-brand-navy dark:text-white">Townhouse</span>
               </button>
-              <button class="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-xl hover:border-brand-turqoise-light hover:bg-brand-turqoise-light/10 transition-all duration-300 text-center">
+              <button class="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-xl hover:border-brand-red-light hover:bg-brand-red-light/10 transition-all duration-300 text-center">
                 <div class="w-8 h-8 mx-auto mb-2">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-brand-turqoise-light">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full text-brand-red-light">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
@@ -200,14 +200,14 @@
                 <input 
                   type="text" 
                   placeholder="District (e.g., Sukhumvit, Silom)"
-                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
                 >
               </div>
               <div>
                 <input 
                   type="text" 
                   placeholder="Nearest BTS/MRT Station"
-                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
                 >
               </div>
             </div>
@@ -221,7 +221,7 @@
             <div class="grid lg:grid-cols-3 gap-4">
               <div>
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Bedrooms</label>
-                <select class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option>Studio</option>
                   <option>1</option>
                   <option selected>2</option>
@@ -231,7 +231,7 @@
               </div>
               <div>
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Bathrooms</label>
-                <select class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
+                <select class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white">
                   <option>1</option>
                   <option selected>2</option>
                   <option>3</option>
@@ -243,7 +243,7 @@
                 <input 
                   type="number" 
                   placeholder="85"
-                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
                 >
               </div>
             </div>
@@ -259,7 +259,7 @@
               <input 
                 type="text" 
                 placeholder="8,500,000"
-                class="w-full pl-12 pr-4 py-4 text-xl font-bold border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                class="w-full pl-12 pr-4 py-4 text-xl font-bold border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
               >
             </div>
           </div>
@@ -269,7 +269,7 @@
             <label class="block text-lg font-semibold text-brand-navy dark:text-white mb-4">
               Property Photos
             </label>
-            <div class="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl p-8 text-center hover:border-brand-turqoise-light transition-colors duration-300">
+            <div class="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl p-8 text-center hover:border-brand-red-light transition-colors duration-300">
               <div class="w-16 h-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -277,7 +277,7 @@
               </div>
               <p class="text-brand-navy dark:text-gray-300 mb-2">Upload photos of your property</p>
               <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Max 10 photos, JPG or PNG</p>
-              <button class="bg-brand-turqoise-light text-brand-navy px-6 py-2 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
+              <button class="bg-brand-red-light text-brand-navy px-6 py-2 rounded-lg font-semibold hover:bg-teal-300 transition-colors">
                 Choose Photos
               </button>
             </div>
@@ -293,14 +293,14 @@
                 <input 
                   type="text" 
                   placeholder="Your Name"
-                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
                 >
               </div>
               <div>
                 <input 
                   type="tel" 
                   placeholder="Phone Number"
-                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
+                  class="w-full px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white"
                 >
               </div>
             </div>
@@ -308,7 +308,7 @@
 
           <!-- Submit Button -->
           <div class="text-center">
-            <button class="bg-gradient-to-r from-brand-turqoise-light to-teal-400 text-brand-navy px-12 py-4 rounded-xl font-bold text-xl hover:from-teal-400 hover:to-brand-turqoise-light transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button class="bg-gradient-to-r from-brand-red-light to-teal-400 text-brand-navy px-12 py-4 rounded-xl font-bold text-xl hover:from-teal-400 hover:to-brand-red-light transition-all duration-300 shadow-lg hover:shadow-xl">
               Get Agent Proposals
             </button>
             <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
@@ -666,7 +666,7 @@
         </div>
 
         <!-- Overall Stats -->
-        <div class="bg-gradient-to-r from-brand-turqoise-light to-teal-400 rounded-2xl p-8 text-center text-white">
+        <div class="bg-gradient-to-r from-brand-red-light to-teal-400 rounded-2xl p-8 text-center text-white">
           <h3 class="text-2xl font-bold mb-6">Platform Results So Far</h3>
           <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div>
@@ -771,7 +771,7 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-          <button class="bg-brand-turqoise-light text-brand-navy px-12 py-4 rounded-xl font-bold text-xl hover:bg-teal-300 transition-all duration-300 shadow-lg hover:shadow-xl">
+          <button class="bg-brand-red-light text-brand-navy px-12 py-4 rounded-xl font-bold text-xl hover:bg-teal-300 transition-all duration-300 shadow-lg hover:shadow-xl">
             Get Agent Proposals Now
           </button>
           <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-800 transition-all duration-300 text-lg">
@@ -782,15 +782,15 @@
         <!-- Trust Indicators -->
         <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto opacity-80">
           <div class="text-center">
-            <div class="text-2xl font-bold text-brand-turqoise-light mb-1">Free</div>
+            <div class="text-2xl font-bold text-brand-red-light mb-1">Free</div>
             <div class="text-sm">No upfront costs</div>
           </div>
           <div class="text-center">
-            <div class="text-2xl font-bold text-brand-turqoise-light mb-1">24hr</div>
+            <div class="text-2xl font-bold text-brand-red-light mb-1">24hr</div>
             <div class="text-sm">Response time</div>
           </div>
           <div class="text-center">
-            <div class="text-2xl font-bold text-brand-turqoise-light mb-1">500+</div>
+            <div class="text-2xl font-bold text-brand-red-light mb-1">500+</div>
             <div class="text-sm">Verified agents</div>
           </div>
         </div>

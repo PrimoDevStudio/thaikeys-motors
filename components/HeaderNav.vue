@@ -6,12 +6,12 @@
         <div class="flex-shrink-0">
           <NuxtLink :to="localePath('/')" class="flex items-center group">
             <img 
-              src="~/assets/thaikeys_motors_logo_dark.svg" 
+              src="~/assets/thaikeys_motors_logo_dark_red.svg" 
               alt="ThaiKeys Logo" 
               class="h-8 dark:hidden"
             />
             <img 
-              src="~/assets/thaikeys_motors_logo_light.svg" 
+              src="~/assets/thaikeys_motors_logo_light_red.svg" 
               alt="ThaiKeys Logo" 
               class="h-8 hidden dark:block"
             />   
@@ -19,7 +19,7 @@
         </div>
         
         <!-- Center: Navigation Links -->
-        <div class="hidden lg:flex items-center justify-center flex-1 space-x-8">
+        <div class="hidden lg:flex items-center justify-center flex-1 space-x-7">
           <NuxtLink :to="localePath('/cars')" class="nav-link">
             {{ $t('nav.cars') }}
           </NuxtLink>
@@ -55,7 +55,7 @@
           <div v-if="!user" class="flex items-center">
             <button 
               @click="showLoginModal = true"
-              class="bg-brand-navy dark:bg-brand-turqoise-light text-white dark:text-brand-navy px-6 py-2.5 rounded-lg hover:bg-brand-turqoise-light dark:hover:bg-blue-400 transition-all duration-300 font-medium"
+              class="bg-brand-red-light dark:bg-brand-red-light text-white dark:text-white px-6 py-2 rounded-lg hover:bg-brand-red-light dark:hover:bg-brand-red-dark transition-all duration-300 font-medium"
             >
               {{ $t('nav.login') }}
             </button>
@@ -66,7 +66,7 @@
             <span class="text-sm text-brand-navy dark:text-white">{{ user.email }}</span>
             <button 
               @click="handleLogout"
-              class="text-brand-navy dark:text-white hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light transition-colors duration-300 font-medium"
+              class="text-brand-navy dark:text-white hover:text-brand-red-light dark:hover:text-brand-red-light transition-colors duration-300 font-medium"
             >
               {{ $t('nav.logout') }}
             </button>
@@ -122,7 +122,7 @@
           <div v-if="!user" class="flex flex-col items-center space-y-3 pt-2">
             <button 
               @click="showLoginModal = true; closeMobileMenu()"
-              class="bg-brand-navy dark:bg-brand-turqoise-light text-white dark:text-brand-navy px-6 py-2.5 rounded-lg hover:bg-blue-800 dark:hover:bg-blue-400 transition-all duration-300 font-medium"
+              class="bg-brand-navy dark:bg-brand-red-light text-white dark:text-brand-navy px-6 py-2.5 rounded-lg hover:bg-blue-800 dark:hover:bg-blue-400 transition-all duration-300 font-medium"
             >
               {{ $t('nav.login') }}
             </button>
@@ -133,7 +133,7 @@
             <span class="text-sm text-brand-navy dark:text-white">{{ user.email }}</span>
             <button 
               @click="handleLogout"
-              class="text-brand-navy dark:text-white hover:text-brand-turqoise-light dark:hover:text-brand-turqoise-light transition-colors duration-300 font-medium"
+              class="text-brand-navy dark:text-white hover:text-brand-red-light dark:hover:text-brand-red-light transition-colors duration-300 font-medium"
             >
               {{ $t('nav.logout') }}
             </button>
@@ -219,7 +219,7 @@ const handleLogout = async () => {
   left: 50%;
   width: 0;
   height: 2px;
-  @apply bg-brand-turqoise-light;
+  @apply bg-brand-red-light;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -239,10 +239,10 @@ const handleLogout = async () => {
 }
 
 .mobile-nav-link:hover {
-  @apply text-brand-turqoise-light dark:text-brand-turqoise-light;
+  @apply text-brand-red-light dark:text-brand-red-light;
 }
 
 .mobile-nav-link.router-link-active {
-  @apply text-brand-turqoise-light dark:text-brand-turqoise-light;
+  @apply text-brand-red-light dark:text-brand-red-light;
 }
 </style>

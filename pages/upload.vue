@@ -15,7 +15,7 @@
                 v-model="form.title_en"
                 type="text" 
                 required
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="Modern 2BR Condo with City View"
               />
             </div>
@@ -26,7 +26,7 @@
                 v-model="form.property_type"
                 required
                 @change="resetPropertySpecificFields"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
               >
                 <option value="">Select type...</option>
                 <option value="condo">Condominium</option>
@@ -43,7 +43,7 @@
               <input 
                 v-model="form.title_th"
                 type="text" 
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="คอนโดสมัยใหม่ 2 ห้องนอน วิวเมือง"
               />
             </div>
@@ -53,7 +53,7 @@
               <select 
                 v-model="form.listing_type"
                 required
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
               >
                 <option value="">Select type...</option>
                 <option value="rent">For Rent</option>
@@ -67,7 +67,7 @@
               <textarea 
                 v-model="form.description_en"
                 rows="3"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="Describe the property features, location benefits, etc."
               ></textarea>
             </div>
@@ -77,7 +77,7 @@
               <textarea 
                 v-model="form.description_th"
                 rows="3"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="คำอธิบายคุณสมบัติของอสังหาริมทรัพย์"
               ></textarea>
             </div>
@@ -95,7 +95,7 @@
                 v-model="form.address_en"
                 type="text" 
                 required
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="123 Sukhumvit Road, Klongtoei"
               />
             </div>
@@ -106,7 +106,7 @@
                 v-model="form.district"
                 type="text" 
                 required
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="Klongtoei"
               />
             </div>
@@ -116,7 +116,7 @@
               <input 
                 v-model="form.address_th"
                 type="text" 
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="123 ถนนสุขุมวิท คลองเตย"
               />
             </div>
@@ -126,7 +126,7 @@
               <input 
                 v-model="form.province"
                 type="text" 
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="Bangkok"
               />
             </div>
@@ -136,7 +136,7 @@
               <input 
                 v-model="form.postal_code"
                 type="text" 
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="10110"
               />
             </div>
@@ -151,31 +151,31 @@
           <div v-if="form.property_type === 'condo'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Bedrooms *</label>
-              <input v-model.number="form.bedrooms" type="number" min="0" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="2" />
+              <input v-model.number="form.bedrooms" type="number" min="0" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="2" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Bathrooms *</label>
-              <input v-model.number="form.bathrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="2" />
+              <input v-model.number="form.bathrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="2" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Floor Area (sqm) *</label>
-              <input v-model.number="form.floor_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="65" />
+              <input v-model.number="form.floor_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="65" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Floor Level *</label>
-              <input v-model.number="form.floor_level" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="15" />
+              <input v-model.number="form.floor_level" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="15" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Building Floors</label>
-              <input v-model.number="form.building_floors" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="30" />
+              <input v-model.number="form.building_floors" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="30" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Unit Number</label>
-              <input v-model="form.unit_number" type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="1502" />
+              <input v-model="form.unit_number" type="text" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="1502" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Furnished</label>
-              <select v-model="form.furnished" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light">
+              <select v-model="form.furnished" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light">
                 <option value="">Select...</option>
                 <option value="unfurnished">Unfurnished</option>
                 <option value="partially">Partially Furnished</option>
@@ -184,7 +184,7 @@
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Parking Spaces</label>
-              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="1" />
+              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="1" />
             </div>
           </div>
 
@@ -192,27 +192,27 @@
           <div v-if="form.property_type === 'house'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Bedrooms *</label>
-              <input v-model.number="form.bedrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="3" />
+              <input v-model.number="form.bedrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="3" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Bathrooms *</label>
-              <input v-model.number="form.bathrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="2" />
+              <input v-model.number="form.bathrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="2" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Usable Area (sqm) *</label>
-              <input v-model.number="form.usable_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="150" />
+              <input v-model.number="form.usable_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="150" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Land Size (sqwa) *</label>
-              <input v-model.number="form.land_size_sqwa" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="50" />
+              <input v-model.number="form.land_size_sqwa" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="50" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Number of Floors</label>
-              <input v-model.number="form.number_of_floors" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="2" />
+              <input v-model.number="form.number_of_floors" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="2" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Furnished</label>
-              <select v-model="form.furnished" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light">
+              <select v-model="form.furnished" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light">
                 <option value="">Select...</option>
                 <option value="unfurnished">Unfurnished</option>
                 <option value="partially">Partially Furnished</option>
@@ -221,7 +221,7 @@
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Parking Spaces</label>
-              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="2" />
+              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="2" />
             </div>
           </div>
 
@@ -229,27 +229,27 @@
           <div v-if="form.property_type === 'townhouse'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Bedrooms *</label>
-              <input v-model.number="form.bedrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="3" />
+              <input v-model.number="form.bedrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="3" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Bathrooms *</label>
-              <input v-model.number="form.bathrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="2" />
+              <input v-model.number="form.bathrooms" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="2" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Usable Area (sqm) *</label>
-              <input v-model.number="form.usable_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="120" />
+              <input v-model.number="form.usable_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="120" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Land Size (sqwa) *</label>
-              <input v-model.number="form.land_size_sqwa" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="25" />
+              <input v-model.number="form.land_size_sqwa" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="25" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Number of Floors</label>
-              <input v-model.number="form.number_of_floors" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="3" />
+              <input v-model.number="form.number_of_floors" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="3" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Furnished</label>
-              <select v-model="form.furnished" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light">
+              <select v-model="form.furnished" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light">
                 <option value="">Select...</option>
                 <option value="unfurnished">Unfurnished</option>
                 <option value="partially">Partially Furnished</option>
@@ -258,7 +258,7 @@
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Parking Spaces</label>
-              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="1" />
+              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="1" />
             </div>
           </div>
 
@@ -266,19 +266,19 @@
           <div v-if="form.property_type === 'commercial'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Floor Area (sqm) *</label>
-              <input v-model.number="form.floor_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="200" />
+              <input v-model.number="form.floor_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="200" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Floor Level</label>
-              <input v-model.number="form.floor_level" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="3" />
+              <input v-model.number="form.floor_level" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="3" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Building Floors</label>
-              <input v-model.number="form.building_floors" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="20" />
+              <input v-model.number="form.building_floors" type="number" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="20" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Commercial Type *</label>
-              <select v-model="form.commercial_type" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light">
+              <select v-model="form.commercial_type" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light">
                 <option value="">Select...</option>
                 <option value="office">Office</option>
                 <option value="retail">Retail</option>
@@ -289,7 +289,7 @@
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Parking Spaces</label>
-              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="3" />
+              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="3" />
             </div>
           </div>
 
@@ -297,15 +297,15 @@
           <div v-if="form.property_type === 'land'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Land Size (sqwa) *</label>
-              <input v-model.number="form.land_size_sqwa" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="100" />
+              <input v-model.number="form.land_size_sqwa" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="100" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Land Size (rai)</label>
-              <input v-model.number="form.land_size_rai" type="number" min="0" step="0.01" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="0.25" />
+              <input v-model.number="form.land_size_rai" type="number" min="0" step="0.01" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="0.25" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Land Type *</label>
-              <select v-model="form.land_type" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light">
+              <select v-model="form.land_type" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light">
                 <option value="">Select...</option>
                 <option value="residential">Residential</option>
                 <option value="commercial">Commercial</option>
@@ -316,7 +316,7 @@
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Land Title Type *</label>
-              <select v-model="form.land_title_type" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light">
+              <select v-model="form.land_title_type" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light">
                 <option value="">Select...</option>
                 <option value="chanote">Chanote</option>
                 <option value="nor_sor_3_kor">Nor Sor 3 Kor</option>
@@ -326,7 +326,7 @@
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Road Access</label>
-              <select v-model="form.road_access" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light">
+              <select v-model="form.road_access" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light">
                 <option value="">Select...</option>
                 <option value="true">Yes</option>
                 <option value="false">No</option>
@@ -334,7 +334,7 @@
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Road Width (meters)</label>
-              <input v-model.number="form.road_width_meters" type="number" min="1" step="0.1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="6" />
+              <input v-model.number="form.road_width_meters" type="number" min="1" step="0.1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="6" />
             </div>
           </div>
 
@@ -342,31 +342,31 @@
           <div v-if="form.property_type === 'warehouse'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Warehouse Area (sqm) *</label>
-              <input v-model.number="form.warehouse_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="500" />
+              <input v-model.number="form.warehouse_area_sqm" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="500" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Land Size (sqwa) *</label>
-              <input v-model.number="form.land_size_sqwa" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="200" />
+              <input v-model.number="form.land_size_sqwa" type="number" min="1" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="200" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Ceiling Height (meters)</label>
-              <input v-model.number="form.ceiling_height_meters" type="number" min="1" step="0.1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="8" />
+              <input v-model.number="form.ceiling_height_meters" type="number" min="1" step="0.1" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="8" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Loading Docks</label>
-              <input v-model.number="form.loading_docks" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="2" />
+              <input v-model.number="form.loading_docks" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="2" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Office Area (sqm)</label>
-              <input v-model.number="form.office_area_sqm" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="50" />
+              <input v-model.number="form.office_area_sqm" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="50" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Parking Spaces</label>
-              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light" placeholder="5" />
+              <input v-model.number="form.parking_spaces" type="number" min="0" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light" placeholder="5" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Warehouse Type</label>
-              <select v-model="form.warehouse_type" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light">
+              <select v-model="form.warehouse_type" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light">
                 <option value="">Select...</option>
                 <option value="cold_storage">Cold Storage</option>
                 <option value="dry_storage">Dry Storage</option>
@@ -390,7 +390,7 @@
                 type="number" 
                 min="1"
                 :required="form.listing_type === 'rent' || form.listing_type === 'both'"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="25000"
               />
             </div>
@@ -402,7 +402,7 @@
                 type="number" 
                 min="1"
                 :required="form.listing_type === 'sale' || form.listing_type === 'both'"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="3500000"
               />
             </div>
@@ -414,7 +414,7 @@
                 type="number" 
                 min="0"
                 max="12"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="2"
               />
             </div>
@@ -425,7 +425,7 @@
                 v-model.number="form.price_per_sqwa"
                 type="number" 
                 min="1"
-                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-turqoise-light"
+                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-red-light"
                 placeholder="50000"
               />
             </div>
@@ -447,7 +447,7 @@
             @dragover.prevent
             @dragenter.prevent
             @click="triggerImageUpload"
-            class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-brand-turqoise-light transition-colors"
+            class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-brand-red-light transition-colors"
           >
             <svg class="mx-auto h-12 w-12 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
@@ -476,7 +476,7 @@
                 </div>
                 <div class="w-full bg-gray-200 rounded-full h-2">
                   <div 
-                    class="bg-brand-turqoise-light h-2 rounded-full transition-all duration-300"
+                    class="bg-brand-red-light h-2 rounded-full transition-all duration-300"
                     :style="{ width: upload.progress + '%' }"
                   ></div>
                 </div>
@@ -502,7 +502,7 @@
                 >
                   ×
                 </button>
-                <div v-if="index === 0" class="absolute bottom-1 left-1 bg-brand-turqoise-light text-white text-xs px-2 py-1 rounded">
+                <div v-if="index === 0" class="absolute bottom-1 left-1 bg-brand-red-light text-white text-xs px-2 py-1 rounded">
                   Featured
                 </div>
                 <button 
@@ -528,7 +528,7 @@
               @dragover.prevent
               @dragenter.prevent
               @click="triggerVideoUpload"
-              class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-brand-turqoise-light transition-colors"
+              class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer hover:border-brand-red-light transition-colors"
             >
               <svg class="mx-auto h-12 w-12 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -556,7 +556,7 @@
                 </div>
                 <div class="w-full bg-gray-200 rounded-full h-2">
                   <div 
-                    class="bg-brand-turqoise-light h-2 rounded-full transition-all duration-300"
+                    class="bg-brand-red-light h-2 rounded-full transition-all duration-300"
                     :style="{ width: videoUpload.progress + '%' }"
                   ></div>
                 </div>
@@ -635,7 +635,7 @@
                 <input 
                   v-model="form.unit_amenities[amenity.key]" 
                   type="checkbox" 
-                  class="rounded border-gray-300 text-brand-turqoise-light focus:ring-brand-turqoise-light"
+                  class="rounded border-gray-300 text-brand-red-light focus:ring-brand-red-light"
                 />
                 <span class="text-sm text-gray-700">{{ amenity.label }}</span>
               </label>
@@ -650,7 +650,7 @@
                 <input 
                   v-model="form.project_amenities[amenity.key]" 
                   type="checkbox" 
-                  class="rounded border-gray-300 text-brand-turqoise-light focus:ring-brand-turqoise-light"
+                  class="rounded border-gray-300 text-brand-red-light focus:ring-brand-red-light"
                 />
                 <span class="text-sm text-gray-700">{{ amenity.label }}</span>
               </label>
@@ -670,7 +670,7 @@
           <button 
             type="submit"
             :disabled="isSubmitting || imageUploads.some(u => u.status === 'uploading') || videoUpload.status === 'uploading'"
-            class="px-8 py-3 bg-brand-navy text-white rounded-lg hover:bg-brand-turqoise-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            class="px-8 py-3 bg-brand-navy text-white rounded-lg hover:bg-brand-red-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <span v-if="isSubmitting">Creating Listing...</span>
             <span v-else>Create Listing</span>
@@ -1477,7 +1477,7 @@ const formatDuration = (seconds) => {
   color: #1e3a8a;
 }
 
-.brand-turqoise-light {
+.brand-red-light {
   color: #3b82f6;
 }
 

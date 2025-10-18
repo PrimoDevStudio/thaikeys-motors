@@ -21,7 +21,7 @@
           <div class="text-center max-w-6xl w-full">
             <!-- Main Headline -->
             <h1 class="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight tracking-tight">
-              <span class="bg-gradient-to-r from-brand-turqoise-light to-brand-turqoise-dark bg-clip-text text-transparent">
+              <span class="bg-gradient-to-r from-brand-red-light to-brand-red-dark bg-clip-text text-transparent">
                 Find Your Dream
               </span>
               <br>
@@ -35,7 +35,7 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+              <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
                 Start Property Search
               </button>
               <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-800 transition-all duration-300 text-lg">
@@ -46,15 +46,15 @@
             <!-- Key Stats -->
             <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">500K+</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">500K+</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Verified Properties</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">95%</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">95%</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Purchase Success Rate</div>
               </div>
               <div class="text-center">
-                <div class="text-4xl lg:text-5xl font-bold text-brand-turqoise-light mb-2">24h</div>
+                <div class="text-4xl lg:text-5xl font-bold text-brand-red-light mb-2">24h</div>
                 <div class="text-sm lg:text-base font-medium text-white/80">Response Time</div>
               </div>
             </div>
@@ -89,7 +89,7 @@
                 <input 
                   v-model="minBudget" 
                   type="text" 
-                  class="w-full pl-12 pr-4 py-3 text-lg border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-center"
+                  class="w-full pl-12 pr-4 py-3 text-lg border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-center"
                   placeholder="Min budget"
                 >
               </div>
@@ -98,7 +98,7 @@
                 <input 
                   v-model="maxBudget" 
                   type="text" 
-                  class="w-full pl-12 pr-4 py-3 text-lg border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-turqoise-light focus:border-brand-turqoise-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-center"
+                  class="w-full pl-12 pr-4 py-3 text-lg border-2 border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-brand-red-light focus:border-brand-red-light bg-white dark:bg-gray-700 text-brand-navy dark:text-white text-center"
                   placeholder="Max budget"
                 >
               </div>
@@ -117,7 +117,7 @@
                   :class="[
                     'px-6 py-3 rounded-lg font-semibold transition-all duration-300',
                     propertyType === 'condo' 
-                      ? 'bg-brand-turqoise-light text-brand-navy shadow-md' 
+                      ? 'bg-brand-red-light text-brand-navy shadow-md' 
                       : 'text-gray-600 dark:text-gray-300 hover:text-brand-navy dark:hover:text-white'
                   ]"
                 >
@@ -128,7 +128,7 @@
                   :class="[
                     'px-6 py-3 rounded-lg font-semibold transition-all duration-300',
                     propertyType === 'house' 
-                      ? 'bg-brand-turqoise-light text-brand-navy shadow-md' 
+                      ? 'bg-brand-red-light text-brand-navy shadow-md' 
                       : 'text-gray-600 dark:text-gray-300 hover:text-brand-navy dark:hover:text-white'
                   ]"
                 >
@@ -139,7 +139,7 @@
                   :class="[
                     'px-6 py-3 rounded-lg font-semibold transition-all duration-300',
                     propertyType === 'villa' 
-                      ? 'bg-brand-turqoise-light text-brand-navy shadow-md' 
+                      ? 'bg-brand-red-light text-brand-navy shadow-md' 
                       : 'text-gray-600 dark:text-gray-300 hover:text-brand-navy dark:hover:text-white'
                   ]"
                 >
@@ -172,7 +172,7 @@
               <div class="border-t border-gray-300 dark:border-gray-600 pt-4">
                 <div class="flex justify-between items-center">
                   <span class="text-lg font-bold text-brand-navy dark:text-white">Total Budget Needed</span>
-                  <span class="text-2xl font-bold text-brand-turqoise-light">₿{{ totalCost.toLocaleString() }}</span>
+                  <span class="text-2xl font-bold text-brand-red-light">₿{{ totalCost.toLocaleString() }}</span>
                 </div>
               </div>
             </div>
@@ -318,7 +318,7 @@
           <!-- Services List -->
           <div class="space-y-8">
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
@@ -330,7 +330,7 @@
             </div>
 
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -342,7 +342,7 @@
             </div>
 
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                 </svg>
@@ -354,7 +354,7 @@
             </div>
 
             <div class="flex items-start space-x-4">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-xl flex items-center justify-center flex-shrink-0">
+              <div class="w-12 h-12 bg-brand-red-light rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-6 h-6 text-brand-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -501,35 +501,35 @@
           <h3 class="text-2xl font-bold text-brand-navy dark:text-white mb-8 text-center">Purchase Process for Foreign Buyers</h3>
           <div class="grid md:grid-cols-5 gap-6">
             <div class="text-center">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+              <div class="w-12 h-12 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
                 <span class="text-lg font-bold text-brand-navy">1</span>
               </div>
               <h4 class="font-semibold text-brand-navy dark:text-white mb-2">Property Search</h4>
               <p class="text-sm text-brand-navy dark:text-gray-300">Find and verify eligible properties</p>
             </div>
             <div class="text-center">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+              <div class="w-12 h-12 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
                 <span class="text-lg font-bold text-brand-navy">2</span>
               </div>
               <h4 class="font-semibold text-brand-navy dark:text-white mb-2">Legal Review</h4>
               <p class="text-sm text-brand-navy dark:text-gray-300">Due diligence and title verification</p>
             </div>
             <div class="text-center">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+              <div class="w-12 h-12 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
                 <span class="text-lg font-bold text-brand-navy">3</span>
               </div>
               <h4 class="font-semibold text-brand-navy dark:text-white mb-2">Fund Transfer</h4>
               <p class="text-sm text-brand-navy dark:text-gray-300">Foreign currency documentation</p>
             </div>
             <div class="text-center">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+              <div class="w-12 h-12 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
                 <span class="text-lg font-bold text-brand-navy">4</span>
               </div>
               <h4 class="font-semibold text-brand-navy dark:text-white mb-2">Contract Signing</h4>
               <p class="text-sm text-brand-navy dark:text-gray-300">Purchase agreement execution</p>
             </div>
             <div class="text-center">
-              <div class="w-12 h-12 bg-brand-turqoise-light rounded-full flex items-center justify-center mx-auto mb-4">
+              <div class="w-12 h-12 bg-brand-red-light rounded-full flex items-center justify-center mx-auto mb-4">
                 <span class="text-lg font-bold text-brand-navy">5</span>
               </div>
               <h4 class="font-semibold text-brand-navy dark:text-white mb-2">Title Transfer</h4>
@@ -557,7 +557,7 @@
             <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-700 relative">
               <div class="absolute inset-0 bg-black/20"></div>
               <div class="absolute bottom-4 left-4 text-white">
-                <span class="text-sm font-medium bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded">Prime Location</span>
+                <span class="text-sm font-medium bg-brand-red-light text-brand-navy px-2 py-1 rounded">Prime Location</span>
               </div>
             </div>
             <div class="p-6">
@@ -587,7 +587,7 @@
             <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-800 dark:to-purple-700 relative">
               <div class="absolute inset-0 bg-black/20"></div>
               <div class="absolute bottom-4 left-4 text-white">
-                <span class="text-sm font-medium bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded">Beach Life</span>
+                <span class="text-sm font-medium bg-brand-red-light text-brand-navy px-2 py-1 rounded">Beach Life</span>
               </div>
             </div>
             <div class="p-6">
@@ -668,7 +668,7 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <button class="bg-brand-turqoise-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+          <button class="bg-brand-red-light text-brand-navy px-8 py-4 rounded-xl font-semibold hover:bg-teal-300 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
             Start Property Search
           </button>
           <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-brand-navy transition-all duration-300 text-lg">

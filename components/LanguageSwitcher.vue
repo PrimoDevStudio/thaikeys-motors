@@ -8,7 +8,7 @@
       <!-- English Icon -->
       <span
         v-if="currentLocale === 'en'"
-        class="text-sm font-bold text-gray-600 dark:text-gray-300 group-hover:text-brand-turqoise-light transition-colors duration-300"
+        class="text-sm font-bold text-gray-600 dark:text-gray-300 group-hover:text-brand-red-light transition-colors duration-300"
       >
         EN
       </span>
@@ -16,7 +16,7 @@
       <!-- Thai Icon -->
       <span
         v-else
-        class="text-sm font-bold text-gray-600 dark:text-gray-300 group-hover:text-brand-turqoise-light transition-colors duration-300"
+        class="text-sm font-bold text-gray-600 dark:text-gray-300 group-hover:text-brand-red-light transition-colors duration-300"
       >
         ไทย
       </span>

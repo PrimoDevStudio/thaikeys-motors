@@ -1,5 +1,5 @@
 <template>
-  <!-- Featured Properties Carousel -->
+  <!-- Featured Vehicles Carousel -->
   <section class="bg-white dark:bg-gray-800 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-3 lg:px-4">
       <!-- Swiper Carousel -->
@@ -35,174 +35,184 @@
           }"
           class="!pb-16"
         >
-          <!-- Card 1 -->
+          <!-- Card 1 - Honda PCX 160 -->
           <SwiperSlide>
             <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
               <div class="h-48 relative overflow-hidden">
                 <NuxtImg
-                  src="/assets/placeholder/sample_1.webp"
-                  alt="Altitude Forest Onnut"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
+                  src="/assets/placeholder/2023-honda-pcx-160.webp"
+                  alt="Honda PCX 160"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   sizes="sm:100vw md:33vw lg:25vw"
                 />
                 <div class="absolute top-4 left-4">
-                  <span class="text-sm font-medium bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded">
-                    {{ $t('common.new_project') }}
+                  <span class="text-sm font-medium bg-brand-red-light text-white px-2 py-1 rounded">
+                    Featured
                   </span>
                 </div>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  Altitude Forest Onnut
+                  Honda PCX 160
                 </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Bang Na, Bangkok
+                <p class="text-sm text-brand-navy dark:text-gray-200 mb-1">
+                  2023 • 5,200 km • Phuket
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-300 mb-3">
+                  Automatic • 160cc
                 </p>
                 <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿1,890,000
+                  ฿68,000
                 </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $53,000</p>
               </div>
             </div>
           </SwiperSlide>
 
-          <!-- Card 2 -->
+          <!-- Card 2 - Toyota Fortuner -->
           <SwiperSlide>
             <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
               <div class="h-48 relative overflow-hidden">
                 <NuxtImg
-                  src="/assets/placeholder/sample_2.webp"
-                  alt="Sansiri Ekkamai"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                  sizes="sm:100vw md:33vw lg:25vw"
-                />
-                <div class="absolute top-4 left-4">
-                  <span class="text-sm font-medium bg-brand-navy text-white px-2 py-1 rounded">
-                    {{ $t('common.premium') }}
-                  </span>
-                </div>
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  Sansiri Ekkamai
-                </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Ekkamai, Bangkok
-                </p>
-                <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿4,500,000
-                </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $126,000</p>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <!-- Card 3 -->
-          <SwiperSlide>
-            <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
-              <div class="h-48 relative overflow-hidden">
-                <NuxtImg
-                  src="/assets/placeholder/sample_3.webp"
-                  alt="The Lofts Silom"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                  sizes="sm:100vw md:33vw lg:25vw"
-                />
-                <div class="absolute top-4 left-4">
-                  <span class="text-sm font-medium bg-brand-turqoise-light text-brand-navy px-2 py-1 rounded">
-                    {{ $t('common.hot_sale') }}
-                  </span>
-                </div>
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  The Lofts Silom
-                </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Silom, Bangkok
-                </p>
-                <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿2,890,000
-                </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $81,000</p>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <!-- Card 4 -->
-          <SwiperSlide>
-            <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
-              <div class="h-48 relative overflow-hidden">
-                <NuxtImg
-                  src="/assets/placeholder/sample_4.webp"
-                  alt="Park Origin Thonglor"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
+                  src="/assets/placeholder/2022-Toyota-Fortuner-2.8-V-4WD.webp"
+                  alt="Toyota Fortuner"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   sizes="sm:100vw md:33vw lg:25vw"
                 />
                 <div class="absolute top-4 left-4">
                   <span class="text-sm font-medium bg-brand-navy text-white px-2 py-1 rounded">
-                    {{ $t('common.luxury') }}
+                    Premium
                   </span>
                 </div>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  Park Origin Thonglor
+                  Toyota Fortuner 2.8 V 4WD
                 </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Thonglor, Bangkok
+                <p class="text-sm text-brand-navy dark:text-gray-200 mb-1">
+                  2022 • 28,000 km • Bangkok
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-300 mb-3">
+                  Automatic • Diesel
                 </p>
                 <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿8,500,000
+                  ฿1,450,000
                 </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $238,000</p>
               </div>
             </div>
           </SwiperSlide>
 
-          <!-- Card 5 -->
+          <!-- Card 3 - Yamaha Aerox -->
+          <SwiperSlide>
+            <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
+              <div class="h-48 relative overflow-hidden">
+                <NuxtImg
+                  src="/assets/placeholder/2024-Yamaha-Aerox-155.webp"
+                  alt="Yamaha Aerox"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  sizes="sm:100vw md:33vw lg:25vw"
+                />
+                <div class="absolute top-4 left-4">
+                  <span class="text-sm font-medium bg-brand-red-light text-white px-2 py-1 rounded">
+                    Hot Deal
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
+                  Yamaha Aerox 155
+                </h3>
+                <p class="text-sm text-brand-navy dark:text-gray-200 mb-1">
+                  2024 • 1,800 km • Chiang Mai
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-300 mb-3">
+                  Automatic • 155cc
+                </p>
+                <p class="text-lg font-bold text-brand-navy dark:text-white">
+                  ฿79,000
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <!-- Card 4 - Honda Civic -->
+          <SwiperSlide>
+            <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
+              <div class="h-48 relative overflow-hidden">
+                <NuxtImg
+                  src="/assets/placeholder/2021-Honda-Civic-RS-Turbo.webp"
+                  alt="Honda Civic"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  sizes="sm:100vw md:33vw lg:25vw"
+                />
+                <div class="absolute top-4 left-4">
+                  <span class="text-sm font-medium bg-brand-navy text-white px-2 py-1 rounded">
+                    Certified
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
+                  Honda Civic RS Turbo
+                </h3>
+                <p class="text-sm text-brand-navy dark:text-gray-200 mb-1">
+                  2021 • 35,000 km • Bangkok
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-300 mb-3">
+                  Automatic • Petrol
+                </p>
+                <p class="text-lg font-bold text-brand-navy dark:text-white">
+                  ฿890,000
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <!-- Card 5 - Kawasaki Ninja -->
           <SwiperSlide>
             <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
               <div class="h-48 relative overflow-hidden">
                 <NuxtImg
                   src="/assets/placeholder/sample_5.webp"
-                  alt="Noble Ploenchit"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
+                  alt="Kawasaki Ninja"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   sizes="sm:100vw md:33vw lg:25vw"
                 />
                 <div class="absolute top-4 left-4">
                   <span class="text-sm font-medium bg-green-500 text-white px-2 py-1 rounded">
-                    Ready to Move
+                    Like New
                   </span>
                 </div>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  Noble Ploenchit
+                  Kawasaki Ninja 400
                 </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Ploenchit, Bangkok
+                <p class="text-sm text-brand-navy dark:text-gray-300 mb-1">
+                  2023 • 3,500 km • Phuket
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                  Manual • 400cc
                 </p>
                 <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿6,200,000
+                  ฿185,000
                 </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $174,000</p>
               </div>
             </div>
           </SwiperSlide>
 
-          <!-- Card 6 -->
+          <!-- Card 6 - Isuzu D-Max -->
           <SwiperSlide>
             <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
               <div class="h-48 relative overflow-hidden">
                 <NuxtImg
                   src="/assets/placeholder/sample_6.webp"
-                  alt="Whizdom Connect Sukhumvit"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
+                  alt="Isuzu D-Max"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   sizes="sm:100vw md:33vw lg:25vw"
                 />
@@ -214,143 +224,153 @@
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  Whizdom Connect Sukhumvit
+                  Isuzu D-Max Hi-Lander
                 </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Punnawithi, Bangkok
+                <p class="text-sm text-brand-navy dark:text-gray-300 mb-1">
+                  2020 • 52,000 km • Chonburi
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                  Manual • Diesel
                 </p>
                 <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿2,100,000
+                  ฿620,000
                 </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $59,000</p>
               </div>
             </div>
           </SwiperSlide>
 
-          <!-- Card 7 -->
+          <!-- Card 7 - Speedboat -->
           <SwiperSlide>
             <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
               <div class="h-48 relative overflow-hidden">
                 <NuxtImg
                   src="/assets/placeholder/sample_7.webp"
-                  alt="The Reserve Phahol-Pradipat"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
+                  alt="Speedboat"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   sizes="sm:100vw md:33vw lg:25vw"
                 />
                 <div class="absolute top-4 left-4">
                   <span class="text-sm font-medium bg-red-500 text-white px-2 py-1 rounded">
-                    Last Units
+                    Marine
                   </span>
                 </div>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  The Reserve Phahol-Pradipat
+                  Yamaha Speedboat 24ft
                 </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Phahol, Bangkok
+                <p class="text-sm text-brand-navy dark:text-gray-300 mb-1">
+                  2019 • 450 hrs • Phuket
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                  Twin 200HP Engines
                 </p>
                 <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿3,450,000
+                  ฿2,800,000
                 </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $97,000</p>
               </div>
             </div>
           </SwiperSlide>
 
-          <!-- Card 8 -->
+          <!-- Card 8 - Mazda CX-5 -->
           <SwiperSlide>
             <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
               <div class="h-48 relative overflow-hidden">
                 <NuxtImg
                   src="/assets/placeholder/sample_8.webp"
-                  alt="Life Asoke-Rama 9"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
+                  alt="Mazda CX-5"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   sizes="sm:100vw md:33vw lg:25vw"
                 />
                 <div class="absolute top-4 left-4">
                   <span class="text-sm font-medium bg-yellow-500 text-brand-navy px-2 py-1 rounded">
-                    Special Offer
+                    Reduced
                   </span>
                 </div>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  Life Asoke-Rama 9
+                  Mazda CX-5 2.5 Turbo
                 </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Rama 9, Bangkok
+                <p class="text-sm text-brand-navy dark:text-gray-300 mb-1">
+                  2022 • 18,000 km • Bangkok
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                  Automatic • Petrol
                 </p>
                 <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿2,750,000
+                  ฿1,280,000
                 </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $77,000</p>
               </div>
             </div>
           </SwiperSlide>
 
-          <!-- Card 9 -->
+          <!-- Card 9 - Honda Wave -->
           <SwiperSlide>
             <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
               <div class="h-48 relative overflow-hidden">
                 <NuxtImg
                   src="/assets/placeholder/sample_9.webp"
-                  alt="Quintara Treehaus Sukhumvit 42"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
+                  alt="Honda Wave"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   sizes="sm:100vw md:33vw lg:25vw"
                 />
                 <div class="absolute top-4 left-4">
                   <span class="text-sm font-medium bg-blue-500 text-white px-2 py-1 rounded">
-                    Near BTS
+                    Rent-to-Own
                   </span>
                 </div>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  Quintara Treehaus Sukhumvit 42
+                  Honda Wave 125i
                 </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Ekkamai, Bangkok
+                <p class="text-sm text-brand-navy dark:text-gray-300 mb-1">
+                  2024 • 800 km • Bangkok
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                  Semi-Auto • 125cc
                 </p>
                 <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿5,890,000
+                  ฿1,200/mo
                 </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $165,000</p>
               </div>
             </div>
           </SwiperSlide>
 
-          <!-- Card 10 -->
+          <!-- Card 10 - BMW 3 Series -->
           <SwiperSlide>
             <div class="bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-2xl transition-all duration-300 group h-full">
               <div class="h-48 relative overflow-hidden">
                 <NuxtImg
                   src="/assets/placeholder/sample_10.webp"
-                  alt="Cloud Residences SKV23"
-                  class="w-full h-full object-cover object-bottom transform group-hover:scale-105 transition-transform duration-700"
+                  alt="BMW 3 Series"
+                  class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   sizes="sm:100vw md:33vw lg:25vw"
                 />
                 <div class="absolute top-4 left-4">
                   <span class="text-sm font-medium bg-indigo-500 text-white px-2 py-1 rounded">
-                    High Floor
+                    Luxury
                   </span>
                 </div>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-brand-navy dark:text-white mb-2 min-h-[3.5rem] line-clamp-2">
-                  Cloud Residences SKV23
+                  BMW 330i M Sport
                 </h3>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mb-3">
-                  Asoke, Bangkok
+                <p class="text-sm text-brand-navy dark:text-gray-300 mb-1">
+                  2021 • 22,000 km • Bangkok
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">
+                  Automatic • Petrol
                 </p>
                 <p class="text-lg font-bold text-brand-navy dark:text-white">
-                  {{ $t('common.from') }} ฿7,200,000
+                  ฿1,950,000
                 </p>
-                <p class="text-sm text-brand-navy dark:text-gray-300 mt-1">≈ $202,000</p>
               </div>
             </div>
           </SwiperSlide>
@@ -358,7 +378,7 @@
 
         <!-- Custom Navigation Arrows -->
         <button 
-          class="swiper-button-prev-featured absolute left-0 top-[43%] -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 flex bg-brand-navy dark:bg-white rounded-full shadow-lg items-center justify-center hover:bg-brand-turqoise-light dark:hover:bg-brand-turqoise-light transition-colors duration-300 -ml-[8px] lg:-ml-6"
+          class="swiper-button-prev-featured absolute left-0 top-[43%] -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 flex bg-brand-navy dark:bg-white rounded-full shadow-lg items-center justify-center hover:bg-brand-red-light dark:hover:bg-brand-red-light transition-colors duration-300 -ml-[8px] lg:-ml-6"
           type="button"
           aria-label="Previous slide"
         >
@@ -368,7 +388,7 @@
         </button>
 
         <button 
-          class="swiper-button-next-featured absolute right-0 top-[43%] -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 flex bg-brand-navy dark:bg-white rounded-full shadow-lg items-center justify-center hover:bg-brand-turqoise-light dark:hover:bg-brand-turqoise-light transition-colors duration-300 -mr-[8px] lg:-mr-6"
+          class="swiper-button-next-featured absolute right-0 top-[43%] -translate-y-1/2 z-10 w-8 h-8 md:w-12 md:h-12 flex bg-brand-navy dark:bg-white rounded-full shadow-lg items-center justify-center hover:bg-brand-red-light dark:hover:bg-brand-red-light transition-colors duration-300 -mr-[8px] lg:-mr-6"
           type="button"
           aria-label="Next slide"
         >
@@ -401,6 +421,6 @@ const SwiperPagination = Pagination
 }
 
 .swiper-pagination-bullet-active {
-  @apply bg-brand-turqoise-light opacity-100;
+  @apply bg-brand-red-light opacity-100;
 }
 </style>

@@ -48,7 +48,7 @@
     "terms": "Terms & Conditions", 
     "contact": "Contact Us",
     "payments": "Digital Payments",
-    "tagline": "Unlocking Thailand's Property Market."
+    "tagline": "Unlocking Thailand's Vehicle Market."
   },
   "hero": {
     "title_part1": "Unlocking",
@@ -91,7 +91,7 @@
     "bts_stations": "Transit Stations"
   },
   "sections": {
-    "featured_properties": "Featured Properties",
+    "featured_properties": "Featured Listings",
     "featured_properties_subtitle": "Exceptional homes selected for their outstanding value, location, and amenities.",
     "popular_projects": "Popular Projects",
     "popular_projects_subtitle": "Discover Thailand's most sought-after developments",
@@ -103,10 +103,10 @@
     "revolutionary_features_subtitle": "Experience property search like never before with cutting-edge technology and professional-grade service standards",
     "property_insights": "Latest Property Insights",
     "property_insights_subtitle": "Stay updated with Thailand's property market trends and expert advice",
-    "bts_search_title_1": "Find Properties Near Any",
-    "bts_search_title_2": "Transit Station",
-    "bts_search_subtitle": "Our revolutionary transport mapping shows you exactly how close properties are to transit stations, helping you make smarter decisions about your commute and lifestyle.",
-    "insights_title_1": "Market",
+    "bts_search_title_1": "Buy Within Your",
+    "bts_search_title_2": "Budget",
+    "bts_search_subtitle": "Tell us how much you can afford, and we'll match you with quality vehicles at that price.",
+    "insights_title_1": "Automotive",
     "insights_title_2": "Insights & News",
     "insights_subtitle": "Stay informed with the latest market trends, investment opportunities, and expert insights from Thailand's property experts.",
     "built_for_agents": "Built for Modern Agents",
