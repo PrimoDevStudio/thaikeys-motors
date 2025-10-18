@@ -55,7 +55,7 @@
           <div v-if="!user" class="flex items-center">
             <button 
               @click="showLoginModal = true"
-              class="bg-brand-red-light dark:bg-brand-red-light text-white dark:text-white px-6 py-2 rounded-lg hover:bg-brand-red-light dark:hover:bg-brand-red-dark transition-all duration-300 font-medium"
+              class="bg-brand-red-light dark:bg-brand-red-light text-white dark:text-white px-6 py-2 rounded-lg hover:bg-brand-red-dark dark:hover:bg-brand-red-dark transition-all duration-300 font-medium"
             >
               {{ $t('nav.login') }}
             </button>
@@ -89,26 +89,23 @@
       <!-- Mobile Menu -->
       <div v-if="isMobileMenuOpen" class="lg:hidden border-t border-gray-200 dark:border-gray-700 py-4 transition-colors duration-300">
         <div class="flex flex-col items-center space-y-4">
-          <NuxtLink :to="localePath('/rent')" class="mobile-nav-link text-center" @click="closeMobileMenu">
-            {{ $t('nav.rent') }}
+          <NuxtLink :to="localePath('/cars')" class="mobile-nav-link text-center" @click="closeMobileMenu">
+            {{ $t('nav.cars') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/buy')" class="mobile-nav-link text-center" @click="closeMobileMenu">
-            {{ $t('nav.buy') }}
+          <NuxtLink :to="localePath('/motorcycles')" class="mobile-nav-link text-center" @click="closeMobileMenu">
+            {{ $t('nav.motorcycles') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/sell')" class="mobile-nav-link text-center" @click="closeMobileMenu">
-            {{ $t('nav.sell') }}
+          <NuxtLink :to="localePath('/commercial')" class="mobile-nav-link text-center" @click="closeMobileMenu">
+            {{ $t('nav.commercial') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/agents')" class="mobile-nav-link text-center" @click="closeMobileMenu">
-            {{ $t('nav.agents') }}
+          <NuxtLink :to="localePath('/marine')" class="mobile-nav-link text-center" @click="closeMobileMenu">
+            {{ $t('nav.marine') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/developers')" class="mobile-nav-link text-center" @click="closeMobileMenu">
-            {{ $t('nav.developers') }}
+          <NuxtLink :to="localePath('/rent-to-own')" class="mobile-nav-link text-center" @click="closeMobileMenu">
+            {{ $t('nav.rent_to_own') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/list-privately')" class="mobile-nav-link text-center" @click="closeMobileMenu">
-            {{ $t('nav.listprivately') }}
-          </NuxtLink>
-          <NuxtLink :to="localePath('/expats')" class="mobile-nav-link text-center" @click="closeMobileMenu">
-            {{ $t('nav.expats') }}
+          <NuxtLink :to="localePath('/news')" class="mobile-nav-link text-center" @click="closeMobileMenu">
+            {{ $t('nav.news') }}
           </NuxtLink>
           
           <!-- Switchers -->
@@ -122,7 +119,7 @@
           <div v-if="!user" class="flex flex-col items-center space-y-3 pt-2">
             <button 
               @click="showLoginModal = true; closeMobileMenu()"
-              class="bg-brand-navy dark:bg-brand-red-light text-white dark:text-brand-navy px-6 py-2.5 rounded-lg hover:bg-blue-800 dark:hover:bg-blue-400 transition-all duration-300 font-medium"
+              class="bg-brand-red-light dark:bg-brand-red-light text-white dark:text-white px-6 py-2.5 rounded-lg hover:bg-brand-red-dark dark:hover:bg-brand-red-dark transition-all duration-300 font-medium"
             >
               {{ $t('nav.login') }}
             </button>
