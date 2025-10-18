@@ -35,21 +35,40 @@
 
             <!-- Simplified Search Layout -->
             <div class="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-xl shadow-xl p-4 lg:p-6 max-w-7xl mx-auto mb-10 border border-gray-200/50 dark:border-gray-700/50 transition-colors duration-300">
-              <!-- Vehicle Type Tabs with Underline Animation -->
-              <div class="flex justify-center gap-1 mb-6">
-                <button 
-                  v-for="tab in searchTabs" 
-                  :key="tab.id"
-                  @click="activeTab = tab.id"
-                  :class="[
-                    'relative px-4 lg:px-6 py-2 text-base font-semibold transition-all duration-300 vehicle-tab',
-                    activeTab === tab.id 
-                      ? 'text-brand-red-light dark:text-brand-red-light' 
-                      : 'text-brand-navy dark:text-white hover:text-brand-navy dark:hover:text-white'
-                  ]"
-                >
-                  {{ tab.label }}
-                </button>
+              <!-- Vehicle Type Tabs - Dropdown on Mobile, Tabs on Desktop -->
+              <div class="mb-6">
+                <!-- Mobile Dropdown -->
+                <div class="lg:hidden relative">
+                  <select
+                    v-model="activeTab"
+                    class="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-brand-navy dark:text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-red-light text-base font-semibold transition-colors duration-300 appearance-none cursor-pointer"
+                  >
+                    <option v-for="tab in searchTabs" :key="tab.id" :value="tab.id">
+                      {{ tab.label }}
+                    </option>
+                  </select>
+                  <!-- Dropdown Arrow -->
+                  <svg class="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 dark:text-gray-500 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </div>
+
+                <!-- Desktop Tabs -->
+                <div class="hidden lg:flex justify-center gap-1">
+                  <button 
+                    v-for="tab in searchTabs" 
+                    :key="tab.id"
+                    @click="activeTab = tab.id"
+                    :class="[
+                      'relative px-4 lg:px-6 py-2 text-base font-semibold transition-all duration-300 vehicle-tab',
+                      activeTab === tab.id 
+                        ? 'text-brand-red-light dark:text-brand-red-light' 
+                        : 'text-brand-navy dark:text-white hover:text-brand-navy dark:hover:text-white'
+                    ]"
+                  >
+                    {{ tab.label }}
+                  </button>
+                </div>
               </div>
 
               <!-- Search Input + Filters + Button (Single Row on Desktop, Stacked on Mobile) -->
