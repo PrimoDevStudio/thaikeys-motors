@@ -6,40 +6,37 @@
         <div class="flex-shrink-0">
           <NuxtLink :to="localePath('/')" class="flex items-center group">
             <img 
-              src="~/assets/thaikeys_logo_dark.svg" 
+              src="~/assets/thaikeys_motors_logo_dark.svg" 
               alt="ThaiKeys Logo" 
-              class="h-9 dark:hidden"
+              class="h-8 dark:hidden"
             />
             <img 
-              src="~/assets/thaikeys_logo_light.svg" 
+              src="~/assets/thaikeys_motors_logo_light.svg" 
               alt="ThaiKeys Logo" 
-              class="h-9 hidden dark:block"
+              class="h-8 hidden dark:block"
             />   
           </NuxtLink>
         </div>
         
         <!-- Center: Navigation Links -->
         <div class="hidden lg:flex items-center justify-center flex-1 space-x-8">
-          <NuxtLink :to="localePath('/rent')" class="nav-link">
-            {{ $t('nav.rent') }}
+          <NuxtLink :to="localePath('/cars')" class="nav-link">
+            {{ $t('nav.cars') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/buy')" class="nav-link">
-            {{ $t('nav.buy') }}
+          <NuxtLink :to="localePath('/motorcycles')" class="nav-link">
+            {{ $t('nav.motorcycles') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/sell')" class="nav-link">
-            {{ $t('nav.sell') }}
+          <NuxtLink :to="localePath('/commercial')" class="nav-link">
+            {{ $t('nav.commercial') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/agents')" class="nav-link">
-            {{ $t('nav.agents') }}
+          <NuxtLink :to="localePath('/marine')" class="nav-link">
+            {{ $t('nav.marine') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/developers')" class="nav-link">
-            {{ $t('nav.developers') }}
+          <NuxtLink :to="localePath('/rent-to-own')" class="nav-link">
+            {{ $t('nav.rent_to_own') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/list-privately')" class="nav-link">
-            {{ $t('nav.listprivately') }}
-          </NuxtLink>
-          <NuxtLink :to="localePath('/expats')" class="nav-link">
-            {{ $t('nav.expats') }}
+          <NuxtLink :to="localePath('/news')" class="nav-link">
+            {{ $t('nav.news') }}
           </NuxtLink>
         </div>
         

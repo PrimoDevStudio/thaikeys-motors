@@ -25,7 +25,7 @@
               </span>
               <span class="text-white font-extrabold"> Thailand's</span>
               <br>
-              <span class="text-white font-extrabold">Property Market</span>
+              <span class="text-white font-extrabold">Vehicle Market</span>
             </h1>
 
             <!-- Subtitle -->

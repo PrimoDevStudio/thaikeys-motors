@@ -1,5 +1,12 @@
 {
   "nav": {
+    "cars":"Cars",
+    "motorcycles":"Motorcycles",
+    "marine":"Marine",
+    "commercial":"Commercial",
+    "rent_to_own":"Rent To Own",
+    "tools_services":"Tools & Services",
+    "news":"News",
     "buy": "Buy",
     "rent": "Rent", 
     "sell": "Sell",
@@ -46,7 +53,7 @@
   "hero": {
     "title_part1": "Unlocking",
     "title_part2": "Thailand's Property Market",
-    "subtitle": "Thailand's most advanced property platform with integrated transport mapping, professional agents, and modern payment solutions.",
+    "subtitle": "Thailand's most comprehensive vehicle marketplace with intelligent search, verified listings, integrated financing, and rent-to-own solutions.",
     "search_placeholder": "Search by location, landmark, or transit station..."
   },
   "tabs": {

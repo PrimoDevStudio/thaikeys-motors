@@ -5,12 +5,12 @@
         <div class="flex items-center">
           <NuxtLink :to="localePath('/')" class="flex items-center group">
             <img 
-              src="~/assets/thaikeys_logo_dark.svg" 
+              src="~/assets/thaikeys_motors_logo_dark.svg" 
               alt="ThaiKeys Logo" 
               class="h-10 dark:hidden"
             />
             <img 
-              src="~/assets/thaikeys_logo_light.svg" 
+              src="~/assets/thaikeys_motors_logo_light.svg" 
               alt="ThaiKeys Logo" 
               class="h-10 hidden dark:block"
             />
