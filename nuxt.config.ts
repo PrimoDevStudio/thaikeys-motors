@@ -36,7 +36,15 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/supabase', '@nuxtjs/i18n', 'nuxt-echarts','@nuxt/image', '@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxtjs/tailwindcss', 
+    '@nuxtjs/supabase', 
+    '@nuxtjs/i18n', 
+    'nuxt-echarts',
+    '@nuxt/image', 
+    '@nuxtjs/google-fonts',
+    '@productdevbook/chatwoot'
+  ],
 
   // @ts-ignore - i18n types not yet recognized
   i18n: i18nConfig,
@@ -48,6 +56,19 @@ export default defineNuxtConfig({
     display: 'swap',
     download: true,
     inject: true
+  },
+
+  chatwoot: {
+    init: {
+      websiteToken: 'mcU6DvnFm2YepiBENZDyshco',
+      baseUrl: 'https://chatwoot-production-1730.up.railway.app'
+    },
+    settings: {
+      locale: 'en',
+      position: 'right',
+      launcherTitle: 'Chat with us'
+    },
+    partytown: false
   },
 
   supabase: {
@@ -65,13 +86,13 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'th'
       },
-      title: 'Thailand PropTech - Modern Property Platform',
+      title: 'ThaiKeys Motors',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: "Thailand's most advanced property platform with BTS integration" 
+          content: "Thailand's most comprehensive vehicle marketplace" 
         }
       ],
       link: [
